@@ -7,9 +7,9 @@ const dev = process.env.NODE_ENV === "development";
 const nextConfig = {
   images: {
     loader: "akamai",
-    path: !dev ? "/AVDramaNextJS" : "",
+    path: !dev ? "/AVDramaNextJS/public" : "",
   },
-  assetPrefix: !dev ? "https://oozeqoo.github.io/AVDramaNextJS/" : "./",
+  assetPrefix: !dev ? "https://oozeqoo.github.io/AVDramaNextJS/public" : "./",
   basePath: !dev ? "/AVDramaNextJS" : "",
 };
 
