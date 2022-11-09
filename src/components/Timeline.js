@@ -16,7 +16,7 @@ const createTimeLineItem = (
   isVideo = false,
   index
 ) => {
-  const imagePath = "/images/sunflower-6.jpg";
+  const imagePath = "/images/first_christmas.jpg";
   console.log();
 
   return (
