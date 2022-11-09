@@ -7,7 +7,7 @@
      loader: "akamai",
      path: "",
    },
-   assetPrefix: "./",
+   assetPrefix: "https://oozeqoo.github.io/AVDramaNextJS/",
  };
 
 export default nextConfig;
