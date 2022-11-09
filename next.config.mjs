@@ -2,15 +2,26 @@
  * @type {import('next').NextConfig}
  */
 
-const dev = process.env.NODE_ENV === "development";
+ const isGithubActions = process.env.GITHUB_ACTIONS || false;
+ const repo = "/AVDramaNextJS";
+ let assetPrefix = "";
+ let basePath = "/";
 
-const nextConfig = {
-  images: {
-    loader: "akamai",
-    path: !dev ? "/AVDramaNextJS/public" : "",
-  },
-  assetPrefix: !dev ? "https://oozeqoo.github.io/AVDramaNextJS/public" : "./",
-  basePath: !dev ? "/AVDramaNextJS" : "",
-};
+ if (isGithubActions) {
+   // trim off `<owner>/`
+   const repo = process.env.GITHUB_REPOSITORY.replace(/.*?\//, "");
+
+   assetPrefix = `/${repo}`;
+   basePath = `/${repo}`;
+ }
+
+ const nextConfig = {
+   images: {
+     loader: "akamai",
+     path: basePath,
+   },
+   assetPrefix: assetPrefix,
+   basePath: basePath,
+ };
 
 export default nextConfig;
