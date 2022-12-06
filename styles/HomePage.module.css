@@ -1,0 +1,412 @@
+/*
+
+Template 2087 Kalay
+
+http://www.tooplate.com/view/2087_kalay
+
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400');
+
+
+.title_outline {
+    color: black;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  font-size: 60px;
+}
+
+
+/*---------------------------------------
+  Buttons
+-----------------------------------------*/
+
+.section_btn {
+  background: #000000;
+  border: none;
+  border-radius: 50px;
+  color: #f0f0f0;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  padding: 18px 32px;
+  margin-top: 42px;
+  text-transform: uppercase;
+  -webkit-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
+}
+
+.section_btn:focus,
+.section_btn:hover {
+  background: #ffffff;
+  color: #000000;
+}
+
+
+
+/*---------------------------------------
+  General
+-----------------------------------------*/
+
+.parallax_section {
+  background-attachment: fixed !important;
+  background-size: cover !important;
+}
+
+.section_title {
+  margin: 0;
+  padding-bottom: 16px;
+}
+
+.service, .about, .work,
+.contact, .footer {
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.service, .work {
+  background: #f9f9f9;
+  text-align: center;
+}
+
+
+/*---------------------------------------
+  Pre loader section
+-----------------------------------------*/
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  background: none repeat scroll 0 0 #ffffff;
+}
+
+.spinner {
+  border: 1px solid transparent;
+  border-radius: 5px;
+  position: relative;
+}
+
+.spinner:before {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 65px;
+  height: 65px;
+  margin-top: -10px;
+  margin-left: -10px;
+  border-radius: 50%;
+  border: 2px solid #454545;
+  border-top-color: #ffffff;
+  animation: spinner .9s linear infinite;
+}
+
+@-webkit-@keyframes spinner {
+  to {transform: rotate(360deg);}
+}
+
+@keyframes spinner {
+  to {transform: rotate(360deg);}
+}
+
+
+
+/*---------------------------------------
+  Home section
+-----------------------------------------*/
+
+.home {
+  background: url('../public/images/sunflower-6.jpg') 50% 0 repeat_y fixed;
+  background-size: cover;
+  object-fit: cover;
+  background-position: center center;
+  display: -webkit-box;
+  display: -webkit-flex;
+   display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+   align-items: center;
+  position: absolute;
+  text-align: right;
+  z-index: -1;
+}
+
+
+
+/*---------------------------------------
+  Service section
+-----------------------------------------*/
+
+.service_thumb {
+  background: #ffffff;
+  border-radius: 5px;
+  padding: 42px 22px;
+  cursor: crosshair;
+  position: relative;
+  top: 0;
+  -webkit-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
+}
+
+.service_thumb:hover {
+  background: #2b2b2b;
+  top: -5px;
+}
+
+.service_thumb:hover .fa,
+.service_thumb:hover h4 {
+  color: #ffffff;
+}
+
+.service_thumb h4 {
+  padding-bottom: 5px;
+}
+
+.service_thumb .fa {
+  color: #7682cc;
+  font-size: 62px;
+  text-align: center;
+  margin-top: 32px;
+  margin-bottom: 22px;
+}
+
+.bg_grey .fa {
+  color: #ffffff;
+}
+
+
+
+/*---------------------------------------
+  About section
+-----------------------------------------*/
+
+.about {
+  padding-top: 100px;
+}
+
+.about-image_thumb img {
+  border-radius: 5px;
+  margin-bottom: 22px;
+}
+
+.about-image-thumb .social_icon li a {
+  background: #f0f0f0;
+}
+
+.about_thumb {
+  padding: 32px 12px;
+}
+
+.about_thumb p {
+  padding: 2px 0;
+}
+
+
+
+/*---------------------------------------
+  Work section
+-----------------------------------------*/
+
+.work_thumb {
+  margin: 22px 0 12px 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  text-align: left;
+}
+
+.work_thumb img {
+  border-radius: 5px;
+}
+
+.work_thumb h2 {
+  font-size: 25px;
+}
+
+.work-thumb_overlay {
+  position: absolute;
+  background: #7682cc;
+  border-radius: 5px;
+  cursor: crosshair;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  padding: 82px 42px;
+  -webkit-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
+}
+
+.work-thumb:hover .work-thumb_overlay {
+  opacity: 1;
+}
+
+
+
+/*---------------------------------------
+  Contact section
+-----------------------------------------*/
+
+.contact_info .fa {
+  padding-right: 5px;
+}
+
+.contact .form_control {
+  border: none;
+  border-bottom: 2px solid #f0f0f0;
+  border-radius: 0px;
+  box-shadow: none;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  -webkit-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
+}
+
+.contact .form_control:focus {
+  border-bottom-color: #999999;
+}
+
+.contact input {
+  height: 55px;
+}
+
+.contact button.submit {
+  background: #2b2b2b;
+  border: none;
+  border-radius: 50px;
+  color: #ffffff;
+  height: 50px;
+  margin-top: 24px;
+}
+
+.contact button.submit:hover {
+  background: #7682cc;
+  color: #ffffff;
+}
+
+
+
+/*---------------------------------------
+  .footer section
+-----------------------------------------*/
+
+.footer {
+  background: #7682cc;
+  text-align: center;
+  padding: 120px 0;
+}
+
+.footer p {
+  padding-bottom: 16px;
+}
+
+
+
+/*---------------------------------------
+  Social icon
+-----------------------------------------*/
+
+.social_icon {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.social_icon li {
+  display: inline-block;
+  list-style: none;
+}
+
+.social_icon li a {
+  background: #ffffff;
+  border-radius: 100%;
+  color: #454545;
+  cursor: pointer;
+  font-size: 20px;
+  text-decoration: none;
+  transition: all 0.4s ease-in_out;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  top: 0;
+  margin: 0px 6px 10px 6px;
+}
+
+.social_icon li a:hover {
+  background: #000000;
+  color: #ffffff;
+  transform: scale(1.1);
+  top: -5px;
+}
+
+
+
+/*---------------------------------------
+  Mobile Responsive styles
+-----------------------------------------*/
+
+@media (max-width: 980px) {
+  .home {
+    height: 55vh;
+  }
+
+  .service_thumb {
+    margin-top: 12px;
+    margin-bottom: 22px;
+  }
+
+  .contact_info {
+    margin-top: 22px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .home {
+    height: 85vh;
+  }
+}
+
+
+@media (max-width: 580px) {
+
+  .h1 {
+    font-size: 29px;
+  }
+
+  .h2 {
+    font-size: 23px;
+  }
+
+  .home {
+    height: 95vh;
+  }
+
+  .contact_info {
+    margin-top: 42px;
+  }
+}
+
+
+@media (max-width: 320px) {
+  .home {
+    height: 125vh;
+  }
+}

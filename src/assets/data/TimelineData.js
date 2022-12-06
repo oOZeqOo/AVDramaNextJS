@@ -1,5 +1,5 @@
 export const timelineData = {
-  Jan2019: [
+  2019: [
     {
       description:
         " Zac and Anna went on their first date by going mini golfing and then they went to a Mongolian restaurant for dinner!",
@@ -7,6 +7,7 @@ export const timelineData = {
       imgPath: "/images/timeline/start_timeline_sunflower.jpeg",
       month: "December 2019",
       title: "1st Date",
+      tag: "2019",
     },
     {
       description:
@@ -17,7 +18,7 @@ export const timelineData = {
       title: "First Time seeing Lights 🌟",
     },
   ],
-  Jan2020: [
+  2020: [
     {
       description:
         " Zac and Anna celebrated New Years together and went bowling. This was the first time Zac put his arm around Anna",
@@ -25,6 +26,7 @@ export const timelineData = {
       imgPath: "/images/timeline/2020/new_years.jpg",
       month: "January 2020",
       title: "1st New Years Together",
+      tag: "2020",
     },
     {
       description:
@@ -130,7 +132,7 @@ export const timelineData = {
       title: "Christmas Lights ⚡",
     },
   ],
-  Jan2021: [
+  2021: [
     {
       description:
         " Zac and Anna got to spend another New Years together and met Annas family at One Pocha",
@@ -138,6 +140,7 @@ export const timelineData = {
       imgPath: "/images/timeline/2021/jan.jpg",
       month: "January 2021",
       title: "2nd New Years! 🎇",
+      tag: "2021",
     },
     {
       description:
@@ -284,7 +287,7 @@ export const timelineData = {
       title: "Christmas!!!",
     },
   ],
-  Jan2022: [
+  2022: [
     {
       description:
         " Anna and Zac got to the Cheesecake Factory and do some sparklers together!!",
@@ -292,6 +295,7 @@ export const timelineData = {
       imgPath: "/images/timeline/2022/lights.jpg",
       month: "January 2022",
       title: "New Years!! 🎆🎆🎇🎇",
+      tag: "2022",
     },
     {
       description:
@@ -474,12 +478,12 @@ export const timelineData = {
     // Template for new Events
     // {
     //      description:
-    //          "Zac helped to support Anna since she has been going through a tough time in life!",
+    //          "",
     //      isVideo: false
     //      imgClass: "img",
     //      imgPath: "/images/timeline/2022/Support_Anna.jpg",
-    //      month: "October 2022",
-    //      title: "Support 💪💪💪💪",
+    //      month: "",
+    //      title: "",
     //   },
     {
       description:

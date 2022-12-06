@@ -1,5 +1,5 @@
 import HomePage from "../src/components/HomePage";
 
-export default function Home() {
+export default function ImageGalleryPage() {
   return <HomePage />;
 }

@@ -1,5 +1,4 @@
-import styles from "../styles/Home.module.css";
-import Timeline from "../src/components/Timeline";
-export default function TimelinePage() {
-  return <Timeline />;
+import TimelinePage from "../src/components/TimelinePage";
+export default function Timeline() {
+  return <TimelinePage />;
 }
