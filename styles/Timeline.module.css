@@ -32,13 +32,11 @@
     padding: 0em 5px 0px 5px;
     align-items: center;
     text-align: center;
-    transition: 3s;
 
   }
 
   .timeline_nav a:hover {
     background-color: rgb(64, 132, 250);
-    transition: 0.3s;
   }
 
   .main_timeline {

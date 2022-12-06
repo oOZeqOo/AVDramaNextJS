@@ -4,8 +4,28 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import ContactPageIcon from "@mui/icons-material/ContactPage";
 import TimelineIcon from "@mui/icons-material/Timeline";
 import Card from "../common/Card";
+import { FadeInAnimation } from "../utils/Animations";
 
 const CardSection = () => {
+  const getAnimatedCard = (
+    icon,
+    title,
+    description,
+    link,
+    cardColor,
+    transition
+  ) => (
+    <FadeInAnimation transition={transition}>
+      <Card
+        icon={icon}
+        title={title}
+        description={description}
+        link={link}
+        cardColor={cardColor}
+      />
+    </FadeInAnimation>
+  );
+
   return (
     <div
       style={{
@@ -17,33 +37,38 @@ const CardSection = () => {
         flexWrap: "wrap",
       }}
     >
-      <Card
-        icon={<CameraAltIcon sx={{ fontSize: 50 }} />}
-        title={"More Images"}
-        description={"The cast has 2 main protagonists: Anna and Zac"}
-        link={"/more_images"}
-      />
-      <Card
-        icon={<LocationOnIcon sx={{ fontSize: 50 }} />}
-        title={"Location"}
-        description={"This Drama takes place in the 21st century USA"}
-        link={"/"}
-      />
-      <Card
-        icon={<ContactPageIcon sx={{ fontSize: 50 }} />}
-        title={"Intro"}
-        description={
-          "These two love birds find a way to make it through anything together"
-        }
-        link={"/"}
-      />
-      <Card
-        icon={<TimelineIcon sx={{ fontSize: 50 }} />}
-        title={"Timeline"}
-        description={"View the history of the Drama 💝💝💝💝💝💝"}
-        link={"/timeline"}
-        cardColor={"pink"}
-      />
+      {getAnimatedCard(
+        <CameraAltIcon sx={{ fontSize: 50 }} />,
+        "More Images",
+        "The cast has 2 main protagonists: Anna and Zac",
+        "/more_images",
+        "",
+        0.5
+      )}
+      {getAnimatedCard(
+        <LocationOnIcon sx={{ fontSize: 50 }} />,
+        "Location",
+        "This Drama takes place in the 21st century USA",
+        "/",
+        "",
+        0.75
+      )}
+      {getAnimatedCard(
+        <ContactPageIcon sx={{ fontSize: 50 }} />,
+        "Intro",
+        "These two love birds find a way to make it through anything together",
+        "/",
+        "",
+        1
+      )}
+      {getAnimatedCard(
+        <TimelineIcon sx={{ fontSize: 50 }} />,
+        "Timeline",
+        "View the history of the Drama 💝💝💝💝💝💝",
+        "/timeline",
+        "pink",
+        1.25
+      )}
     </div>
   );
 };

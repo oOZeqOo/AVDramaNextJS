@@ -7,7 +7,6 @@ export const timelineData = {
       imgPath: "/images/timeline/start_timeline_sunflower.jpeg",
       month: "December 2019",
       title: "1st Date",
-      tag: "2019",
     },
     {
       description:
@@ -26,7 +25,6 @@ export const timelineData = {
       imgPath: "/images/timeline/2020/new_years.jpg",
       month: "January 2020",
       title: "1st New Years Together",
-      tag: "2020",
     },
     {
       description:
@@ -140,7 +138,6 @@ export const timelineData = {
       imgPath: "/images/timeline/2021/jan.jpg",
       month: "January 2021",
       title: "2nd New Years! 🎇",
-      tag: "2021",
     },
     {
       description:
@@ -295,7 +292,6 @@ export const timelineData = {
       imgPath: "/images/timeline/2022/lights.jpg",
       month: "January 2022",
       title: "New Years!! 🎆🎆🎇🎇",
-      tag: "2022",
     },
     {
       description:

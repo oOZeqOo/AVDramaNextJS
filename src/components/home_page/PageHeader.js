@@ -2,6 +2,7 @@ import React from "react";
 import { Button } from "@mui/material";
 import styles from "/styles/HomePage.module.css";
 import Image from "next/image";
+import Link from "next/link";
 
 const PageHeader = ({ width, height, isMobile }) => {
   const myStyles = {
@@ -36,6 +37,7 @@ const PageHeader = ({ width, height, isMobile }) => {
       borderRadius: 10,
     },
     button: {
+      //   scrollBehavior: "smooth",
       marginTop: 10,
       backgroundColor: "black",
       color: "white",
@@ -73,11 +75,13 @@ const PageHeader = ({ width, height, isMobile }) => {
             </h3>
           </div>
           <div style={myStyles.rowCenter}>
-            <Button style={myStyles.button}>LEARN MORE</Button>
+            <Link href={"#more"} style={myStyles.button} scroll={false}>
+              LEARN MORE
+            </Link>
           </div>
         </div>
       </div>
-      <div style={myStyles.moreInfoWrapper}>
+      <div style={myStyles.moreInfoWrapper} id={"more"}>
         <h1 style={myStyles.moreInfo}>More Information about the A-V-Drama</h1>
       </div>
     </>

@@ -3,6 +3,7 @@ import Typography from "@mui/material/Typography";
 import Image from "next/image";
 import { isMobile } from "react-device-detect";
 import { aboutSectionData } from "../../assets/data/AboutSectionData";
+import { FadeInUpAnimation } from "../utils/Animations";
 
 const mobileDevice = isMobile || false;
 
@@ -51,50 +52,58 @@ const getSection = ({
   );
 
   return (
-    <div key={index} style={styles.wordImageWrapper}>
-      {!isSmallScreen && alternating ? (
-        index % 2 === 0 ? (
-          <>
-            {getWordSection(title, description)}
-            <div style={styles.centerItems}>
-              <Image
-                alt={"Image"}
-                width={600}
-                height={600}
-                src={imagePath}
-                style={{ objectFit: "cover", borderRadius: imageBorderRadius }}
-              />
-            </div>
-          </>
+    <FadeInUpAnimation key={index}>
+      <div style={styles.wordImageWrapper}>
+        {!isSmallScreen && alternating ? (
+          index % 2 === 0 ? (
+            <>
+              {getWordSection(title, description)}
+              <div style={styles.centerItems}>
+                <Image
+                  alt={"Image"}
+                  width={600}
+                  height={600}
+                  src={imagePath}
+                  style={{
+                    objectFit: "cover",
+                    borderRadius: imageBorderRadius,
+                  }}
+                />
+              </div>
+            </>
+          ) : (
+            <>
+              <div style={styles.centerItems}>
+                <Image
+                  alt={"Image"}
+                  width={600}
+                  height={600}
+                  src={imagePath}
+                  style={{
+                    objectFit: "cover",
+                    borderRadius: imageBorderRadius,
+                  }}
+                />
+              </div>
+              {getWordSection(title, description)}
+            </>
+          )
         ) : (
           <>
             <div style={styles.centerItems}>
               <Image
                 alt={"Image"}
-                width={600}
-                height={600}
+                width={300}
+                height={300}
                 src={imagePath}
                 style={{ objectFit: "cover", borderRadius: imageBorderRadius }}
               />
             </div>
             {getWordSection(title, description)}
           </>
-        )
-      ) : (
-        <>
-          <div style={styles.centerItems}>
-            <Image
-              alt={"Image"}
-              width={300}
-              height={300}
-              src={imagePath}
-              style={{ objectFit: "cover", borderRadius: imageBorderRadius }}
-            />
-          </div>
-          {getWordSection(title, description)}
-        </>
-      )}
-    </div>
+        )}
+      </div>
+    </FadeInUpAnimation>
   );
 };
 

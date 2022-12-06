@@ -1,4 +1,4 @@
-import React, { useMemo, useEffect } from "react";
+import React, { useMemo, useState } from "react";
 import { timelineData } from "../assets/data/TimelineData";
 import cssStyles from "../../styles/Timeline.module.css";
 import Link from "next/link";
@@ -14,7 +14,7 @@ import TimelineDot from "@mui/lab/TimelineDot";
 import { isMobile } from "react-device-detect";
 import useDeviceSize from "./hooks/useDeviceSize";
 import { Divider } from "@mui/material";
-
+import { LoadingButton } from "@mui/lab";
 const TimelinePage = () => {
   return createTimeline(timelineData);
 };
@@ -22,11 +22,17 @@ const TimelinePage = () => {
 export default TimelinePage;
 
 const createTimeline = (data) => {
+  const [loadingSection, setLoadingSection] = useState(false);
   const [width, height] = useDeviceSize();
   const isSmallScreen = isMobile || width < 800;
   const flattenData = useMemo(() => {
     return Object.keys(data)
-      ?.map((key, topIndex) => data[key]?.map((item, index) => item))
+      ?.map((key, topIndex) =>
+        data[key]?.map((item, index) => ({
+          ...item,
+          tag: index === 0 ? key : undefined,
+        }))
+      )
       .flat();
   }, [data]);
   const timelineClass =
@@ -39,11 +45,17 @@ const createTimeline = (data) => {
         }
       : {};
 
+  const setLoadingHold = () => {
+    setLoadingSection(true);
+    setTimeout(() => setLoadingSection(false), 0);
+  };
+
   return (
     <div className={cssStyles.root}>
       <div className={cssStyles.timeline_nav}>
         <Link
-          href="/"
+          onClick={() => setLoadingHold()}
+          href={loadingSection ? "" : "/"}
           style={{
             backgroundColor: "pink",
             border: "none",
@@ -66,13 +78,51 @@ const createTimeline = (data) => {
             <KeyboardBackspaceIcon style={{ fontSize: "40" }} />
           </IconButton>
         </Link>
-        <Link href="#start"> Start </Link>
-        {Object.keys(data)?.map((key, index) => (
-          <Link href={`#${key}`} key={index}>
-            {key}
+        <LoadingButton loading={loadingSection}>
+          <Link
+            scroll={false}
+            href={loadingSection ? "#Waiting" : "#start"}
+            onClick={() => setLoadingHold()}
+            style={
+              loadingSection
+                ? { backgroundColor: "grey", color: "lightgrey" }
+                : {}
+            }
+          >
+            Start
           </Link>
+        </LoadingButton>
+        {Object.keys(data)?.map((key, index) => (
+          <LoadingButton loading={loadingSection}>
+            <Link
+              scroll={false}
+              href={loadingSection ? "#Waiting" : `#${key}`}
+              key={index}
+              onClick={() => setLoadingHold()}
+              style={
+                loadingSection
+                  ? { backgroundColor: "grey", color: "lightgrey" }
+                  : {}
+              }
+            >
+              {key}
+            </Link>
+          </LoadingButton>
         ))}
-        <Link href="#latest"> Latest </Link>
+        <LoadingButton loading={loadingSection}>
+          <Link
+            scroll={false}
+            href={"#latest"}
+            onClick={() => setLoadingHold()}
+            style={
+              loadingSection
+                ? { backgroundColor: "grey", color: "lightgrey" }
+                : {}
+            }
+          >
+            New
+          </Link>
+        </LoadingButton>
       </div>
       <div style={{ paddingTop: 0, width: "100vw" }}>
         <Timeline
@@ -88,9 +138,7 @@ const createTimeline = (data) => {
               item?.tag,
               item?.imgPath,
               item?.isVideo || false,
-              index,
-              index === 0 || index == flattenData?.length,
-              isSmallScreen
+              index
             )
           )}
         </Timeline>
@@ -109,61 +157,57 @@ const createTimeLineItem = (
   tag,
   imgPath,
   isVideo = false,
-  index,
-  endItem = false,
-  isSmallScreen
+  index
 ) => {
-  return (
-    <>
-      {!endItem && isSmallScreen && <Divider style={styles.divider} />}
-      <TimelineItem
-        id={tag ? `${tag}` : undefined}
-        style={index === 0 ? { marginTop: 50 } : {}}
-      >
-        <TimelineSeparator>
-          <TimelineDot variant="outlined" />
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent>
-          <div className={[cssStyles.content, cssStyles.anchor_container]}>
-            <span className={cssStyles.year}>{month}</span>
-            <h3 className={[cssStyles.title, cssStyles.h4]}>{title}</h3>
-            <p
-              className={cssStyles.description}
-              style={{ fontSize: "large", fontWeight: "bold" }}
-            >
-              {description}
-            </p>
-            <div className={cssStyles.icon}>
-              <span></span>
-            </div>
+  return [
+    <TimelineItem
+      key={index}
+      id={tag ? `${tag}` : undefined}
+      style={index === 0 ? { marginTop: 50 } : {}}
+    >
+      <TimelineSeparator>
+        <TimelineDot
+          variant="outlined"
+          style={{ padding: 5, borderWidth: 4 }}
+        />
+        <TimelineConnector />
+      </TimelineSeparator>
+      <TimelineContent>
+        <Divider style={styles.divider} />
+        <div className={[cssStyles.content, cssStyles.anchor_container]}>
+          <span style={styles.year}>{month}</span>
+          <h3 style={styles.title}>{title}</h3>
+          <p
+            className={cssStyles.description}
+            style={{ fontSize: "large", fontWeight: "bold" }}
+          >
+            {description}
+          </p>
+          <div className={cssStyles.icon}>
+            <span></span>
           </div>
-          <div style={styles.imageWrapper}>
-            {isVideo ? (
-              <>
-                <video
-                  controls={true}
-                  loop={true}
-                  style={styles.image}
-                  onLoadStart={() => {}}
-                  playsInline={true}
-                  src={imgPath}
-                />
-                <source type="video/mp4" />
-              </>
-            ) : (
-              // eslint-disable-next-line @next/next/no-img-element
-              <img
-                src={imgPath}
-                alt={title || "Missing"}
+        </div>
+        <div style={styles.imageWrapper}>
+          {isVideo ? (
+            <>
+              <video
+                controls={true}
+                loop={true}
                 style={styles.image}
+                onLoadStart={() => {}}
+                playsInline={true}
+                src={imgPath}
               />
-            )}
-          </div>
-        </TimelineContent>
-      </TimelineItem>
-    </>
-  );
+              <source type="video/mp4" />
+            </>
+          ) : (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img src={imgPath} alt={title || "Missing"} style={styles.image} />
+          )}
+        </div>
+      </TimelineContent>
+    </TimelineItem>,
+  ];
 };
 
 const styles = {
@@ -179,6 +223,14 @@ const styles = {
     justifyContent: "center",
     margin: "auto",
   },
+  year: {
+    fontSize: 30,
+    fontWeight: "bold",
+  },
+  title: {
+    fontSize: 25,
+    fontWeight: "bold",
+  },
   image: {
     width: 300,
     weight: 300,
@@ -186,7 +238,7 @@ const styles = {
     objectFit: "contain",
   },
   divider: {
-    margin: "5px 5%",
+    margin: "15px 0px 5%",
     fontWeight: "bold",
     fontSize: 100,
     borderBottomWidth: 3,
