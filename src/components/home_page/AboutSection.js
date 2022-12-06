@@ -7,11 +7,11 @@ import { FadeInUpAnimation } from "../utils/Animations";
 
 const mobileDevice = isMobile || false;
 
-const AboutSection = ({ alternating = true, width = 800 }) => {
+const AboutSection = ({ alternating = true, viewWidth = 800 }) => {
   return (
     <div style={styles.wordSectionWrapper}>
       {aboutSectionData?.map((item, index) =>
-        getSection({ ...item, index, alternating, width })
+        getSection({ ...item, index, alternating, viewWidth })
       )}
     </div>
   );
@@ -25,8 +25,10 @@ const getSection = ({
   description,
   index,
   alternating = false,
-  width,
+  viewWidth,
 }) => {
+  const width = Math.min(viewWidth, 300);
+
   const imageBorderRadius = 100;
   const isSmallScreen = mobileDevice || width < 800;
 
@@ -61,8 +63,8 @@ const getSection = ({
               <div style={styles.centerItems}>
                 <Image
                   alt={"Image"}
-                  width={600}
-                  height={600}
+                  width={width}
+                  height={width}
                   src={imagePath}
                   style={{
                     objectFit: "cover",
@@ -76,8 +78,8 @@ const getSection = ({
               <div style={styles.centerItems}>
                 <Image
                   alt={"Image"}
-                  width={600}
-                  height={600}
+                  width={width}
+                  height={width}
                   src={imagePath}
                   style={{
                     objectFit: "cover",
@@ -93,8 +95,8 @@ const getSection = ({
             <div style={styles.centerItems}>
               <Image
                 alt={"Image"}
-                width={300}
-                height={300}
+                width={width}
+                height={width}
                 src={imagePath}
                 style={{ objectFit: "cover", borderRadius: imageBorderRadius }}
               />

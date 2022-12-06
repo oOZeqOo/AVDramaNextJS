@@ -9,18 +9,17 @@ import AboutSection from "./home_page/AboutSection";
 import PageHeader from "./home_page/PageHeader";
 import NoteSection from "./home_page/NotesSection";
 
-const mobileDevice = isMobile || false;
 const HomePage = () => {
   const [width, height] = useDeviceSize();
   return (
     <>
       <div style={styles.contentWrapper}>
-        <PageHeader width={width} height={height} isMobile={isMobile} />
+        <PageHeader viewWidth={width} height={height} isMobile={isMobile} />
         <CardSection />
         <Divider style={styles.divider} />
-        <AboutSection width={width} />
+        <AboutSection viewWidth={width} />
         <Divider style={styles.divider} />
-        <NoteSection />
+        <NoteSection viewWidth={width} />
       </div>
     </>
   );

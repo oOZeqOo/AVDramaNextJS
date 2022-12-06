@@ -1,14 +1,15 @@
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 import { homePageNotes } from "../../assets/data/HomePageNotes";
 
-const NoteSection = () => {
-  return buildNoteSection();
+const NoteSection = ({ viewWidth = 200 }) => {
+  return buildNoteSection(viewWidth);
 };
 
 export default NoteSection;
 
-const buildNoteSection = () => {
+const buildNoteSection = (viewWidth) => {
+  const width = Math.min(viewWidth, 300);
   return (
     <div style={styles.contentWrapper}>
       <div style={styles.content}>
@@ -19,20 +20,20 @@ const buildNoteSection = () => {
         <div style={styles.gifWrapper}>
           <Image
             src={"/gifs/drinking_boba.gif"}
-            width={400}
-            height={400}
+            width={width}
+            height={width}
             alt={"gif"}
           />
           <Image
             src={"/gifs/best_tea.gif"}
-            width={400}
-            height={400}
+            width={width}
+            height={width}
             alt={"gif"}
           />
           <Image
             src={"/gifs/happy_boba.gif"}
-            width={400}
-            height={400}
+            width={width}
+            height={width}
             alt={"gif"}
           />
         </div>

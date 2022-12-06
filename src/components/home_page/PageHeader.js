@@ -4,7 +4,7 @@ import styles from "/styles/HomePage.module.css";
 import Image from "next/image";
 import Link from "next/link";
 
-const PageHeader = ({ width, height, isMobile }) => {
+const PageHeader = ({ viewWidth, height, isMobile }) => {
   const myStyles = {
     headerWrapper: {
       minHeight: "100vh",
@@ -20,10 +20,9 @@ const PageHeader = ({ width, height, isMobile }) => {
       marginLeft: isMobile ? "5%" : "25%",
       marginRight: isMobile ? "5%" : "25%",
     },
-    imageWrapper: { position: "absolute", zIndex: -1 },
+    imageWrapper: { position: "absolute", zIndex: -1, overflowX: "hidden" },
     image: {
       objectFit: "cover",
-      backgroundSize: "cover",
       alignItems: "center",
       textAlign: "right",
       zIndex: -1,
@@ -37,7 +36,6 @@ const PageHeader = ({ width, height, isMobile }) => {
       borderRadius: 10,
     },
     button: {
-      //   scrollBehavior: "smooth",
       marginTop: 10,
       backgroundColor: "black",
       color: "white",
@@ -53,7 +51,6 @@ const PageHeader = ({ width, height, isMobile }) => {
       justifyContent: "center",
     },
   };
-
   return (
     <>
       <div style={myStyles.headerWrapper}>
@@ -63,8 +60,8 @@ const PageHeader = ({ width, height, isMobile }) => {
             style={myStyles.image}
             src={"/images/sunflower-6.jpg"}
             alt={"Sunflowers"}
-            width={width}
-            height={height * 2}
+            width={viewWidth}
+            height={height}
           />
         </div>
         <div style={myStyles.header}>
