@@ -27,17 +27,16 @@ const getSection = ({
   alternating = false,
   viewWidth,
 }) => {
-  const width = Math.min(viewWidth, 300);
+  const width = Math.min(viewWidth, 400);
 
   const imageBorderRadius = 100;
-  const isSmallScreen = mobileDevice || width < 800;
+  const isSmallScreen = mobileDevice || viewWidth < 800;
+  const myStyle = !isSmallScreen
+    ? styles.wordSection
+    : styles.wordSectionSmallScreen;
 
   const getWordSection = (title, description) => (
-    <div
-      style={
-        !isSmallScreen ? styles.wordSection : styles.wordSectionSmallScreen
-      }
-    >
+    <div style={myStyle}>
       <div style={styles.titleWrapper}>
         <Typography variant={"h4"} sx={{ fontWeight: "bold" }} align={"center"}>
           {title}
@@ -54,7 +53,7 @@ const getSection = ({
   );
 
   return (
-    <FadeInUpAnimation key={index}>
+    <FadeInUpAnimation index={index}>
       <div style={styles.wordImageWrapper}>
         {!isSmallScreen && alternating ? (
           index % 2 === 0 ? (
@@ -98,7 +97,10 @@ const getSection = ({
                 width={width}
                 height={width}
                 src={imagePath}
-                style={{ objectFit: "cover", borderRadius: imageBorderRadius }}
+                style={{
+                  objectFit: "cover",
+                  borderRadius: imageBorderRadius,
+                }}
               />
             </div>
             {getWordSection(title, description)}

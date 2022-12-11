@@ -13,9 +13,10 @@ export const FadeInAnimation = ({ children, transition = 1 }) => {
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
       transition={{
-        delay: transition,
+        delay: 0,
         x: { duration: transition },
         type: "linear",
+        duration: transition,
       }}
     >
       {children}
@@ -23,21 +24,26 @@ export const FadeInAnimation = ({ children, transition = 1 }) => {
   );
 };
 
-export const FadeInUpAnimation = ({ children, transition = 0.5, key }) => {
+export const FadeInUpAnimation = ({
+  children,
+  transition = 0.5,
+  index = 0,
+}) => {
   return (
-    <motion.main
-      key={key}
-      variants={variants} // Pass the variant object into Framer Motion
-      initial="hidden" // Set the initial state to variants.hidden
-      whileInView="enter" // Animated state to variants.enter
-      viewport={{ once: true }}
-      transition={{
-        delay: transition,
-        x: { duration: transition },
-        type: "linear",
-      }}
-    >
-      {children}
-    </motion.main>
+    <div key={index}>
+      <motion.main
+        variants={variants} // Pass the variant object into Framer Motion
+        initial="hidden" // Set the initial state to variants.hidden
+        whileInView="enter" // Animated state to variants.enter
+        viewport={{ once: true }}
+        transition={{
+          delay: transition,
+          x: { duration: transition },
+          type: "linear",
+        }}
+      >
+        {children}
+      </motion.main>
+    </div>
   );
 };

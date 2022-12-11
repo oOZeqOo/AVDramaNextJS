@@ -15,6 +15,8 @@ import { isMobile } from "react-device-detect";
 import useDeviceSize from "./hooks/useDeviceSize";
 import { Divider } from "@mui/material";
 import { LoadingButton } from "@mui/lab";
+import { FixedSizeList as List } from "react-window";
+
 const TimelinePage = () => {
   return createTimeline(timelineData);
 };
@@ -130,7 +132,7 @@ const createTimeline = (data) => {
           sx={timelineClass}
           id={"start"}
         >
-          {flattenData?.map((item, index) =>
+          {/* {flattenData?.map((item, index) =>
             createTimeLineItem(
               item?.month,
               item?.title,
@@ -140,7 +142,16 @@ const createTimeline = (data) => {
               item?.isVideo || false,
               index
             )
-          )}
+          )} */}
+          <List
+            className="List"
+            height={height}
+            itemCount={flattenData.length}
+            itemSize={10}
+            width={width}
+          >
+            {({ index, style }) => Row({ index, style, flattenData })}
+          </List>
         </Timeline>
         <footer style={{ padding: 0 }}>
           <div id="latest"></div>
@@ -209,6 +220,20 @@ const createTimeLineItem = (
     </TimelineItem>,
   ];
 };
+
+const Row = ({ index, style, flattenData }) => (
+  <div className={index % 2 ? "ListItemOdd" : "ListItemEven"} key={index}>
+    {createTimeLineItem(
+      flattenData[index]?.month,
+      flattenData[index]?.title,
+      flattenData[index]?.description,
+      flattenData[index]?.tag,
+      flattenData[index]?.imgPath,
+      flattenData[index]?.isVideo || false,
+      index
+    )}
+  </div>
+);
 
 const styles = {
   imageWrapper: {

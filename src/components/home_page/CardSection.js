@@ -51,7 +51,7 @@ const CardSection = () => {
         "This Drama takes place in the 21st century USA",
         "/",
         "",
-        0.75
+        0.5
       )}
       {getAnimatedCard(
         <ContactPageIcon sx={{ fontSize: 50 }} />,
@@ -59,7 +59,7 @@ const CardSection = () => {
         "These two love birds find a way to make it through anything together",
         "/",
         "",
-        1
+        0.5
       )}
       {getAnimatedCard(
         <TimelineIcon sx={{ fontSize: 50 }} />,
@@ -67,7 +67,7 @@ const CardSection = () => {
         "View the history of the Drama 💝💝💝💝💝💝",
         "/timeline",
         "pink",
-        1.25
+        0.5
       )}
     </div>
   );
