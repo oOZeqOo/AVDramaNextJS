@@ -11,6 +11,22 @@ import NoteSection from "./home_page/NotesSection";
 
 const HomePage = () => {
   const [width, height] = useDeviceSize();
+  const styles = {
+    contentWrapper: {
+      width: width,
+      height: "fit-content",
+      display: "flex",
+      flexDirection: "column",
+      justifyContent: "flex-start",
+      textAlign: "center",
+    },
+    divider: {
+      margin: "40px 5%",
+      fontWeight: "bold",
+      fontSize: 100,
+      borderBottomWidth: 3,
+    },
+  };
   return (
     <>
       <div style={styles.contentWrapper}>
@@ -27,19 +43,3 @@ const HomePage = () => {
 
 export default HomePage;
 
-const styles = {
-  contentWrapper: {
-    width: "100vw",
-    height: "fit-content",
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "flex-start",
-    textAlign: "center",
-  },
-  divider: {
-    margin: "40px 5%",
-    fontWeight: "bold",
-    fontSize: 100,
-    borderBottomWidth: 3,
-  },
-};

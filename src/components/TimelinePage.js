@@ -16,7 +16,8 @@ import useDeviceSize from "./hooks/useDeviceSize";
 import { Divider } from "@mui/material";
 import { LoadingButton } from "@mui/lab";
 import { FixedSizeList as List } from "react-window";
-
+import { useVirtualizer } from "@tanstack/react-virtual";
+import { useEffect } from "react";
 const TimelinePage = () => {
   return createTimeline(timelineData);
 };
@@ -25,18 +26,35 @@ export default TimelinePage;
 
 const createTimeline = (data) => {
   const [loadingSection, setLoadingSection] = useState(false);
+  const [links, setLinks] = useState([]);
   const [width, height] = useDeviceSize();
   const isSmallScreen = isMobile || width < 800;
   const flattenData = useMemo(() => {
+    var count = 0;
     return Object.keys(data)
-      ?.map((key, topIndex) =>
-        data[key]?.map((item, index) => ({
-          ...item,
-          tag: index === 0 ? key : undefined,
-        }))
-      )
+      ?.map((key, topIndex) => {
+        count++;
+        return data[key]?.map((item, index) => {
+          return {
+            ...item,
+            tag: index === 0 ? count : undefined,
+          };
+        });
+      })
       .flat();
   }, [data]);
+
+  useEffect(() => {
+    var count = 0;
+    const list = [];
+    Object.keys(data)?.forEach((key) => {
+      list.push(count);
+      count += data[key]?.length;
+    });
+    console.log(list);
+    setLinks(list);
+  }, [data]);
+
   const timelineClass =
     width < 1200 || isSmallScreen
       ? {
@@ -72,7 +90,6 @@ const createTimeline = (data) => {
             style={{
               color: "rgb(0, 94, 255)",
               fontWeight: "bolder",
-
               margin: "auto",
               width: 30,
             }}
@@ -88,26 +105,26 @@ const createTimeline = (data) => {
             style={
               loadingSection
                 ? { backgroundColor: "grey", color: "lightgrey" }
-                : {}
+                : { scrollMarginTop: "4em" }
             }
           >
             Start
           </Link>
         </LoadingButton>
-        {Object.keys(data)?.map((key, index) => (
-          <LoadingButton loading={loadingSection}>
+        {Object.keys(links)?.map((key, index) => (
+          <LoadingButton loading={loadingSection} key={index}>
             <Link
               scroll={false}
-              href={loadingSection ? "#Waiting" : `#${key}`}
+              href={loadingSection ? "#Waiting" : `#${links?.[index]}`}
               key={index}
               onClick={() => setLoadingHold()}
               style={
                 loadingSection
                   ? { backgroundColor: "grey", color: "lightgrey" }
-                  : {}
+                  : { scrollMarginTop: "4em" }
               }
             >
-              {key}
+              {Object.keys(data)?.[index]}
             </Link>
           </LoadingButton>
         ))}
@@ -119,7 +136,7 @@ const createTimeline = (data) => {
             style={
               loadingSection
                 ? { backgroundColor: "grey", color: "lightgrey" }
-                : {}
+                : { scrollMarginTop: "4em" }
             }
           >
             New
@@ -132,26 +149,27 @@ const createTimeline = (data) => {
           sx={timelineClass}
           id={"start"}
         >
-          {/* {flattenData?.map((item, index) =>
-            createTimeLineItem(
-              item?.month,
-              item?.title,
-              item?.description,
-              item?.tag,
-              item?.imgPath,
-              item?.isVideo || false,
-              index
-            )
-          )} */}
-          <List
-            className="List"
-            height={height}
-            itemCount={flattenData.length}
-            itemSize={10}
-            width={width}
-          >
-            {({ index, style }) => Row({ index, style, flattenData })}
-          </List>
+          {flattenData?.map((item, index) => (
+            <TimelineItem
+              id={index}
+              key={index}
+              className={index % 2 ? "ListItemOdd" : "ListItemEven"}
+            >
+              {createTimeLineItem(
+                item?.month,
+                item?.title,
+                item?.description,
+                item?.tag,
+                item?.imgPath,
+                item?.isVideo || false,
+                index
+              )}
+            </TimelineItem>
+          ))}
+          {/* <RowVirtualizerFixed
+            data={flattenData}
+            rotatingSides={width < 1200 || isSmallScreen}
+          /> */}
         </Timeline>
         <footer style={{ padding: 0 }}>
           <div id="latest"></div>
@@ -167,15 +185,10 @@ const createTimeLineItem = (
   description,
   tag,
   imgPath,
-  isVideo = false,
-  index
+  isVideo = false
 ) => {
-  return [
-    <TimelineItem
-      key={index}
-      id={tag ? `${tag}` : undefined}
-      style={index === 0 ? { marginTop: 50 } : {}}
-    >
+  return (
+    <>
       <TimelineSeparator>
         <TimelineDot
           variant="outlined"
@@ -217,23 +230,68 @@ const createTimeLineItem = (
           )}
         </div>
       </TimelineContent>
-    </TimelineItem>,
-  ];
+    </>
+  );
 };
 
-const Row = ({ index, style, flattenData }) => (
-  <div className={index % 2 ? "ListItemOdd" : "ListItemEven"} key={index}>
-    {createTimeLineItem(
-      flattenData[index]?.month,
-      flattenData[index]?.title,
-      flattenData[index]?.description,
-      flattenData[index]?.tag,
-      flattenData[index]?.imgPath,
-      flattenData[index]?.isVideo || false,
-      index
-    )}
-  </div>
-);
+function RowVirtualizerFixed({ data, rotatingSides = false }) {
+  const parentRef = React.useRef();
+  console.log(rotatingSides);
+  const rowVirtualizer = useVirtualizer({
+    count: data?.length,
+    getScrollElement: () => parentRef.current,
+    estimateSize: () => 600,
+    overscan: !rotatingSides ? 10 : data?.length,
+  });
+
+  return (
+    <>
+      <div
+        ref={parentRef}
+        className="List"
+        style={{
+          height: `100vh`,
+          width: `100vw`,
+          overflow: "auto",
+        }}
+      >
+        <div
+          style={{
+            height: `${rowVirtualizer.getTotalSize()}px`,
+            width: "100%",
+            position: "relative",
+          }}
+        >
+          {rowVirtualizer.getVirtualItems().map((virtualRow, index) => (
+            <TimelineItem
+              id={index}
+              key={virtualRow.index}
+              className={virtualRow.index % 2 ? "ListItemOdd" : "ListItemEven"}
+              style={{
+                position: "absolute",
+                top: 0,
+                left: 0,
+                width: "100%",
+                height: `${virtualRow.size}px`,
+                transform: `translateY(${virtualRow.start}px)`,
+              }}
+            >
+              {createTimeLineItem(
+                data[virtualRow?.index]?.month,
+                data[virtualRow?.index]?.title,
+                data[virtualRow?.index]?.description,
+                data[virtualRow?.index]?.tag,
+                data[virtualRow?.index]?.imgPath,
+                data[virtualRow?.index]?.isVideo || false,
+                virtualRow?.index
+              )}
+            </TimelineItem>
+          ))}
+        </div>
+      </div>
+    </>
+  );
+}
 
 const styles = {
   imageWrapper: {

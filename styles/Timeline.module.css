@@ -7,8 +7,8 @@
     background-color: pink;
     display: flex;
     height: 50px;
-    justify-content: space-around;
-    overflow-x: auto;
+    justify-content: space-evenly;
+    overflow-x: 'scroll';
     overflow-y: hidden;
     position: fixed;
     top: 0;

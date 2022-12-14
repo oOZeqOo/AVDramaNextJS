@@ -1,12 +1,14 @@
+"use client";
+
 import { useState, useEffect } from "react";
 
-const useDeviceSize = () => {
+export default function useDeviceSize() {
   const [width, setWidth] = useState(0);
   const [height, setHeight] = useState(0);
 
   const handleWindowResize = () => {
-    setWidth(window.innerWidth);
-    setHeight(window.innerHeight);
+    window.innerWidth !== width && setWidth(window.innerWidth);
+    window.innerHeight !== height && setHeight(window.innerHeight);
   };
 
   useEffect(() => {
@@ -15,9 +17,7 @@ const useDeviceSize = () => {
     window.addEventListener("resize", handleWindowResize);
     // unsubscribe from the event on component unmount
     return () => window.removeEventListener("resize", handleWindowResize);
-  }, []);
+  }, [handleWindowResize]);
 
   return [width, height];
-};
-
-export default useDeviceSize;
+}
