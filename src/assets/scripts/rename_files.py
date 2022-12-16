@@ -1,7 +1,7 @@
 import os
 
 PARENT_DIR = os.path.abspath('.')
-MORE_IMAGES_DIR = './public/images/front_page/extra/'
+MORE_IMAGES_DIR = './public/images/more_images/'
 MORE_IMAGES_DATA_FILE = './src/assets/data/ImageGalleryData.js'
 
 def rename_more_images_folder() -> list[str]:
@@ -22,7 +22,7 @@ def  set_up_more_images_data(files: list[str]) -> None:
 
     data = ''.join([f'    "{file}",\n' for file in files])
     template =  'export const imageGalleryData = {\n' \
-                '  "/images/front_page/extra/": [\n' \
+                '  "/images/more_images/": [\n' \
                 f'{data} ' \
                 '  ],\n' \
                 '};'

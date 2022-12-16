@@ -2,13 +2,39 @@ import React, { useEffect, useMemo, useState } from "react";
 import { imageGalleryData } from "../../assets/data/ImageGalleryData";
 import { FixedSizeGrid as Grid } from "react-window";
 import useDeviceSize from "../hooks/useDeviceSize";
-import ScreenSizeDetector from "screen-size-detector";
+import IconButton from "../common/IconButton";
+import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
+import Link from "next/link";
 
 const ImageGridContainer = () => {
+  const [width, height] = useDeviceSize();
+  const navBarHeight = 50;
+  const [gridPixelWidth, setGridPixelWidth] = useState(
+    width !== 0 ? width : 400
+  );
+  const [gridPixelHeight, setGridPixelHeight] = useState(
+    height !== 0 ? height - navBarHeight : 800 - navBarHeight
+  );
+  const [gridItems, setGridItems] = useState([]);
+  const gridItemsWidth = Math.max(Math.floor(gridPixelWidth / 220), 1);
+  const imgWidth = gridItemsWidth > 1 ? 200 : width - 20;
+  const imgHeight = gridItemsWidth > 1 ? 200 : height - 20;
+  useEffect(() => {
+    console.log(height);
+    console.log(gridPixelHeight);
+    console.log(navBarHeight);
+  }, [height, gridPixelHeight]);
   const styles = {
+    navBar: {
+      height: navBarHeight,
+      backgroundColor: "pink",
+      display: "flex",
+      flexDirection: "row",
+      justifyContent: "center",
+    },
     imageGridWrapper: {
       width: "100%",
-      height: "100%",
+      height: gridPixelHeight - navBarHeight,
       backgroundColor: "lightyellow",
       display: "flex",
       flexDirection: "row",
@@ -20,27 +46,34 @@ const ImageGridContainer = () => {
       marginLeft: 0,
       marginRight: 0,
     },
-    imageWrapper: { border: "1px solid black" },
+    imageWrapper: {
+      border: "1px solid black",
+      padding: "60px",
+      maxWidth: "650px",
+      background: "lighten(mediumseagreen, 20%)",
+      border: "5px dashed mediumseagreen",
+      boxShadow:
+        "0 0 0 (5px / 2) darken(mediumseagreen, 20%), 0 0 0 (5px * 2.5) #fff, inset 0 0 0 (5px / 2) darken(mediumseagreen, 20%), 0 5px (5px * 2) (5px * 3) rgba(0,0,0,0.5), inset 0 0 0 (5px * 1.2) #fff, inset 0 0 100vw 100vw beige;",
+      color: "mediumseagreen",
+      fontFamily: "Marcellus, serif",
+      fontSize: "3em",
+      textShadow: "0 2px #fff",
+      textAlign: "center",
+    },
     image: {
+      border: "2px solid black",
+      borderRadius: "10px",
+      backgroundColor: "black",
       objectFit: "contain",
-      width: 200,
-      height: 200,
+      width: imgWidth,
+      height: imgHeight == 200 ? imgHeight : "",
+      maxHeight: imgHeight,
       margin: 10,
     },
   };
-  const [width, height] = useDeviceSize();
-  const [gridPixelWidth, setGridPixelWidth] = useState(
-    width !== 0 ? width : 400
-  );
-  const [gridPixelHeight, setGridPixelHeight] = useState(
-    height !== 0 ? height : 800
-  );
-  const [gridItems, setGridItems] = useState([]);
-  const gridItemsWidth = Math.max(Math.floor(gridPixelWidth / 220), 1);
-
   useEffect(() => {
     setGridPixelWidth(width);
-    setGridPixelHeight(height);
+    setGridPixelHeight(height - navBarHeight);
   }, [width, height]);
 
   useEffect(() => {
@@ -59,7 +92,11 @@ const ImageGridContainer = () => {
   const ItemRenderer = ({ columnIndex, rowIndex, style }) => {
     return (
       <div
-        style={{ ...style, left: Number.parseInt(`${style.left}`) + 100 }}
+        style={{
+          ...style,
+          //   left:
+          //     Number.parseInt(`${style.left}`) + (gridItemsWidth > 1 ? 100 : 0),
+        }}
         key={columnIndex * gridItemsWidth + rowIndex}
       >
         {gridItems?.[rowIndex]?.[columnIndex] && (
@@ -74,21 +111,72 @@ const ImageGridContainer = () => {
   };
 
   return (
-    <div style={styles.imageGridWrapper}>
-      {gridItems?.length > 0 && (
-        <Grid
-          style={styles.gridStyle}
-          width={gridPixelWidth}
-          height={gridPixelHeight}
-          columnCount={gridItemsWidth}
-          columnWidth={220}
-          rowHeight={220}
-          rowCount={gridItems?.length}
+    <>
+      <div style={styles.navBar}>
+        <Link
+          href={"/"}
+          style={{
+            width: "fit-content",
+          }}
         >
-          {(props) => ItemRenderer({ ...props })}
-        </Grid>
-      )}
-      {/* {Object.keys(imageGalleryData)?.map((parentPath, index) =>
+          <IconButton
+            style={{
+              color: "rgb(0, 94, 255)",
+              fontWeight: "bolder",
+              width: "fit-content",
+              height: "100%",
+              marginRight: 0,
+              borderRadius: "30%",
+            }}
+          >
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "center",
+                padding: 0,
+                margin: "auto",
+                verticalAlign: "middle",
+              }}
+            >
+              <KeyboardBackspaceIcon style={{ fontSize: "40" }} />
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                }}
+              >
+                <h3
+                  style={{
+                    textAlign: "left",
+                    margin: "0px",
+                    color: "black",
+                  }}
+                >
+                  Back to Homepage
+                </h3>
+              </div>
+            </div>
+          </IconButton>
+        </Link>
+      </div>
+      <div style={styles.imageGridWrapper}>
+        {gridItems?.length > 0 && (
+          <Grid
+            style={styles.gridStyle}
+            width={gridPixelWidth}
+            height={gridPixelHeight}
+            columnCount={gridItemsWidth}
+            columnWidth={imgWidth + 20}
+            rowHeight={imgHeight + 20}
+            rowCount={gridItems?.length}
+            overscanRowCount={6}
+          >
+            {(props) => ItemRenderer({ ...props })}
+          </Grid>
+        )}
+        {/* {Object.keys(imageGalleryData)?.map((parentPath, index) =>
         imageGalleryData[parentPath]?.map((childPath, index) => (
           <div style={styles.imageWrapper} key={index}>
             <img
@@ -99,7 +187,8 @@ const ImageGridContainer = () => {
           </div>
         ))
       )} */}
-    </div>
+      </div>
+    </>
   );
 };
 

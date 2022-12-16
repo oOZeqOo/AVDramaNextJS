@@ -11,7 +11,7 @@ export default NoteSection;
 const buildNoteSection = (viewWidth) => {
   const width = Math.min(viewWidth, 300);
   return (
-    <div style={styles.contentWrapper}>
+    <div style={styles.contentWrapper} id={"secret"}>
       <div style={styles.content}>
         <div>{getElementsContent(homePageNotes?.title)}</div>
         <div>{getElementsContent(homePageNotes?.message)}</div>

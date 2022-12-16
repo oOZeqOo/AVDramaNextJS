@@ -9,7 +9,7 @@ const mobileDevice = isMobile || false;
 
 const AboutSection = ({ alternating = true, viewWidth = 800 }) => {
   return (
-    <div style={styles.wordSectionWrapper}>
+    <div style={styles.wordSectionWrapper} id={"info-section"}>
       {aboutSectionData?.map((item, index) =>
         getSection({ ...item, index, alternating, viewWidth })
       )}
@@ -35,22 +35,71 @@ const getSection = ({
     ? styles.wordSection
     : styles.wordSectionSmallScreen;
 
-  const getWordSection = (title, description) => (
-    <div style={myStyle}>
-      <div style={styles.titleWrapper}>
-        <Typography variant={"h4"} sx={{ fontWeight: "bold" }} align={"center"}>
-          {title}
-        </Typography>
-      </div>
-      <div>
-        {description?.map((item, index) => (
-          <Typography key={index} style={{ marginTop: 10 }}>
-            {item}
+  const getWordSection = (title, descriptions) => {
+    const middle = Math.ceil(descriptions?.length / 2);
+    console.log(middle);
+    return (
+      <div style={myStyle}>
+        <div style={styles.titleWrapper}>
+          <Typography
+            variant={"h4"}
+            sx={{ fontWeight: "bold" }}
+            align={"center"}
+          >
+            {title}
           </Typography>
-        ))}
+        </div>
+        <div>
+          {descriptions[0]?.includes("Title:") ? (
+            <>
+              <Typography
+                key={index}
+                style={{
+                  textAlign: "middle",
+                  margin: "auto",
+                  fontWeight: "bold",
+                  fontSize: 20,
+                  color: "black",
+                }}
+              >
+                {descriptions[0].split("Title:")}:
+              </Typography>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  justifyContent: "space-around",
+                }}
+              >
+                <ul key={"left-side"} id={"left-side"}>
+                  {descriptions?.slice(1, middle)?.map((item, index) => (
+                    <li key={index} id={index}>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+                <ul key={"right-side"} id={"right-side"}>
+                  {descriptions
+                    ?.slice(middle, descriptions?.length)
+                    ?.map((item) => (
+                      <li key={index} id={index}>
+                        {item}
+                      </li>
+                    ))}
+                </ul>
+              </div>
+            </>
+          ) : (
+            description?.map((item, index) => (
+              <Typography key={index} style={{ marginTop: 10 }}>
+                {item}
+              </Typography>
+            ))
+          )}
+        </div>
       </div>
-    </div>
-  );
+    );
+  };
 
   return (
     <FadeInUpAnimation index={index}>

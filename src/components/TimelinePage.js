@@ -92,6 +92,8 @@ const createTimeline = (data) => {
               fontWeight: "bolder",
               margin: "auto",
               width: 30,
+              height: "fit-content",
+              borderRadius: "30%",
             }}
           >
             <KeyboardBackspaceIcon style={{ fontSize: "40" }} />
@@ -143,7 +145,14 @@ const createTimeline = (data) => {
           </Link>
         </LoadingButton>
       </div>
-      <div style={{ paddingTop: 0, width: "100vw" }}>
+      <div
+        style={{
+          paddingTop: 0,
+          width: "100vw",
+          overflowY: "scroll",
+          height: "calc(100vh - 50px)",
+        }}
+      >
         <Timeline
           position={width < 1200 || isSmallScreen ? "right" : "alternate"}
           sx={timelineClass}

@@ -35,6 +35,18 @@ export const aboutSectionData = [
   {
     imagePath: "/images/front_page/astral.jpeg",
     title: "Commonalities!",
-    description: ["", "", "", ""],
+    description: [
+      "Title:Anna and Zac, together love to",
+      "Bowl",
+      "Get milk tea",
+      "Have a nice dinner",
+      "Take awesome pics",
+      "Go on a picnic",
+      "Take dance classes",
+      "Ride Sunflower Circles",
+      "Go to Carnivals",
+      "Build Gingerbread houses",
+      "Many more ...",
+    ],
   },
 ];

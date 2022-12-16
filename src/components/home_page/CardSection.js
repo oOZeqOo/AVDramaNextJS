@@ -49,7 +49,7 @@ const CardSection = () => {
         <LocationOnIcon sx={{ fontSize: 50 }} />,
         "Location",
         "This Drama takes place in the 21st century USA",
-        "/",
+        "#secret",
         "",
         0.5
       )}
@@ -57,7 +57,7 @@ const CardSection = () => {
         <ContactPageIcon sx={{ fontSize: 50 }} />,
         "Intro",
         "These two love birds find a way to make it through anything together",
-        "/",
+        "#info-section",
         "",
         0.5
       )}

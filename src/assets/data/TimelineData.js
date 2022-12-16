@@ -471,6 +471,28 @@ export const timelineData = {
       month: "October 2022",
       title: "Halloween 🎃👻",
     },
+    {
+      description: "Zac and Anna went to Kaffeinated Crepes and Coffee",
+      imgClass: "img",
+      imgPath: "/images/timeline/2022/kaffeinated.jpg",
+      month: "November 2022",
+      title: "Coffee and Crepes 🍰",
+    },
+    {
+      description:
+        "Zac and Anna had some fun at Main event. Anna did laser tag for the first time and she liked it! They also played some arcade games, bowled and played pool!",
+      imgClass: "img",
+      imgPath: "/images/timeline/2022/pool_main_event.jpg",
+      month: "November 2022",
+      title: "Main Event 🎉🎉🎉",
+    },
+    {
+      description: "Zac went to visit Anna after work and they had some fun!",
+      imgClass: "img",
+      imgPath: "/images/timeline/2022/visit_anna.jpg",
+      month: "November 2022",
+      title: "Work Time After Hours",
+    },
     // Template for new Events
     // {
     //      description:

@@ -1,6 +1,7 @@
 .root {
     background-color: lightyellow;
-    width: '100vw'
+    width: '100vw';
+    height: '100vh';
   }
 
   .timeline_nav {
@@ -10,11 +11,12 @@
     justify-content: space-evenly;
     overflow-x: 'scroll';
     overflow-y: hidden;
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     vertical-align: middle;
     width: 100%;
     z-index: 1000;
+    border-bottom: 2px solid black;
   }
 
   .anchor_container {
