@@ -84,6 +84,8 @@ const createTimeline = (data) => {
             flexDirection: "column",
             justifyContent: "center",
             width: 30,
+            marginLeft: 50,
+            // marginRight: 30,
           }}
         >
           <IconButton

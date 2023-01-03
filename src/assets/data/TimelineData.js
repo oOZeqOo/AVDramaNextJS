@@ -493,11 +493,68 @@ export const timelineData = {
       month: "November 2022",
       title: "Work Time After Hours",
     },
+    {
+      description:
+        "Zac and Anna went to Houston to celebrate their 3rd Anniversary together. They got some boba milk tea, got to see some fish and have a fancy dinner",
+      isVideo: false,
+      imgClass: "img",
+      imgPath: "/images/timeline/2022/Anniversary.jpg",
+      month: "December",
+      title: "3rd Anniversary",
+    },
+    {
+      description:
+        "Zac and Anna went to see a movie and went to see the lights at the Botanical Garden",
+      isVideo: false,
+      imgClass: "img",
+      imgPath: "/images/timeline/2022/zacs_birthday.jpg",
+      month: "December",
+      title: "Zac's Birthday 🎉🥳🥳🎊🎊🎉",
+    },
+
+    {
+      description:
+        "A last minute invitation was given to Anna to join a dinner with Zac's family. They had a great time!",
+      isVideo: false,
+      imgClass: "img",
+      imgPath: "/images/timeline/2022/alamo_dinner.jpg",
+      month: "December",
+      title: "Dinner with GF and Family",
+    },
+    {
+      description:
+        "Zac and Anna went to a local Barnes and Noble Starbucks to build a gingerbread house together. They had a lot of fun!",
+      isVideo: false,
+      imgClass: "img",
+      imgPath: "/images/timeline/2022/gingerbread.jpg",
+      month: "December",
+      title: "Gingerbread Time!!!",
+    },
+    {
+      description:
+        "Zac and Anna went bowling with Zac family and they had a lot of fun!",
+      isVideo: false,
+      imgClass: "img",
+      imgPath: "/images/timeline/2022/new_year_eve.jpg",
+      month: "December",
+      title: "New Years Eve Fun!🎉🥳🥳🎊",
+    },
+  ],
+  2023: [
+    {
+      description:
+        "Zac and Anna went to a new Gong Cha location and to a fancy restaurant! Then they celebrated New Years together",
+      isVideo: false,
+      imgClass: "img",
+      imgPath: "/images/timeline/2022/new_year.jpg",
+      month: "December",
+      title: "New Year 2023!!! 🎉🥳🥳🎊",
+    },
     // Template for new Events
     // {
     //      description:
     //          "",
-    //      isVideo: false
+    //      isVideo: false,
     //      imgClass: "img",
     //      imgPath: "/images/timeline/2022/Support_Anna.jpg",
     //      month: "",
