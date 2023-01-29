@@ -499,7 +499,7 @@ export const timelineData = {
       isVideo: false,
       imgClass: "img",
       imgPath: "/images/timeline/2022/Anniversary.jpg",
-      month: "December",
+      month: "December 2022",
       title: "3rd Anniversary",
     },
     {
@@ -508,7 +508,7 @@ export const timelineData = {
       isVideo: false,
       imgClass: "img",
       imgPath: "/images/timeline/2022/zacs_birthday.jpg",
-      month: "December",
+      month: "December 2022",
       title: "Zac's Birthday 🎉🥳🥳🎊🎊🎉",
     },
 
@@ -518,7 +518,7 @@ export const timelineData = {
       isVideo: false,
       imgClass: "img",
       imgPath: "/images/timeline/2022/alamo_dinner.jpg",
-      month: "December",
+      month: "December 2022",
       title: "Dinner with GF and Family",
     },
     {
@@ -527,7 +527,7 @@ export const timelineData = {
       isVideo: false,
       imgClass: "img",
       imgPath: "/images/timeline/2022/gingerbread.jpg",
-      month: "December",
+      month: "December 2022",
       title: "Gingerbread Time!!!",
     },
     {
@@ -536,7 +536,7 @@ export const timelineData = {
       isVideo: false,
       imgClass: "img",
       imgPath: "/images/timeline/2022/new_year_eve.jpg",
-      month: "December",
+      month: "December 2022",
       title: "New Years Eve Fun!🎉🥳🥳🎊",
     },
   ],
@@ -547,8 +547,16 @@ export const timelineData = {
       isVideo: false,
       imgClass: "img",
       imgPath: "/images/timeline/2022/new_year.jpg",
-      month: "December",
+      month: "January 2023",
       title: "New Year 2023!!! 🎉🥳🥳🎊",
+    },
+    {
+      description:
+        "Zac and Anna went to Six Flags and had a fun time on the carousel, sunflower circle and pirate ride. They also took some amazing pics",
+      imgClass: "img",
+      imgPath: "/images/timeline/2023/six_flags.jpg",
+      month: "January 2023",
+      title: "Six Flags Fun",
     },
     // Template for new Events
     // {
@@ -562,7 +570,23 @@ export const timelineData = {
     //   },
     {
       description:
-        " I love you so much 💖💖💝💝🥰🥰🥰❣❣❣💖💖💝💝🥰🥰🥰❣❣❣💖💖💝💝🥰🥰🥰❣❣❣",
+        "Zac and Anna went to Incredible Pizza to have fun and a great time! They had a blast as Anna was going to start her Spring semester the next week!",
+      imgClass: "img",
+      imgPath: "/images/timeline/2023/incredible_pizza.jpg",
+      month: "January 2023",
+      title: "Fun Days Before School",
+    },
+    {
+      description:
+        "Zac and Anna went with Annas family to a Pagoda and then to Annas Aunt's house to celebrate Lunar New Year",
+      imgClass: "img",
+      imgPath: "/images/timeline/2023/incredible_pizza.jpg",
+      month: "January 2023",
+      title: "Lunar New Year 🍀🌠🤞🤞",
+    },
+    {
+      description:
+        "I love you so much 💖💖💝💝🥰🥰🥰❣❣❣💖💖💝💝🥰🥰🥰❣❣❣💖💖💝💝🥰🥰🥰❣❣❣",
       imgClass: "img",
       imgPath: "/images/timeline/sunflower-6.jpg",
       month: "More to come!",

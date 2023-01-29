@@ -8,7 +8,10 @@ def rename_more_images_folder() -> list[str]:
     file_names = []
     files = os.listdir('.')
     for index, file in enumerate(files):
-        new_name = f'{index + 1}'.rjust(4, '0') + '.' + file.split('.')[1]
+        end = file.split('.')[1].lower()
+        if end == 'jpeg':
+            end = 'jpg'
+        new_name = f'{index + 1}'.rjust(4, '0') + '.' + end
         file_names.append(new_name)
         if new_name == file:
             continue
