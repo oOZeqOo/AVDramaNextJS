@@ -30,7 +30,7 @@ export const FadeInUpAnimation = ({
   index = 0,
 }) => {
   return (
-    <div key={index}>
+    <div key={`fade-${index}`}>
       <motion.main
         variants={variants} // Pass the variant object into Framer Motion
         initial="hidden" // Set the initial state to variants.hidden

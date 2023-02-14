@@ -37,9 +37,8 @@ const getSection = ({
 
   const getWordSection = (title, descriptions) => {
     const middle = Math.ceil(descriptions?.length / 2);
-    console.log(middle);
     return (
-      <div style={myStyle}>
+      <div style={myStyle} id={index}>
         <div style={styles.titleWrapper}>
           <Typography
             variant={"h4"}
@@ -71,18 +70,18 @@ const getSection = ({
                   justifyContent: "space-around",
                 }}
               >
-                <ul key={"left-side"} id={"left-side"}>
-                  {descriptions?.slice(1, middle)?.map((item, index) => (
-                    <li key={index} id={index}>
+                <ul key={`left-side-${title}-1`} id={`left-side-${title}`}>
+                  {descriptions?.slice(1, middle)?.map((item, i) => (
+                    <li key={`left-${i}`} id={`left-${i}`}>
                       {item}
                     </li>
                   ))}
                 </ul>
-                <ul key={"right-side"} id={"right-side"}>
+                <ul key={`right-side-${title}-2`} id={`right-side-${title}`}>
                   {descriptions
                     ?.slice(middle, descriptions?.length)
-                    ?.map((item) => (
-                      <li key={index} id={index}>
+                    ?.map((item, i) => (
+                      <li key={`right-${i}`} id={`right-${i}`}>
                         {item}
                       </li>
                     ))}
@@ -102,7 +101,7 @@ const getSection = ({
   };
 
   return (
-    <FadeInUpAnimation index={index}>
+    <FadeInUpAnimation index={index} key={index}>
       <div style={styles.wordImageWrapper}>
         {!isSmallScreen && alternating ? (
           index % 2 === 0 ? (

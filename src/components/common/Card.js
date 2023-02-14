@@ -15,9 +15,6 @@ const Card = ({
   return (
     <MUICard
       sx={{ maxWidth: 250, height: 300, margin: 5, borderRadius: 10 }}
-      onClick={() => {
-        console.log(`Going to ${link}}`);
-      }}
       style={{
         backgroundColor: cardColor,
         display: "flex",

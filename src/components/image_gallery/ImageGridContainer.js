@@ -5,6 +5,7 @@ import useDeviceSize from "../hooks/useDeviceSize";
 import IconButton from "../common/IconButton";
 import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
 import Link from "next/link";
+import Tooltip from "../common/Tooltip";
 
 const ImageGridContainer = () => {
   const [width, height] = useDeviceSize();
@@ -19,11 +20,6 @@ const ImageGridContainer = () => {
   const gridItemsWidth = Math.max(Math.floor(gridPixelWidth / 220), 1);
   const imgWidth = gridItemsWidth > 1 ? 200 : width - 20;
   const imgHeight = gridItemsWidth > 1 ? 200 : height - 20;
-  useEffect(() => {
-    console.log(height);
-    console.log(gridPixelHeight);
-    console.log(navBarHeight);
-  }, [height, gridPixelHeight]);
   const styles = {
     navBar: {
       height: navBarHeight,
@@ -34,7 +30,7 @@ const ImageGridContainer = () => {
     },
     imageGridWrapper: {
       width: "100%",
-      height: gridPixelHeight - navBarHeight,
+      height: gridPixelHeight,
       backgroundColor: "lightyellow",
       display: "flex",
       flexDirection: "row",
@@ -79,8 +75,10 @@ const ImageGridContainer = () => {
   useEffect(() => {
     const values = [];
 
-    const flatValues = Object.keys(imageGalleryData)?.flatMap((key) =>
-      imageGalleryData?.[key]?.flatMap((value) => `${key}${value}`)
+    const flatValues = shuffleArray(
+      Object.keys(imageGalleryData)?.flatMap((key) =>
+        imageGalleryData?.[key]?.flatMap((value) => `${key}${value}`)
+      )
     );
     for (let i = 0; i < flatValues?.length; i += gridItemsWidth) {
       const chunk = flatValues?.slice(i, i + gridItemsWidth);
@@ -89,7 +87,18 @@ const ImageGridContainer = () => {
     setGridItems(values);
   }, [gridItemsWidth]);
 
+  function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+  }
+
   const ItemRenderer = ({ columnIndex, rowIndex, style }) => {
+    const value = gridItems?.[rowIndex]?.[columnIndex];
+    let split = value?.split("/");
+    split = split?.[split?.length - 1]?.split(".")?.[0];
     return (
       <div
         style={{
@@ -99,12 +108,11 @@ const ImageGridContainer = () => {
         }}
         key={columnIndex * gridItemsWidth + rowIndex}
       >
-        {gridItems?.[rowIndex]?.[columnIndex] && (
-          <img
-            src={gridItems?.[rowIndex]?.[columnIndex]}
-            alt={"Missing Image"}
-            style={styles.image}
-          />
+        {value && (
+          <Tooltip text={`${split}`}>
+            {console.log()}
+            <img src={value} alt={"Missing Image"} style={styles.image} />
+          </Tooltip>
         )}
       </div>
     );

@@ -18,24 +18,9 @@ const buildNoteSection = (viewWidth) => {
         <div>{getElementsContent(homePageNotes?.extraNote)}</div>
         <div>{getElementsContent(homePageNotes?.extras)}</div>
         <div style={styles.gifWrapper}>
-          <Image
-            src={"/gifs/drinking_boba.gif"}
-            width={width}
-            height={width}
-            alt={"gif"}
-          />
-          <Image
-            src={"/gifs/best_tea.gif"}
-            width={width}
-            height={width}
-            alt={"gif"}
-          />
-          <Image
-            src={"/gifs/happy_boba.gif"}
-            width={width}
-            height={width}
-            alt={"gif"}
-          />
+          {homePageNotes?.pics?.map((url) => (
+            <Image src={url} width={width} height={width} alt={"gif"} />
+          ))}
         </div>
       </div>
     </div>

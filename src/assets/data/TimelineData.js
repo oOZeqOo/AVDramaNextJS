@@ -558,6 +558,30 @@ export const timelineData = {
       month: "January 2023",
       title: "Six Flags Fun",
     },
+    {
+      description:
+        "Zac and Anna went to Incredible Pizza to have fun and a great time! They had a blast as Anna was going to start her spring semester the next week!",
+      imgClass: "img",
+      imgPath: "/images/timeline/2023/incredible_pizza.jpg",
+      month: "January 2023",
+      title: "Fun Days Before School",
+    },
+    {
+      description:
+        "Zac and Anna went with Annas family to a Pagoda and then to Anna's Aunt's house to celebrate Lunar New Year",
+      imgClass: "img",
+      imgPath: "/images/timeline/2023/incredible_pizza.jpg",
+      month: "January 2023",
+      title: "Lunar New Year 🍀🌠🤞🤞",
+    },
+    {
+      description:
+        "Zac and Anna went to Tardif to have an early Valentines dinner",
+      imgClass: "img",
+      imgPath: "/images/timeline/2023/tardif_pre_valentines.jpg",
+      month: "January 2023",
+      title: "💖💖💝💝 Early Valentines Day 💝💝💖💖",
+    },
     // Template for new Events
     // {
     //      description:
@@ -568,22 +592,6 @@ export const timelineData = {
     //      month: "",
     //      title: "",
     //   },
-    {
-      description:
-        "Zac and Anna went to Incredible Pizza to have fun and a great time! They had a blast as Anna was going to start her Spring semester the next week!",
-      imgClass: "img",
-      imgPath: "/images/timeline/2023/incredible_pizza.jpg",
-      month: "January 2023",
-      title: "Fun Days Before School",
-    },
-    {
-      description:
-        "Zac and Anna went with Annas family to a Pagoda and then to Annas Aunt's house to celebrate Lunar New Year",
-      imgClass: "img",
-      imgPath: "/images/timeline/2023/incredible_pizza.jpg",
-      month: "January 2023",
-      title: "Lunar New Year 🍀🌠🤞🤞",
-    },
     {
       description:
         "I love you so much 💖💖💝💝🥰🥰🥰❣❣❣💖💖💝💝🥰🥰🥰❣❣❣💖💖💝💝🥰🥰🥰❣❣❣",

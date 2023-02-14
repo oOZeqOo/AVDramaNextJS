@@ -51,7 +51,6 @@ const createTimeline = (data) => {
       list.push(count);
       count += data[key]?.length;
     });
-    console.log(list);
     setLinks(list);
   }, [data]);
 
@@ -247,7 +246,6 @@ const createTimeLineItem = (
 
 function RowVirtualizerFixed({ data, rotatingSides = false }) {
   const parentRef = React.useRef();
-  console.log(rotatingSides);
   const rowVirtualizer = useVirtualizer({
     count: data?.length,
     getScrollElement: () => parentRef.current,
