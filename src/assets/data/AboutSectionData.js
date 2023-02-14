@@ -18,7 +18,7 @@ export const aboutSectionData = [
       "She is very intelligent and even has a 4.0 GPA in school!",
       "She has been through a lot to get to where she is today",
       "She grew up in Vietnam and moved here with her family a few years ago and been through so many struggles, but she has persevered and overcome any challenges she has faced",
-      "Also known as 'Crystal Boba Queen'",
+      "Also known as 'Crystal Boba Queen' 💝💗💕😍",
     ],
   },
   {
@@ -31,7 +31,7 @@ export const aboutSectionData = [
       "He is really smart and superficial at times",
       "He is inexperienced and is learning a lot to be a better man for Anna",
       "He enjoys spending time with Anna even if they do something Zac isn't good at",
-      "Also known as 'Steam Bun'",
+      "Also known as 'Steam Bun' 😎",
     ],
   },
   {

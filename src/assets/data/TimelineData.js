@@ -570,7 +570,7 @@ export const timelineData = {
       description:
         "Zac and Anna went with Annas family to a Pagoda and then to Anna's Aunt's house to celebrate Lunar New Year",
       imgClass: "img",
-      imgPath: "/images/timeline/2023/incredible_pizza.jpg",
+      imgPath: "/images/timeline/2023/lunar_new_year.jpg",
       month: "January 2023",
       title: "Lunar New Year 🍀🌠🤞🤞",
     },
@@ -593,8 +593,7 @@ export const timelineData = {
     //      title: "",
     //   },
     {
-      description:
-        "I love you so much 💖💖💝💝🥰🥰🥰❣❣❣💖💖💝💝🥰🥰🥰❣❣❣💖💖💝💝🥰🥰🥰❣❣❣",
+      description: "I love you so much babyyyyy 💖💖💝💝🥰🥰🥰",
       imgClass: "img",
       imgPath: "/images/timeline/sunflower-6.jpg",
       month: "More to come!",
