@@ -582,6 +582,31 @@ export const timelineData = {
       month: "January 2023",
       title: "💖💖💝💝 Early Valentines Day 💝💝💖💖",
     },
+    {
+      description:
+        "Zac and Anna got to spend another Valentines day together 😊😊😄😄😁😁💘💖💓",
+      imgClass: "img",
+      imgPath: "/images/timeline/2023/valentines.mp4",
+      isVideo: true,
+      month: "February 2023",
+      title: "💖💖💝💝💘💘💘 Valentines Day 💘💘💘💝💝💖💖",
+    },
+    {
+      description:
+        "Zac and Anna went to IKEA to find Anna a new bed frame and night stand for her new room 🤘🤘🤘",
+      imgClass: "img",
+      imgPath: "/images/timeline/2023/ikea.jpg",
+      month: "February 2023",
+      title: "IKEA 🛏",
+    },
+    {
+      description:
+        "Zac and Anna got to see each other at NLC and had some fun celebrating International Woman's Day 💖💖💖",
+      imgClass: "img",
+      imgPath: "/images/timeline/2023/international_womans_day.jpg",
+      month: "March 2023",
+      title: "💖💖💖 International Woman's Day 💖💖💖",
+    },
     // Template for new Events
     // {
     //      description:
