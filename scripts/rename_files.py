@@ -11,7 +11,7 @@ def rename_more_images_folder() -> list[str]:
         end = file.split('.')[1].lower()
         if end == 'jpeg':
             end = 'jpg'
-        new_name = f'{index + 1}'.rjust(4, '0') + '.' + end
+        new_name = f'{index + 201}'.rjust(4, '0') + '.' + end
         file_names.append(new_name)
         if new_name == file:
             continue
