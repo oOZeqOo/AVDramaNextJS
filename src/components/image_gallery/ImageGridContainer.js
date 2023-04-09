@@ -101,6 +101,7 @@ const ImageGridContainer = () => {
 
   const ItemRenderer = ({ columnIndex, rowIndex, style }) => {
     const value = gridItems?.[rowIndex]?.[columnIndex];
+    console.log(value);
     let split = value?.split("/");
     split = split?.[split?.length - 1]?.split(".")?.[0];
     return (
@@ -114,7 +115,11 @@ const ImageGridContainer = () => {
       >
         {value && (
           <Tooltip text={`${split}`}>
-            <img src={value} alt={"Missing Image"} style={styles.image} />
+            <img
+              src={value}
+              alt={`Missing Image: ${value}`}
+              style={styles.image}
+            />
           </Tooltip>
         )}
       </div>
