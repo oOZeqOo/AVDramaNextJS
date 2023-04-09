@@ -156,9 +156,5 @@ export const imageGalleryData = {
     "0154.jpg",
     "0155.jpg",
     "0156.jpg",
-    "0157.jpg",
-    "0158.jpg",
-    "0159.jpg",
-    "0160.jpg",
    ],
 };
