@@ -614,6 +614,30 @@ export const timelineData = {
       month: "March 2023",
       title: "Big Moving Days 🚚🚚",
     },
+    {
+      description:
+        "Zac and Anna celebrated Easter together, having a fancy lunch at their favorite restaurant and getting milk tea 🥩🍵☕",
+      imgClass: "img",
+      imgPath: "/images/timeline/2023/easter.jpg",
+      month: "April 2023",
+      title: "Big Moving Days 🚚🚚",
+    },
+    {
+      description:
+        "Zac and Anna went shopping together and had some unforgettable moments together!",
+      imgClass: "img",
+      imgPath: "/images/timeline/2023/ross.jpg",
+      month: "April 2023",
+      title: "Shopping Day 🛒🏪👜",
+    },
+    {
+      description:
+        "Zac and Anna went to a fancy restaurant and then went downtown to see the new Super Mario Movie. They liked it 😎",
+      imgClass: "img",
+      imgPath: "/images/timeline/2023/best_quality_daughter.jpg",
+      month: "April 2023",
+      title: "Fun Times 🎥🍿",
+    },
     // Template for new Events
     // {
     //      description:
