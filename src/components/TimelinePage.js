@@ -172,6 +172,7 @@ const createTimeline = (data) => {
                 item?.tag,
                 item?.imgPath,
                 item?.isVideo || false,
+                item?.link,
                 index
               )}
             </TimelineItem>
@@ -195,7 +196,9 @@ const createTimeLineItem = (
   description,
   tag,
   imgPath,
-  isVideo = false
+  isVideo = false,
+  link = null,
+  index
 ) => {
   return (
     <>
@@ -217,6 +220,17 @@ const createTimeLineItem = (
           >
             {description}
           </p>
+
+          {link?.length > 0 ? (
+            <p>
+              <a href={link} style={styles.timeline_link}>
+                &gt;&gt;&gt;&gt;&gt; Check it out &lt;&lt;&lt;&lt;&lt;
+              </a>
+            </p>
+          ) : (
+            ""
+          )}
+
           <div className={cssStyles.icon}>
             <span></span>
           </div>
@@ -243,64 +257,6 @@ const createTimeLineItem = (
     </>
   );
 };
-
-function RowVirtualizerFixed({ data, rotatingSides = false }) {
-  const parentRef = React.useRef();
-  const rowVirtualizer = useVirtualizer({
-    count: data?.length,
-    getScrollElement: () => parentRef.current,
-    estimateSize: () => 600,
-    overscan: !rotatingSides ? 10 : data?.length,
-  });
-
-  return (
-    <>
-      <div
-        ref={parentRef}
-        className="List"
-        style={{
-          height: `100vh`,
-          width: `100vw`,
-          overflow: "auto",
-        }}
-      >
-        <div
-          style={{
-            height: `${rowVirtualizer.getTotalSize()}px`,
-            width: "100%",
-            position: "relative",
-          }}
-        >
-          {rowVirtualizer.getVirtualItems().map((virtualRow, index) => (
-            <TimelineItem
-              id={index}
-              key={virtualRow.index}
-              className={virtualRow.index % 2 ? "ListItemOdd" : "ListItemEven"}
-              style={{
-                position: "absolute",
-                top: 0,
-                left: 0,
-                width: "100%",
-                height: `${virtualRow.size}px`,
-                transform: `translateY(${virtualRow.start}px)`,
-              }}
-            >
-              {createTimeLineItem(
-                data[virtualRow?.index]?.month,
-                data[virtualRow?.index]?.title,
-                data[virtualRow?.index]?.description,
-                data[virtualRow?.index]?.tag,
-                data[virtualRow?.index]?.imgPath,
-                data[virtualRow?.index]?.isVideo || false,
-                virtualRow?.index
-              )}
-            </TimelineItem>
-          ))}
-        </div>
-      </div>
-    </>
-  );
-}
 
 const styles = {
   imageWrapper: {
@@ -334,5 +290,13 @@ const styles = {
     fontWeight: "bold",
     fontSize: 100,
     borderBottomWidth: 3,
+  },
+  timeline_link: {
+    color: "blue",
+    fontWeight: "bold",
+    fontSize: "large",
+    ":hover": {
+      color: "pink",
+    },
   },
 };

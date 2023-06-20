@@ -94,14 +94,11 @@ const ImageGridContainer = () => {
       array[i] = array[j];
       array[j] = temp;
     }
-    console.log(array?.length);
-    console.log([...new Set(array)]?.length);
     return array;
   }
 
   const ItemRenderer = ({ columnIndex, rowIndex, style }) => {
     const value = gridItems?.[rowIndex]?.[columnIndex];
-    console.log(value);
     let split = value?.split("/");
     split = split?.[split?.length - 1]?.split(".")?.[0];
     return (

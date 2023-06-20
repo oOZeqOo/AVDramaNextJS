@@ -638,6 +638,15 @@ export const timelineData = {
       month: "April 2023",
       title: "Fun Times 🎥🍿",
     },
+    {
+      description:
+        "Zac and Anna went on a vacation to Vietnam to visit her home country! They had a lot of fun and made many memories there!",
+      imgClass: "img",
+      imgPath: "/images/timeline/2023/vietnam_1.jpg",
+      month: "May 2023",
+      title: "Vietnam Vacation ✈✈🌴🌴🛬🛫",
+      link: "/vacations/vietnam_1",
+    },
     // Template for new Events
     // {
     //      description:

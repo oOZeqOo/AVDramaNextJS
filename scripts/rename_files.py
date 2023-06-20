@@ -34,8 +34,8 @@ def set_up_more_images_data(files: list[str]) -> None:
     with open(MORE_IMAGES_DATA_FILE, 'w+') as file:
         file.write(template)
 
-def set_this_dir(dir) -> None:
-    os.chdir(dir)
+def set_this_dir(dirs) -> None:
+    os.chdir(dirs)
 
 if __name__ == '__main__':
     set_this_dir(MORE_IMAGES_DIR)

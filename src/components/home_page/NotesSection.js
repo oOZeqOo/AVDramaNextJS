@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React, { useEffect } from "react";
+import React from "react";
 import { homePageNotes } from "../../assets/data/HomePageNotes";
 
 const NoteSection = ({ viewWidth = 200 }) => {
