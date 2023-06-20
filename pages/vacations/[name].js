@@ -20,15 +20,22 @@ const Card = ({
   const content = () => (
     <>
       {imgPath && (
-        <Image
-          alt={"Image"}
-          width={250}
-          height={200}
-          src={imgPath}
+        <div
           style={{
-            objectFit: "contain",
+            display: "flex",
+            justifyContent: "center",
           }}
-        />
+        >
+          <Image
+            alt={"Image"}
+            width={250}
+            height={200}
+            src={imgPath}
+            style={{
+              objectFit: "contain",
+            }}
+          />
+        </div>
       )}
       {icon && <div style={{ margin: 50 }}>{icon}</div>}
       <CardContent style={{ flex: 1 }}>
@@ -52,7 +59,7 @@ const Card = ({
       sx={{
         maxWidth: 250,
         height: 300,
-        margin: 5,
+        margin: 2,
         borderRadius: 10,
         border: "1px solid black",
       }}
@@ -125,6 +132,7 @@ const VacationName = () => {
               src={vacation?.imgPath}
               style={{
                 objectFit: "contain",
+
               }}
             />
           </div>
