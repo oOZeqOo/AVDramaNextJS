@@ -3,9 +3,7 @@ export const vacationData = {
     title: "Vietnam Vacation Summer 2023",
     borderImage: "/images/vacations/vietnam_1/sunflower-border.jpg",
     description: (
-      <div
-        style={{ maxWidth: "90%", display: "flex", justifyContent: "center" }}
-      >
+      <div style={{ display: "flex", justifyContent: "center" }}>
         <h5>
           Zac and Anna went to Anna's home country: Vietnam. They had a lot of
           fun and created a lot of memories they will cherish forever. Zac got

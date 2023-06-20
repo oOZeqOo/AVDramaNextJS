@@ -104,7 +104,7 @@ const VacationName = () => {
       </div>
       <div
         style={{
-          border: "50px solid",
+          border: "30px solid",
           borderImage: `url("${vacation?.borderImage}")`,
           backgroundColor: "lightgreen",
         }}
