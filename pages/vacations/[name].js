@@ -24,6 +24,7 @@ const Card = ({
           style={{
             display: "flex",
             justifyContent: "center",
+            alignItems: "middle",
           }}
         >
           <Image
