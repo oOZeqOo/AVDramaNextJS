@@ -620,7 +620,7 @@ export const timelineData = {
       imgClass: "img",
       imgPath: "/images/timeline/2023/easter.jpg",
       month: "April 2023",
-      title: "Big Moving Days 🚚🚚",
+      title: "Easter Fun!!! 🐰🐇",
     },
     {
       description:

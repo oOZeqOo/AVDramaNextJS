@@ -144,6 +144,17 @@ export const vacationData = {
         title: "Anna's family picture with Zac",
         imgPath: "/images/vacations/vietnam_1/anna_family.JPG",
       },
+      {
+        // Here
+        title:
+          "Anna and Zac went to swim in a pool on top of a really tall building 🏊‍♀️🏊‍♀️🏊‍♀️",
+        imgPath: "/images/vacations/vietnam_1/pool_time.jpg",
+      },
+      {
+        // Here
+        title: "Anna and Zac went swimming in a water park at vinpearl ⛲",
+        imgPath: "/images/vacations/vietnam_1/vinpearl_water_park.jpg",
+      },
     ],
     footer:
       "I LOVE YOU SO MUCH BABY AND CANT WAIT FOR MORE VACATIONS WITH YOU! 💖💖💖💖💖💖💖",
