@@ -130,10 +130,9 @@ const VacationName = () => {
               alt={"Image"}
               width={250}
               height={200}
-              src={vacation?.imgPath}
+              src={vacation?.imgPath || ""}
               style={{
                 objectFit: "contain",
-
               }}
             />
           </div>
@@ -154,8 +153,8 @@ const VacationName = () => {
             justifyContent: "center",
           }}
         >
-          {vacation?.cards?.map((item) => (
-            <Card {...item} />
+          {vacation?.cards?.map((item, index) => (
+            <Card key={index} {...item} />
           ))}
         </div>
         <div id="footer-section">

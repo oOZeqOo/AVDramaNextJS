@@ -76,8 +76,10 @@ const VacationPage = () => {
               label="Vacation"
               onChange={handleChange}
             >
-              {items?.map((item) => (
-                <MenuItem value={item?.value}>{item?.name}</MenuItem>
+              {items?.map((item, index) => (
+                <MenuItem key={index} value={item?.value}>
+                  {item?.name}
+                </MenuItem>
               ))}
             </Select>
           </FormControl>

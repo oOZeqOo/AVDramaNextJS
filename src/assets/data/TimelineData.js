@@ -647,6 +647,22 @@ export const timelineData = {
       title: "Vietnam Vacation ✈✈🌴🌴🛬🛫",
       link: "/vacations/vietnam_1",
     },
+    {
+      description:
+        "Zac and Anna celebrated Annas birthday! They went to her starbucks, the wax museum and Biga for a fancy dinner!",
+      imgClass: "img",
+      imgPath: "/images/timeline/2023/annas_birthday.jpg",
+      month: "May 2023",
+      title: "Birthday for Anna 🎂🎂🎉🎉🎊🥳🥳",
+    },
+    {
+      description:
+        "Zac and Anna went on a vacation to Vietnam to visit her home country! They had a lot of fun and made many memories there!",
+      imgClass: "img",
+      imgPath: "/images/timeline/2023/beach_time.jpg",
+      month: "May 2023",
+      title: "Beach Time 🌴🌴🏖🏖⛱⛱",
+    },
     // Template for new Events
     // {
     //      description:
@@ -656,6 +672,7 @@ export const timelineData = {
     //      imgPath: "/images/timeline/2022/Support_Anna.jpg",
     //      month: "",
     //      title: "",
+    //      link: "",
     //   },
     {
       description: "I love you so much babyyyyy 💖💖💝💝🥰🥰🥰",

@@ -46,8 +46,11 @@ const Card = ({
 
   return (
     <MUICard
-      sx={{ maxWidth: 250, height: 300, margin: 5, borderRadius: 10 }}
-      style={{
+      sx={{
+        maxWidth: 250,
+        height: 300,
+        margin: 5,
+        borderRadius: 10,
         backgroundColor: cardColor,
         display: "flex",
         flexDirection: "column",
