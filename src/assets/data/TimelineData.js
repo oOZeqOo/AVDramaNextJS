@@ -657,7 +657,7 @@ export const timelineData = {
     },
     {
       description:
-        "Zac and Anna went on a vacation to Vietnam to visit her home country! They had a lot of fun and made many memories there!",
+        "Zac and Anna went on a trip to the Beach to meet Zac's family there! They had a lot of fun and enjoyed it!",
       imgClass: "img",
       imgPath: "/images/timeline/2023/beach_time.jpg",
       month: "May 2023",

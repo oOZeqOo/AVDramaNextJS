@@ -163,5 +163,6 @@ export const imageGalleryData = {
     "0361.jpg",
     "0362.jpg",
     "0363.jpg",
+    "0364.jpg",
    ],
 };
