@@ -145,15 +145,17 @@ export const vacationData = {
         imgPath: "/images/vacations/vietnam_1/anna_family.JPG",
       },
       {
-        // Here
         title:
           "Anna and Zac went to swim in a pool on top of a really tall building 🏊‍♀️🏊‍♀️🏊‍♀️",
         imgPath: "/images/vacations/vietnam_1/pool_time.jpg",
       },
       {
-        // Here
         title: "Anna and Zac went swimming in a water park at vinpearl ⛲",
         imgPath: "/images/vacations/vietnam_1/vinpearl_water_park.jpg",
+      },
+      {
+        title: "Anna was on her way back to the US, leaving Vietnam 😢😢😭😭",
+        imgPath: "/images/vacations/vietnam_1/anna_coming_back.jpg",
       },
     ],
     footer:

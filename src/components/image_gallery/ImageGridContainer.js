@@ -78,7 +78,8 @@ const ImageGridContainer = () => {
     const flatValues = shuffleArray(
       Object.keys(imageGalleryData)?.flatMap((key) =>
         imageGalleryData?.[key]?.flatMap((value) => `${key}${value}`)
-      )
+      ),
+      false
     );
     for (let i = 0; i < flatValues?.length; i += gridItemsWidth) {
       const chunk = flatValues?.slice(i, i + gridItemsWidth);
@@ -87,7 +88,9 @@ const ImageGridContainer = () => {
     setGridItems(values);
   }, [gridItemsWidth]);
 
-  function shuffleArray(array) {
+  function shuffleArray(array, debug = false) {
+    if (debug) return array;
+
     for (var i = array.length - 1; i > 0; i--) {
       var j = Math.floor(Math.random() * (i + 1));
       var temp = array[i];

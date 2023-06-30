@@ -171,6 +171,7 @@ const createTimeline = (data) => {
                 item?.description,
                 item?.tag,
                 item?.imgPath,
+                item?.imgClass,
                 item?.isVideo || false,
                 item?.link,
                 index
@@ -196,6 +197,7 @@ const createTimeLineItem = (
   description,
   tag,
   imgPath,
+  imgClass,
   isVideo = false,
   link = null,
   index
@@ -250,7 +252,17 @@ const createTimeLineItem = (
             </>
           ) : (
             // eslint-disable-next-line @next/next/no-img-element
-            <img src={imgPath} alt={title || "Missing"} style={styles.image} />
+            <img
+              src={imgPath}
+              alt={title || "Missing"}
+              style={
+                imgClass == "img-small"
+                  ? styles.smallerImage
+                  : imgClass == "img-big"
+                  ? styles.biggerImage
+                  : styles.image
+              }
+            />
           )}
         </div>
       </TimelineContent>
@@ -279,9 +291,21 @@ const styles = {
     fontSize: 25,
     fontWeight: "bold",
   },
-  image: {
+  biggerImage: {
     width: 300,
     weight: 300,
+    margin: "auto",
+    objectFit: "contain",
+  },
+  image: {
+    width: 250,
+    weight: 250,
+    margin: "auto",
+    objectFit: "contain",
+  },
+  smallerImage: {
+    width: 200,
+    weight: 200,
     margin: "auto",
     objectFit: "contain",
   },

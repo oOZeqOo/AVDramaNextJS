@@ -3,7 +3,7 @@ export const timelineData = {
     {
       description:
         " Zac and Anna went on their first date by going mini golfing and then they went to a Mongolian restaurant for dinner!",
-      imgClass: "img",
+      imgClass: "img-big",
       imgPath: "/images/timeline/start_timeline_sunflower.jpeg",
       month: "December 2019",
       title: "1st Date",
@@ -45,7 +45,7 @@ export const timelineData = {
     {
       description:
         " Anna and Zac spent their first Valentines day together! They went to the Japanese Tea Garden and ended up going to the Zoo!",
-      imgClass: "img",
+      imgClass: "img-big",
       imgPath: "/images/timeline/2020/valentines_1.jpg",
       month: "February 2020",
       title: "1st Valentine's Day",
@@ -61,7 +61,7 @@ export const timelineData = {
     {
       description:
         " When the pandemic started, Zac and Anna were unable to see each other in person for a few months and started doing video calls!",
-      imgClass: "img",
+      imgClass: "img-big",
       imgPath: "/images/timeline/2020/april_2020.jpeg",
       month: "April 2020",
       title: "Face Time!",
@@ -108,7 +108,7 @@ export const timelineData = {
     {
       description:
         " Zac and Anna celebrated one year dating each other! They went to the Wonder Chamber while wearing couple hoodies and then they went to a Korean BBQ place!",
-      imgClass: "img",
+      imgClass: "img-big",
       imgPath: "/images/timeline/2020/anniversary.jpg",
       month: "December 2020",
       title: "1 YEAR ANNIVERSARY!!!",
@@ -124,7 +124,7 @@ export const timelineData = {
     {
       description:
         " Zac and Anna went downtown to see the lights and walk around, then they went to the Cheesecake factory for a wonderful dinner!",
-      imgClass: "img",
+      imgClass: "img-big",
       imgPath: "/images/timeline/2020/christmas_lights.jpg",
       month: "December 2020",
       title: "Christmas Lights ⚡",
@@ -142,7 +142,7 @@ export const timelineData = {
     {
       description:
         " There was a freeze, so Anna and Zac couldn't see each other in person on Valentines day, they had to make it up on another day!",
-      imgClass: "img",
+      imgClass: "img-big",
       imgPath: "/images/timeline/2021/snow_valen.jpg",
       month: "February 2021",
       title: "2nd Valentines day!",
@@ -150,7 +150,7 @@ export const timelineData = {
     {
       description:
         " Anna and Zac went to a museum and then had dinner at the Cheesecake Factory!",
-      imgClass: "img",
+      imgClass: "img-big",
       imgPath: "/images/timeline/2021/museum.jpg",
       month: "February 2021",
       title: "Museum fun!",
@@ -174,7 +174,7 @@ export const timelineData = {
     {
       description:
         " Anna and Zac went to an aquarium together and got to see some fishes",
-      imgClass: "img",
+      imgClass: "img-big",
       imgPath: "/images/timeline/2021/aquarium.jpg",
       month: "May 2021",
       title: "Fish Time 🐟🐠🐡",
@@ -206,7 +206,7 @@ export const timelineData = {
     {
       description:
         " Anna and Zac got to return to the Japanese Tea Garden for more memorable moments!",
-      imgClass: "img",
+      imgClass: "img-big",
       imgPath: "/images/timeline/2021/jap_tea_garden.jpg",
       month: "July 2021",
       title: "Return to the Japanese Tea Garden!",
@@ -262,7 +262,7 @@ export const timelineData = {
     {
       description:
         " Anna and Zac went to the Ice Cream Museum and Taquero Mucho in Austin, for dinner they had a very fancy experience at a 5 star restaurant",
-      imgClass: "img",
+      imgClass: "img-big",
       imgPath: "/images/timeline/2021/ice_cream.jpg",
       month: "December 2021",
       title: "2nd Anniversary",
@@ -270,7 +270,7 @@ export const timelineData = {
     {
       description:
         " Anna and Zac went to UTSA to build gingerbread houses for the first time together! They had a lot of fun!",
-      imgClass: "img",
+      imgClass: "img-big",
       imgPath: "/images/timeline/2021/gingerbread.jpg",
       month: "December 2021",
       title: "Gingerbread Houses",
@@ -278,7 +278,7 @@ export const timelineData = {
     {
       description:
         " Anna and Zac got to spend Christmas evening together and go downtown!",
-      imgClass: "img",
+      imgClass: "img-big",
       imgPath: "/images/timeline/2021/christmas.jpg",
       month: "December 2021",
       title: "Christmas!!!",
@@ -312,7 +312,7 @@ export const timelineData = {
     {
       description:
         " Zac and Anna went on another picnic to relax and have some fun!",
-      imgClass: "img",
+      imgClass: "img-big",
       imgPath: "/images/timeline/2022/picnic.jpg",
       month: "March 2022",
       title: "Spring Break Fun!!!",
@@ -320,7 +320,7 @@ export const timelineData = {
     {
       description:
         " Zac and Anna went to the Big Texas Fun Carnival and had a blast!",
-      imgClass: "img",
+      imgClass: "img-big",
       imgPath: "/images/timeline/2022/big_texas_fun.jpg",
       month: "March 2022",
       title: "Big Texas Fun!!!",
@@ -352,7 +352,7 @@ export const timelineData = {
     {
       description:
         " Anna and Zac went to an interesting restaurant where a robot serves food to customers. Then they went to Sea World and had fun! After that they went to Artea to get some drinks and then went to a fancy 5 star restaurant for dinner!",
-      imgClass: "img",
+      imgClass: "img-big",
       imgPath: "/images/timeline/2022/anna_bday.jpg",
       month: "June 2022",
       title: "Anna's Birthday!!! 🎂🎂🎉🎉🎊🎊",
@@ -360,7 +360,7 @@ export const timelineData = {
     {
       description:
         " Anna and Zac were finally able to go to a sunflower field! Even though a lot of sunflowers were already dead, they still had an amazing time!",
-      imgClass: "img",
+      imgClass: "img-big",
       imgPath: "/images/timeline/2022/sunflower_field.jpg",
       month: "June 2022",
       title: "Sunflower Field 🌻🌻🌻🌻",
@@ -394,7 +394,7 @@ export const timelineData = {
     {
       description:
         " Anna and Zac went to Schlitterbahn together. They had a lot of fun swimming and enjoying the water park together! 🏊\u200d♀️🏊\u200d♀️",
-      imgClass: "img",
+      imgClass: "img-big",
       imgPath: "/images/timeline/2022/schlitterbahn.jpg",
       month: "August 2022",
       title: "Schlitterbahn fun!",
@@ -418,7 +418,7 @@ export const timelineData = {
     {
       description:
         " Zac bought a new fancy camera to learn how to take professional pictures. Now the couple can do proper photo shoots!",
-      imgClass: "img",
+      imgClass: "img-big",
       imgPath: "/images/timeline/2022/Show_Camera.JPG",
       month: "September 2022",
       title: "Photo Shoot",
@@ -426,7 +426,7 @@ export const timelineData = {
     {
       description:
         ' Zac took Anna to UTSA and he worked there while she went to class and studies. These two had fun together on campus! Zac showed Anna what he has been learning so far on the piano for I like you so much, you"ll know it',
-      imgClass: "img",
+      imgClass: "img-big",
       imgPath: "/images/timeline/2022/piano.jpg",
       month: "September 2022",
       title: "UTSA Fun",
@@ -466,7 +466,7 @@ export const timelineData = {
     {
       description:
         "Zac and Anna went to a pumpkin patch together for the first time and took a lot of pictures and had fun!",
-      imgClass: "img",
+      imgClass: "img-big",
       imgPath: "/images/timeline/2022/pumpkin_patch.jpg",
       month: "October 2022",
       title: "Halloween 🎃👻",
@@ -488,7 +488,7 @@ export const timelineData = {
     },
     {
       description: "Zac went to visit Anna after work and they had some fun!",
-      imgClass: "img",
+      imgClass: "img-big",
       imgPath: "/images/timeline/2022/visit_anna.jpg",
       month: "November 2022",
       title: "Work Time After Hours",
@@ -506,7 +506,7 @@ export const timelineData = {
       description:
         "Zac and Anna went to see a movie and went to see the lights at the Botanical Garden",
       isVideo: false,
-      imgClass: "img",
+      imgClass: "img-big",
       imgPath: "/images/timeline/2022/zacs_birthday.jpg",
       month: "December 2022",
       title: "Zac's Birthday 🎉🥳🥳🎊🎊🎉",
@@ -516,7 +516,7 @@ export const timelineData = {
       description:
         "A last minute invitation was given to Anna to join a dinner with Zac's family. They had a great time!",
       isVideo: false,
-      imgClass: "img",
+      imgClass: "img-big",
       imgPath: "/images/timeline/2022/alamo_dinner.jpg",
       month: "December 2022",
       title: "Dinner with GF and Family",
@@ -525,7 +525,7 @@ export const timelineData = {
       description:
         "Zac and Anna went to a local Barnes and Noble Starbucks to build a gingerbread house together. They had a lot of fun!",
       isVideo: false,
-      imgClass: "img",
+      imgClass: "img-big",
       imgPath: "/images/timeline/2022/gingerbread.jpg",
       month: "December 2022",
       title: "Gingerbread Time!!!",
@@ -649,18 +649,34 @@ export const timelineData = {
     },
     {
       description:
+        "Zac came back from the Vietnam vacation early without Anna 😢😢😭😭. They did a video call everyday while Anna was still in Vietnam until Anna came back home 💘💘💘💘",
+      imgClass: "img-small",
+      imgPath: "/images/timeline/2023/zac_go_back_vc.jpg",
+      month: "June 2023",
+      title: "Zac Comes Back Home 🛬🛫",
+    },
+    {
+      description:
+        "Anna came back from the Vietnam vacation and the couple was finally reunited! 💖💖💖💘💘💘. They enjoyed some food and drinks at Artea!",
+      imgClass: "img",
+      imgPath: "/images/timeline/2023/anna_comes_back.jpg",
+      month: "June 2023",
+      title: "Anna comes back home 🛬🛫",
+    },
+    {
+      description:
         "Zac and Anna celebrated Annas birthday! They went to her starbucks, the wax museum and Biga for a fancy dinner!",
       imgClass: "img",
       imgPath: "/images/timeline/2023/annas_birthday.jpg",
-      month: "May 2023",
+      month: "June 2023",
       title: "Birthday for Anna 🎂🎂🎉🎉🎊🥳🥳",
     },
     {
       description:
         "Zac and Anna went on a trip to the Beach to meet Zac's family there! They had a lot of fun and enjoyed it!",
-      imgClass: "img",
+      imgClass: "img-big",
       imgPath: "/images/timeline/2023/beach_time.jpg",
-      month: "May 2023",
+      month: "June 2023",
       title: "Beach Time 🌴🌴🏖🏖⛱⛱",
     },
     // Template for new Events
@@ -676,7 +692,7 @@ export const timelineData = {
     //   },
     {
       description: "I love you so much babyyyyy 💖💖💝💝🥰🥰🥰",
-      imgClass: "img",
+      imgClass: "img-big",
       imgPath: "/images/timeline/sunflower-6.jpg",
       month: "More to come!",
       title: "I Can't Wait",
