@@ -79,7 +79,7 @@ const ImageGridContainer = () => {
       Object.keys(imageGalleryData)?.flatMap((key) =>
         imageGalleryData?.[key]?.flatMap((value) => `${key}${value}`)
       ),
-      true
+      false
     );
     for (let i = 0; i < flatValues?.length; i += gridItemsWidth) {
       const chunk = flatValues?.slice(i, i + gridItemsWidth);
