@@ -8,6 +8,7 @@ import CardSection from "./home_page/CardSection";
 import AboutSection from "./home_page/AboutSection";
 import PageHeader from "./home_page/PageHeader";
 import NoteSection from "./home_page/NotesSection";
+// import Play from "./three/play";
 
 const HomePage = () => {
   const [width, height] = useDeviceSize();
@@ -36,10 +37,10 @@ const HomePage = () => {
         <AboutSection viewWidth={width} />
         <Divider style={styles.divider} />
         <NoteSection viewWidth={width} />
+        {/* <Play /> */}
       </div>
     </>
   );
 };
 
 export default HomePage;
-

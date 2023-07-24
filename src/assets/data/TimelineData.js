@@ -679,6 +679,23 @@ export const timelineData = {
       month: "June 2023",
       title: "Beach Time 🌴🌴🏖🏖⛱⛱",
     },
+    {
+      description:
+        "The couple celebrated their 3rd July 4th together! A house near Anna's house caught on fire from a stray firework! 😱😱😨😨",
+      imgClass: "img",
+      imgPath: "/images/timeline/2023/july_4.mp4 ",
+      isVideo: true,
+      month: "July 2023",
+      title: " ",
+    },
+    {
+      description:
+        "The AV Couple had a small celebration for Anna after passing her PACE Exam!!!",
+      imgClass: "img",
+      imgPath: "/images/timeline/2023/celebration_pt1.jpg",
+      month: "July 2023",
+      title: " ",
+    },
     // Template for new Events
     // {
     //      description:
