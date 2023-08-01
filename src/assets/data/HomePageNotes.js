@@ -11,13 +11,16 @@ export const homePageNotes = {
   },
   extraNote: {
     element: "h2",
-    content: ["", ""],
+    content: [
+      "Im so lucky to have you and you are so wonderful and amazing! 😚😊😍😍😍😎😎",
+      "",
+    ],
   },
   extras: {
     element: "h3",
     content: [""],
   },
-  pics: [],
+  pics: ["/images/front_page/cute.png", "/images/front_page/gf_day.png"],
 };
 
 

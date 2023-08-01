@@ -2,8 +2,15 @@ import json
 import os
 from time import perf_counter
 
+import numpy as np
+from keras.applications import VGG16
+from keras.applications.vgg16 import preprocess_input
+from keras.models import Model
 from PIL import Image, ImageChops
+from skimage import io
+from sklearn.metrics.pairwise import cosine_similarity
 
+cache = {}
 
 def prepare_image(img_path):
     size = (256, 256)
@@ -39,12 +46,18 @@ def update_image_similarity_db(image_dir, db_file):
             if image1_file in image_db:
                 continue
 
-            image1 = prepare_image( os.path.join(image_dir, image1_file))
-            # Compute the similarity between the two images
-            image2 = prepare_image( os.path.join(image_dir, image1_file))
-            similarity = image_similarity(image1, image2)
-            print(f'\n{similarity}\n')
-            # Print the result and update the image similarity database
+            similarity = compare_images_2(os.path.join(image_dir, image1_file), os.path.join(image_dir, image1_file))
+
+            # image1 = prepare_image( os.path.join(image_dir, image1_file) )
+            # # Compute the similarity between the two images
+            # image2 = prepare_image( os.path.join(image_dir, image1_file))
+            # similarity = image_similarity(image1, image2)
+            # print(f'\n{similarity}\n')
+            # # Print the result and update the image similarity database
+            if similarity is None:
+                continue
+
+
             if similarity >= 0.9:
                 similar.append(f"{image1_file} and {image2_file} are {similarity*100:.2f}% similar")
 
@@ -61,6 +74,52 @@ def update_image_similarity_db(image_dir, db_file):
     with open(db_file, 'w') as f:
         json.dump(image_db, f, indent=4)
 
+def check_cache(img_path, model ):
+    if img_path not in cache.keys():
+        img = io.imread(img_path)
+        img = np.expand_dims(img, axis=0)
+        img = preprocess_input(img)
+        features = model.predict(img)
+        flat = features.flatten()
+        cache[img_path] = flat
+    else:
+        img = cache[img_path]
+    return flat
+
+# def compare_images(image_path1, image_path2):
+#     try:
+#         # Read the images
+#         img1 = check_cache(image_path1)
+#         img2 = check_cache(image_path2)
+
+
+#         # Compute SSIM
+#         similarity_index, _ = ssim(img1, img2, full=True, data_range=1.0)
+#         print(similarity_index)
+
+#         return similarity_index
+#     except Exception as e:
+#         print("Error occurred while comparing images:", e)
+#         return None
+
+
+def compare_images_2(image_path1, image_path2):
+    try:
+        # Load pre-trained VGG16 model (without the top classification layers)
+        base_model = VGG16(weights='imagenet', include_top=False, input_shape=(224, 224, 3))
+        model = Model(inputs=base_model.input, outputs=base_model.layers[-1].output)
+
+        # Extract features for the two images using the VGG16 model
+        features1 = check_cache(image_path1, model)
+        features2 = check_cache(image_path2, model)
+
+        # Compute the similarity between the two feature vectors
+        similarity = cosine_similarity([features1], [features2])[0][0]
+
+        return similarity
+    except Exception as e:
+        print("Error occurred while comparing images:", e)
+        return None
 
 if __name__ == '__main__':
     image_dir = "./public/images/more_images"
