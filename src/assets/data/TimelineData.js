@@ -681,12 +681,22 @@ export const timelineData = {
     },
     {
       description:
+        "Zac and Anna saw each other and tried a new shop called `The Nest Boba`",
+      isVideo: false,
+      imgClass: "img",
+      imgPath: "/images/timeline/2023/june_nest_boba.jpg",
+      month: "June 2023",
+      title: "The Nest Boba 😎😎😎",
+      link: "",
+    },
+    {
+      description:
         "The couple celebrated their 3rd July 4th together! A house near Anna's house caught on fire from a stray firework! 😱😱😨😨",
       imgClass: "img",
       imgPath: "/images/timeline/2023/july_4.mp4 ",
       isVideo: true,
       month: "July 2023",
-      title: " ",
+      title: "July 4!!!! 🎇🎇🎇🎇🎇🎆🎆🎆🎆🎆",
     },
     {
       description:
@@ -694,7 +704,25 @@ export const timelineData = {
       imgClass: "img",
       imgPath: "/images/timeline/2023/celebration_pt1.jpg",
       month: "July 2023",
-      title: " ",
+      title: "Part 1 celebration for big success! 👏👏🥳",
+    },
+    {
+      description:
+        "The AV Couple had an official celebration for Anna after she passed her PACE Exam!!!",
+      imgClass: "img",
+      imgPath: "/images/timeline/2023/official_celebration.jpg",
+      month: "July 2023",
+      title: "Part 2 celebration for big success! 🎉🎉🍾🍾🎊🎊🎊💗💗💗💗",
+    },
+    {
+      description:
+        "Zac and Anna took a trip to Houston to go to the Cockrell Butterfly Garden and got to see some butterflies and take some awesome pics!",
+      isVideo: false,
+      imgClass: "img",
+      imgPath: "/images/timeline/2023/july_butterfly_garden.jpg",
+      month: "July 2023",
+      title: "Butterfly Garden 🦋🦋🦋🦋",
+      link: "",
     },
     // Template for new Events
     // {

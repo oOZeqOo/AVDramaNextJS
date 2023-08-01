@@ -1,5 +1,4 @@
 import React from "react";
-import { Button } from "@mui/material";
 import styles from "/styles/HomePage.module.css";
 import Image from "next/image";
 import Link from "next/link";
@@ -29,6 +28,13 @@ const PageHeader = ({ viewWidth, height, isMobile }) => {
       display: "flex",
       objectPosition: "50% 50%",
     },
+    video: {
+      width: 100,
+      weight: 100,
+      margin: "auto",
+      objectFit: "contain",
+      borderRadius: 10,
+    },
     subText: {
       backgroundColor: "rgb(0, 0, 0, 0.3)",
       color: "white",
@@ -51,6 +57,7 @@ const PageHeader = ({ viewWidth, height, isMobile }) => {
       justifyContent: "center",
     },
   };
+
   return (
     <>
       <div style={myStyles.headerWrapper}>
@@ -67,9 +74,22 @@ const PageHeader = ({ viewWidth, height, isMobile }) => {
         <div style={myStyles.header}>
           <div>
             <h2 className={styles.title_outline}>A-V-Drama</h2>
+
             <h3 style={myStyles.subText}>
               The All New American-Vietnamese Experience Coming Soon
             </h3>
+            <video
+              width="100"
+              autoPlay={true}
+              loop={true}
+              style={{ borderRadius: 100, border: "5px solid black" }}
+              onLoadStart={() => {}}
+              playsInline={true}
+              src={"/videos/AVDrama.mp4"}
+              alt={"Missing"}
+              muted={true}
+              type="video/mp4"
+            />
           </div>
           <div style={myStyles.rowCenter}>
             <Link href={"#more"} style={myStyles.button} scroll={false}>
