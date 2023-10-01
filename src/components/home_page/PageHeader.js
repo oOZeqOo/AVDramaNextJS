@@ -61,9 +61,9 @@ const PageHeader = ({ viewWidth, height, isMobile }) => {
   return (
     <>
       <div style={myStyles.headerWrapper}>
-        <div style={myStyles.imageWrapper}>
+        <div style={myStyles.imageWrapper} className="fixed">
           <Image
-            //   className={styles.home}
+            className="fixed"
             style={myStyles.image}
             src={"/images/sunflower-6.jpg"}
             alt={"Sunflowers"}
@@ -75,7 +75,7 @@ const PageHeader = ({ viewWidth, height, isMobile }) => {
           <div>
             <h2 className={styles.title_outline}>A-V-Drama</h2>
 
-            <h3 style={myStyles.subText}>
+            <h3 style={myStyles.subText} className="">
               The All New American-Vietnamese Experience Coming Soon
             </h3>
             <video

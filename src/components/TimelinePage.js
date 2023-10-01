@@ -13,22 +13,58 @@ import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import { isMobile } from "react-device-detect";
 import useDeviceSize from "./hooks/useDeviceSize";
-import { Divider } from "@mui/material";
+import { Divider, Typography } from "@mui/material";
 import { LoadingButton } from "@mui/lab";
-import { FixedSizeList as List } from "react-window";
-import { useVirtualizer } from "@tanstack/react-virtual";
 import { useEffect } from "react";
+import Tabs from "@mui/material/Tabs";
+import Tab from "@mui/material/Tab";
+import Box from "@mui/material/Box";
+
 const TimelinePage = () => {
   return createTimeline(timelineData);
 };
 
 export default TimelinePage;
 
+function CustomTabPanel(props) {
+  const { children, value, index, ...other } = props;
+
+  return (
+    <div
+      role="tabpanel"
+      //   hidden={value !== index}
+      id={`simple-tabpanel-${index}`}
+      aria-labelledby={`simple-tab-${index}`}
+      style={{
+        transition: "2s all ease",
+        display: value !== index ? "hidden" : undefined,
+        fontWeight: "bold",
+      }}
+      {...other}
+    >
+      {value === index && <Box sx={{ p: 3 }}>{children}</Box>}
+    </div>
+  );
+}
+
+function a11yProps(index) {
+  return {
+    id: `simple-tab-${index}`,
+    "aria-controls": `simple-tabpanel-${index}`,
+  };
+}
+
 const createTimeline = (data) => {
   const [loadingSection, setLoadingSection] = useState(false);
   const [links, setLinks] = useState([]);
   const [width, height] = useDeviceSize();
   const isSmallScreen = isMobile || width < 800;
+  const [value, setValue] = useState(0);
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+
   const flattenData = useMemo(() => {
     var count = 0;
     return Object.keys(data)
@@ -70,124 +106,163 @@ const createTimeline = (data) => {
   };
 
   return (
-    <div className={cssStyles.root}>
-      <div className={cssStyles.timeline_nav}>
-        <Link
-          onClick={() => setLoadingHold()}
-          href={loadingSection ? "" : "/"}
+    <Box
+      sx={{
+        width: "100%",
+        transition: "all 0.5s ease",
+        scrollbarGutter: "stable",
+      }}
+      className={cssStyles.root}
+    >
+      <Box
+        sx={{ borderBottom: 1, borderColor: "divider" }}
+        className={cssStyles.timeline_nav}
+      >
+        <div
           style={{
-            backgroundColor: "pink",
-            border: "none",
-            fontSize: "x-large",
             display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            width: 30,
-            marginLeft: 50,
-            // marginRight: 30,
+            flexDirection: "row",
+            justifyContent: "space-between",
+            width: "40%",
           }}
+          id="first"
         >
           <IconButton
+            onClick={() => setLoadingHold()}
+            href={loadingSection ? "" : "/"}
             style={{
-              color: "rgb(0, 94, 255)",
               fontWeight: "bolder",
-              margin: "auto",
-              width: 30,
+              marginTop: "auto",
+              marginBottom: "auto",
+              width: "fit-content",
               height: "fit-content",
+              padding: "2px 4px",
               borderRadius: "30%",
+              fontSize: "20px",
             }}
           >
-            <KeyboardBackspaceIcon style={{ fontSize: "40" }} />
+            <KeyboardBackspaceIcon style={{ fontSize: "30" }} /> Back
           </IconButton>
-        </Link>
-        <LoadingButton loading={loadingSection}>
-          <Link
-            scroll={false}
-            href={loadingSection ? "#Waiting" : "#start"}
-            onClick={() => setLoadingHold()}
-            style={
-              loadingSection
-                ? { backgroundColor: "grey", color: "lightgrey" }
-                : { scrollMarginTop: "4em" }
-            }
+        </div>
+        <div className="flex-1 flex flex-col justify-start" style={{ flex: 1 }}>
+          <Tabs
+            value={value}
+            onChange={handleChange}
+            aria-label="basic tabs example"
+            fullwidth
           >
-            Start
-          </Link>
-        </LoadingButton>
-        {Object.keys(links)?.map((key, index) => (
-          <LoadingButton loading={loadingSection} key={index}>
-            <Link
-              scroll={false}
-              href={loadingSection ? "#Waiting" : `#${links?.[index]}`}
-              key={index}
-              onClick={() => setLoadingHold()}
-              style={
-                loadingSection
-                  ? { backgroundColor: "grey", color: "lightgrey" }
-                  : { scrollMarginTop: "4em" }
-              }
-            >
-              {Object.keys(data)?.[index]}
-            </Link>
-          </LoadingButton>
-        ))}
-        <LoadingButton loading={loadingSection}>
-          <Link
-            scroll={false}
-            href={"#latest"}
-            onClick={() => setLoadingHold()}
-            style={
-              loadingSection
-                ? { backgroundColor: "grey", color: "lightgrey" }
-                : { scrollMarginTop: "4em" }
-            }
-          >
-            New
-          </Link>
-        </LoadingButton>
-      </div>
+            {Object.keys(data)?.map((item, index) => (
+              <Tab
+                label={
+                  <Typography
+                    style={{
+                      backgroundColor: value !== index ? "yellow" : "chocolate",
+                      color: value !== index ? "black" : "white",
+                      borderRadius: 20,
+                      padding: "5px 10px",
+                      fontWeight: "bold",
+                    }}
+                  >
+                    {item}
+                  </Typography>
+                }
+                {...a11yProps(index)}
+                key={index}
+                style={{
+                  transition: "0.5s all ease",
+                  padding: 0,
+                }}
+                sx={{}}
+              />
+            ))}
+          </Tabs>
+        </div>
+      </Box>
       <div
         style={{
-          paddingTop: 0,
-          width: "100vw",
-          overflowY: "scroll",
-          height: "calc(100vh - 50px)",
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "center",
+          margin: 10,
         }}
       >
-        <Timeline
-          position={width < 1200 || isSmallScreen ? "right" : "alternate"}
-          sx={timelineClass}
-          id={"start"}
+        <Link
+          scroll={false}
+          href={"#latest"}
+          onClick={() => setLoadingHold()}
+          style={{
+            backgroundColor: "blue",
+            color: "white",
+            border: "1px solid black",
+            borderRadius: 20,
+            fontWeight: "bold",
+            fontSize: "large",
+            padding: "5px 5px",
+          }}
         >
-          {flattenData?.map((item, index) => (
-            <TimelineItem
-              id={index}
-              key={index}
-              className={index % 2 ? "ListItemOdd" : "ListItemEven"}
-            >
-              {createTimeLineItem(
-                item?.month,
-                item?.title,
-                item?.description,
-                item?.tag,
-                item?.imgPath,
-                item?.imgClass,
-                item?.isVideo || false,
-                item?.link,
-                index
-              )}
-            </TimelineItem>
-          ))}
-          {/* <RowVirtualizerFixed
+          Latest
+        </Link>
+      </div>
+      {Object.entries(data)?.map(([key, v], index) => (
+        <CustomTabPanel value={value} index={index} key={index}>
+          <Timeline
+            position={width < 1200 || isSmallScreen ? "right" : "alternate"}
+            sx={timelineClass}
+            id={"start"}
+          >
+            {v?.map((item, index) => (
+              <TimelineItem
+                id={index !== v?.length - 1 ? index : "latest"}
+                key={index}
+                className={index % 2 ? "ListItemOdd" : "ListItemEven"}
+              >
+                {createTimeLineItem(
+                  item?.month,
+                  item?.title,
+                  item?.description,
+                  item?.tag,
+                  item?.imgPath,
+                  item?.imgClass,
+                  item?.isVideo || false,
+                  item?.link,
+                  index
+                )}
+              </TimelineItem>
+            ))}
+            {/* <RowVirtualizerFixed
             data={flattenData}
             rotatingSides={width < 1200 || isSmallScreen}
           /> */}
-        </Timeline>
-        <footer style={{ padding: 0 }}>
-          <div id="latest"></div>
-        </footer>
+          </Timeline>
+        </CustomTabPanel>
+      ))}
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "center",
+          margin: 10,
+          paddingBottom: 50,
+        }}
+      >
+        <Link
+          scroll={false}
+          href={"#first"}
+          onClick={() => setLoadingHold()}
+          style={{
+            backgroundColor: "blue",
+            color: "white",
+            border: "1px solid black",
+            borderRadius: 20,
+            fontWeight: "bold",
+            fontSize: "large",
+            padding: "5px 5px",
+          }}
+        >
+          Back to the top
+        </Link>
       </div>
-    </div>
+    </Box>
   );
 };
 
@@ -314,6 +389,12 @@ const styles = {
     fontWeight: "bold",
     fontSize: 100,
     borderBottomWidth: 3,
+  },
+  timeline_nav: {
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "space-evenly",
+    position: "sticky",
   },
   timeline_link: {
     color: "blue",

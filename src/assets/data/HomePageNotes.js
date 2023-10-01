@@ -1,26 +1,21 @@
 export const homePageNotes = {
   title: {
     element: "h1",
-    content: ["Happy National Girlfriend Day Baby 😍😍💕💕😍😍💝💝", "", ""],
+    content: ["", "", ""],
   },
   message: {
     element: "h2",
-    content: [
-      "I love you so much and wish you the best for this day and all in the future to come! 💖💘💘💖💘💘💖💘💘💖💘💘",
-    ],
+    content: [""],
   },
   extraNote: {
     element: "h2",
-    content: [
-      "Im so lucky to have you and you are so wonderful and amazing! 😚😊😍😍😍😎😎",
-      "",
-    ],
+    content: ["", ""],
   },
   extras: {
     element: "h3",
     content: [""],
   },
-  pics: ["/images/front_page/cute.png", "/images/front_page/gf_day.png"],
+  pics: ["/images/front_page/"],
 };
 
 

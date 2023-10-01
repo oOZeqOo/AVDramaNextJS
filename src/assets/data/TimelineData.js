@@ -724,6 +724,62 @@ export const timelineData = {
       title: "Butterfly Garden 🦋🦋🦋🦋",
       link: "",
     },
+    {
+      description: "",
+      isVideo: false,
+      imgClass: "img",
+      imgPath: "/images/timeline/2023/fancy.jpg",
+      month: "August 2023",
+      title: "National Girlfriend Day 😍🤟🌹💝",
+      link: "",
+    },
+    {
+      description:
+        "Zac and Anna went to UTSA and Zac got to play the piano for Anna. He still has some way to go to be perfect!",
+      isVideo: false,
+      imgClass: "img",
+      imgPath: "/images/timeline/2023/couple_shirts.jpg",
+      month: "August 2023",
+      title: "Piano Time For The Couple 🎹🎹🎹🎹",
+      link: "",
+    },
+    {
+      description:
+        "Zac and Anna went to UTSA to look at Annas classes for the semester and had a fun time!",
+      isVideo: false,
+      imgClass: "img",
+      imgPath: "/images/timeline/2023/August_15_see_Annas_Classes.jpg",
+      month: "August 2023",
+      title: "",
+      link: "",
+    },
+    {
+      description: "Anna made some food for Zac and it was delicious 😋🤤",
+      isVideo: false,
+      imgClass: "img",
+      imgPath: "/images/timeline/2023/August_18_Anna_made_food.jpg",
+      month: "August 2023",
+      title: "",
+      link: "",
+    },
+    {
+      description: "",
+      isVideo: false,
+      imgClass: "img",
+      imgPath: "/images/timeline/2023/August_20_celebrate_for_Anna.jpg",
+      month: "August 2023",
+      title: "",
+      link: "",
+    },
+    {
+      description: "",
+      isVideo: false,
+      imgClass: "img",
+      imgPath: "/images/timeline/2023/September_.jpg",
+      month: "September 2023",
+      title: "",
+      link: "",
+    },
     // Template for new Events
     // {
     //      description:
