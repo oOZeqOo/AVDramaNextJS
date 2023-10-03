@@ -11,11 +11,14 @@ http://www.tooplate.com/view/2087_kalay
 
 .title_outline {
     color: black;
-    font-weight: bolder;
   -webkit-text-fill-color: white; /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-  font-size: 60px;
+  text-shadow:
+    3px 3px 0 #000,
+    -3px 3px 0 #000,
+    -3px -3px 0 #000,
+    3px -3px 0 #000;
+  font-size: 80px;
+  font-weight: bolder;
 }
 
 

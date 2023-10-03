@@ -24,7 +24,7 @@ const VacationPage = () => {
   };
 
   return (
-    <div style={{ height: "100vh" }}>
+    <div style={{ height: "100vh", backgroundColor: "lightgreen" }}>
       <div
         style={{
           backgroundColor: "lime",
@@ -56,7 +56,9 @@ const VacationPage = () => {
             margin: 5,
           }}
         >
-          <Typography>Select the Vacation to View</Typography>
+          <Typography style={{ color: "black" }}>
+            Select the Vacation to View
+          </Typography>
         </div>
         <Box
           sx={{ minWidth: 100 }}
@@ -68,13 +70,16 @@ const VacationPage = () => {
           }}
         >
           <FormControl>
-            <InputLabel id="vacation-select-label">Vacation</InputLabel>
+            <InputLabel id="vacation-select-label" style={{ color: "black" }}>
+              Vacation
+            </InputLabel>
             <Select
               labelId="vacation-select-label"
               id="vacation-simple-select"
               value={vacation?.value}
               label="Vacation"
               onChange={handleChange}
+              style={{ backgroundColor: "whitesmoke" }}
             >
               {items?.map((item, index) => (
                 <MenuItem key={index} value={item?.value}>
