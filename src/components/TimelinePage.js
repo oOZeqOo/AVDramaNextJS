@@ -13,12 +13,13 @@ import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import { isMobile } from "react-device-detect";
 import useDeviceSize from "./hooks/useDeviceSize";
-import { Divider, Typography } from "@mui/material";
+import { Button, Divider, Typography } from "@mui/material";
 import { LoadingButton } from "@mui/lab";
 import { useEffect } from "react";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
+import { useRouter } from "next/router";
 
 const TimelinePage = () => {
   return createTimeline(timelineData);
@@ -60,6 +61,7 @@ const createTimeline = (data) => {
   const [width, height] = useDeviceSize();
   const isSmallScreen = isMobile || width < 800;
   const [value, setValue] = useState(0);
+  const router = useRouter();
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -115,7 +117,12 @@ const createTimeline = (data) => {
       className={cssStyles.root}
     >
       <Box
-        sx={{ borderBottom: 1, borderColor: "divider" }}
+        sx={{
+          borderBottom: 1,
+          borderColor: "divider",
+          height: 75,
+          overflowX: "scroll",
+        }}
         className={cssStyles.timeline_nav}
       >
         <div
@@ -127,24 +134,18 @@ const createTimeline = (data) => {
           }}
           id="first"
         >
-          <IconButton
-            onClick={() => setLoadingHold()}
-            href={loadingSection ? "" : "/"}
-            style={{
-              fontWeight: "bolder",
-              marginTop: "auto",
-              marginBottom: "auto",
-              width: "fit-content",
-              height: "fit-content",
-              padding: "2px 4px",
-              borderRadius: "30%",
-              fontSize: "20px",
-            }}
+          <Button
+            variant="contained"
+            onClick={() => router.back()}
+            style={{ margin: "5px 10px" }}
           >
-            <KeyboardBackspaceIcon style={{ fontSize: "30" }} /> Back
-          </IconButton>
+            Back
+          </Button>
         </div>
-        <div className="flex-1 flex flex-col justify-start" style={{ flex: 1 }}>
+        <div
+          className="flex-1 flex flex-col justify-start"
+          style={{ width: "max(fit-content, 60%)" }}
+        >
           <Tabs
             value={value}
             onChange={handleChange}
