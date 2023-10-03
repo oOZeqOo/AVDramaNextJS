@@ -1,7 +1,7 @@
 export const homePageNotes = {
   title: {
     element: "h1",
-    content: ["", "", ""],
+    content: ["I LOVE YOU SO MUCH", "💖💖💖💘💘💘💘", "💖💖💖💘💘💘💘"],
   },
   message: {
     element: "h2",
@@ -15,7 +15,7 @@ export const homePageNotes = {
     element: "h3",
     content: [""],
   },
-  pics: ["/images/front_page/"],
+  //   pics: ["/images/front_page/"],
 };
 
 

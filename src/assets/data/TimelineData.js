@@ -750,7 +750,7 @@ export const timelineData = {
       imgClass: "img",
       imgPath: "/images/timeline/2023/August_15_see_Annas_Classes.jpg",
       month: "August 2023",
-      title: "",
+      title: "Back to School 🎒📚📖",
       link: "",
     },
     {
@@ -759,25 +759,27 @@ export const timelineData = {
       imgClass: "img",
       imgPath: "/images/timeline/2023/August_18_Anna_made_food.jpg",
       month: "August 2023",
-      title: "",
+      title: "Yummy food 🍗",
       link: "",
     },
     {
-      description: "",
+      description:
+        "Zac celebrated for Anna getting her first badge on Linkedin!",
       isVideo: false,
       imgClass: "img",
       imgPath: "/images/timeline/2023/August_20_celebrate_for_Anna.jpg",
       month: "August 2023",
-      title: "",
+      title: "Celebration 🎉🎉🥳🥳🎊🎊",
       link: "",
     },
     {
-      description: "",
+      description:
+        "Zac and Anna hung out and went to an Asian Market to get Rice for Zac ",
       isVideo: false,
       imgClass: "img",
       imgPath: "/images/timeline/2023/September_.jpg",
       month: "September 2023",
-      title: "",
+      title: "Rice Day 🍚🍙",
       link: "",
     },
     // Template for new Events

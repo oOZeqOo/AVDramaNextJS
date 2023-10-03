@@ -149,7 +149,7 @@ const createTimeline = (data) => {
             value={value}
             onChange={handleChange}
             aria-label="basic tabs example"
-            fullwidth
+            fullwidth="true"
           >
             {Object.keys(data)?.map((item, index) => (
               <Tab
@@ -200,7 +200,7 @@ const createTimeline = (data) => {
             padding: "5px 5px",
           }}
         >
-          Latest
+          Go to the bottom
         </Link>
       </div>
       {Object.entries(data)?.map(([key, v], index) => (
@@ -259,7 +259,7 @@ const createTimeline = (data) => {
             padding: "5px 5px",
           }}
         >
-          Back to the top
+          Go back to the top
         </Link>
       </div>
     </Box>
