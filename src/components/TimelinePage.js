@@ -121,7 +121,7 @@ const createTimeline = (data) => {
           borderBottom: 1,
           borderColor: "divider",
           height: 150,
-          overflowX: "scroll",
+          overflowX: "auto",
           flexWrap: "wrap",
         }}
         className={cssStyles.timeline_nav}
