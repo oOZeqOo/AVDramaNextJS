@@ -7,7 +7,7 @@
   .timeline_nav {
     background-color: pink;
     display: flex;
-    height: 50px;
+    height: fit-content;
     justify-content: space-evenly;
     overflow-x: 'scroll';
     overflow-y: hidden;

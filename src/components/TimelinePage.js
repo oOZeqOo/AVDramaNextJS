@@ -120,8 +120,9 @@ const createTimeline = (data) => {
         sx={{
           borderBottom: 1,
           borderColor: "divider",
-          height: 75,
+          height: 150,
           overflowX: "scroll",
+          flexWrap: "wrap",
         }}
         className={cssStyles.timeline_nav}
       >
@@ -144,7 +145,7 @@ const createTimeline = (data) => {
         </div>
         <div
           className="flex-1 flex flex-col justify-start"
-          style={{ width: "max(fit-content, 60%)" }}
+          style={{ width: "max(fit-content, 60%)", marginLeft: 40 }}
         >
           <Tabs
             value={value}
