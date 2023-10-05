@@ -759,7 +759,7 @@ export const timelineData = {
         "Zac and Anna went on another picnic and had a blast! Zac got a lucky Bamboo plant for Anna, wore couple shirts designed by Anna and created some lyrics for the AV-Drama song!",
       isVideo: false,
       imgClass: "img",
-      imgPath: "/images/timeline/2023/picnic_2023.jpg",
+      imgPath: "/images/timeline/2023/picnic_fun.jpg",
       month: "August 2023",
       title: "Another Picnic date 🥪🌌🤟💝",
       link: "",
