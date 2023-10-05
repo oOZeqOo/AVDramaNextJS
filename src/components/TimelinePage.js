@@ -120,7 +120,7 @@ const createTimeline = (data) => {
         sx={{
           borderBottom: 1,
           borderColor: "divider",
-          height: 150,
+          height: width < 900 ? 150 : 75,
           overflowX: "auto",
           flexWrap: "wrap",
         }}
