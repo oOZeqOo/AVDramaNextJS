@@ -725,12 +725,13 @@ export const timelineData = {
       link: "",
     },
     {
-      description: "",
+      description:
+        "Zac celebrated National Girlfriend day for the love of his life 💝💝💝💝💝 . He showed her his office and went downtown to have dinner at Moon's Daughter 🌙 and they had an awesome time!",
       isVideo: false,
       imgClass: "img",
       imgPath: "/images/timeline/2023/fancy.jpg",
       month: "August 2023",
-      title: "National Girlfriend Day 😍🤟🌹💝",
+      title: "🌻🌻🦋🦋🌸🌸 National Girlfriend Day 😍🤟🌹💝 🌸🌸🦋🦋🌻🌻",
       link: "",
     },
     {
@@ -741,6 +742,26 @@ export const timelineData = {
       imgPath: "/images/timeline/2023/couple_shirts.jpg",
       month: "August 2023",
       title: "Piano Time For The Couple 🎹🎹🎹🎹",
+      link: "",
+    },
+    {
+      description:
+        "Zac took Anna to get her car window tinted! They got Panda Express and took an Uber to Feng Cha and back to the tint place! Zac helped Anna with car stuff while they were there",
+      isVideo: false,
+      imgClass: "img",
+      imgPath: "/images/timeline/2023/car_tint.jpg",
+      month: "August 2023",
+      title: "Getting the Car done 🚗✅",
+      link: "",
+    },
+    {
+      description:
+        "Zac and Anna went on another picnic and had a blast! Zac got a lucky Bamboo plant for Anna, wore couple shirts designed by Anna and created some lyrics for the AV-Drama song!",
+      isVideo: false,
+      imgClass: "img",
+      imgPath: "/images/timeline/2023/picnic_2023.jpg",
+      month: "August 2023",
+      title: "Another Picnic date 🥪🌌🤟💝",
       link: "",
     },
     {
@@ -767,7 +788,7 @@ export const timelineData = {
         "Zac celebrated for Anna getting her first badge on Linkedin!",
       isVideo: false,
       imgClass: "img",
-      imgPath: "/images/timeline/2023/August_20_celebrate_for_Anna.jpg",
+      imgPath: "/images/timeline/2023/linkedin_celebrate.jpg",
       month: "August 2023",
       title: "Celebration 🎉🎉🥳🥳🎊🎊",
       link: "",

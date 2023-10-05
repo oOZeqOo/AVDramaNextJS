@@ -22,7 +22,6 @@ def rename_more_images_folder() -> list[str]:
 
 
 def set_up_more_images_data(files: list[str]) -> None:
-
     data = ''.join([f'    "{file}",\n' for file in files])
     template =  'export const imageGalleryData = {\n' \
                 '  "/images/more_images/": [\n' \

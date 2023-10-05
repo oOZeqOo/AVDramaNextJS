@@ -70,7 +70,10 @@ const VacationPage = () => {
           }}
         >
           <FormControl>
-            <InputLabel id="vacation-select-label" style={{ color: "black" }}>
+            <InputLabel
+              id="vacation-select-label"
+              style={{ color: "black", marginTop: 6 }}
+            >
               Vacation
             </InputLabel>
             <Select

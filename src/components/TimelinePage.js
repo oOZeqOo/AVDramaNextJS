@@ -137,7 +137,7 @@ const createTimeline = (data) => {
         >
           <Button
             variant="contained"
-            onClick={() => router.back()}
+            onClick={() => router.push("/")}
             style={{ margin: "5px 10px" }}
           >
             Back
@@ -158,8 +158,8 @@ const createTimeline = (data) => {
                 label={
                   <Typography
                     style={{
-                      backgroundColor: value !== index ? "yellow" : "chocolate",
-                      color: value !== index ? "black" : "white",
+                      backgroundColor: value !== index ? "lightcoral" : "red",
+                      color: "white",
                       borderRadius: 20,
                       padding: "5px 10px",
                       fontWeight: "bold",
