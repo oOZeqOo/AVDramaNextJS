@@ -120,7 +120,7 @@ const createTimeline = (data) => {
         sx={{
           borderBottom: 1,
           borderColor: "divider",
-          height: width < 900 ? 150 : 75,
+          height: width < 900 ? 150 : 50,
           overflowX: "auto",
           flexWrap: "wrap",
         }}
@@ -145,7 +145,7 @@ const createTimeline = (data) => {
         </div>
         <div
           className="flex-1 flex flex-col justify-start"
-          style={{ width: "max(fit-content, 60%)", marginLeft: 40 }}
+          style={{ width: "max(fit-content, 60%)", marginLeft: 40, height: 50 }}
         >
           <Tabs
             value={value}
