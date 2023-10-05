@@ -2,6 +2,7 @@ import '../styles/globals.css'
 import "../styles/css/all.min.css";
 import ConsoleErrorLogger from "../src/components/common/ConsoleErrorLogger";
 import Head from "next/head";
+import { Analytics } from "@vercel/analytics/react";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -16,6 +17,7 @@ function MyApp({ Component, pageProps }) {
       </Head>
 
       <Component {...pageProps} />
+      <Analytics />
     </ConsoleErrorLogger>
   );
 }
