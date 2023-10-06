@@ -22,6 +22,7 @@ export default Tooltip;
 const styles = {
   tooltip_container: {
     position: "relative",
+    display: "flex",
   },
 
   tooltip: {
@@ -39,5 +40,7 @@ const styles = {
 
   tooltip_trigger: {
     cursor: "pointer",
+    display: "flex",
+    // alignSelf: "center",
   },
 };

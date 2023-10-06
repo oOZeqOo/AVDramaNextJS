@@ -19,7 +19,7 @@ const ImageGridContainer = () => {
   const [gridItems, setGridItems] = useState([]);
   const gridItemsWidth = Math.max(Math.floor(gridPixelWidth / 220), 1);
   const imgWidth = gridItemsWidth > 1 ? 200 : width - 20;
-  const imgHeight = gridItemsWidth > 1 ? 200 : height - 20;
+  const imgHeight = gridItemsWidth > 1 ? 200 : 500;
   const styles = {
     navBar: {
       height: navBarHeight,
@@ -108,6 +108,8 @@ const ImageGridContainer = () => {
       <div
         style={{
           ...style,
+          display: "flex",
+          justifyContent: "center",
           //   left:
           //     Number.parseInt(`${style.left}`) + (gridItemsWidth > 1 ? 100 : 0),
         }}
@@ -178,6 +180,7 @@ const ImageGridContainer = () => {
         </Link>
       </div>
       <div style={styles.imageGridWrapper}>
+        {console.log(imgHeight + 20)}
         {gridItems?.length > 0 && (
           <Grid
             style={styles.gridStyle}

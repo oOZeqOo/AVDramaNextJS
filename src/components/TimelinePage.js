@@ -158,8 +158,8 @@ const createTimeline = (data) => {
                 label={
                   <Typography
                     style={{
-                      backgroundColor: value !== index ? "lightcoral" : "red",
-                      color: "white",
+                      backgroundColor: value !== index ? "#cd4870" : "red",
+                      color: value !== index ? "black" : "white",
                       borderRadius: 20,
                       padding: "5px 10px",
                       fontWeight: "bold",
