@@ -71,6 +71,19 @@ const getElementsContent = (item) => {
           {item}
         </h6>
       ));
+
+    case "tiny":
+      return item?.content?.map((item, index) => (
+        <h6
+          key={index}
+          style={{
+            ...styles.blackText,
+            fontSize: 10,
+          }}
+        >
+          {item}
+        </h6>
+      ));
     default:
       return item?.content?.map((item, index) => (
         <p key={index} style={styles.blackText}>

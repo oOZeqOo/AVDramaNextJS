@@ -180,7 +180,6 @@ const ImageGridContainer = () => {
         </Link>
       </div>
       <div style={styles.imageGridWrapper}>
-        {console.log(imgHeight + 20)}
         {gridItems?.length > 0 && (
           <Grid
             style={styles.gridStyle}
