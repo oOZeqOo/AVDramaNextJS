@@ -803,6 +803,105 @@ export const timelineData = {
       title: "Rice Day 🍚🍙",
       link: "",
     },
+
+    // TODO : Start here for updating
+    {
+      description: "",
+      isVideo: false,
+      imgClass: "img",
+      imgPath: "/images/timeline/2023/oct_3_z_china_stix.jpg",
+      month: "October 2023",
+      title: "",
+      link: "",
+    },
+    {
+      description: "",
+      isVideo: false,
+      imgClass: "img",
+      imgPath: "/images/timeline/2023/oct_6_.jpg",
+      month: "October 2023",
+      title: "",
+      link: "",
+    },
+    {
+      description: "",
+      isVideo: false,
+      imgClass: "img",
+      imgPath: "/images/timeline/2023/oct_8_pumpkin_patch.jpg",
+      month: "October 2023",
+      title: "",
+      link: "",
+    },
+    {
+      description:
+        "Zac helped Anna to take some professional pictures of her in a suit so she can update her LinkedIn profile",
+      isVideo: false,
+      imgClass: "img",
+      imgPath: "/images/timeline/2023/oct_18_professionals.jpg",
+      month: "October 2023",
+      title: "Professional Couple 📷👩‍🎓",
+      link: "",
+    },
+    {
+      description: "",
+      isVideo: false,
+      imgClass: "img",
+      imgPath: "/images/timeline/2023/oct_25_utsa.jpg",
+      month: "October 2023",
+      title: "",
+      link: "",
+    },
+    {
+      description:
+        "Zac and Anna got together to celebrate Halloween and went to a Barnes and Noble to paint Bubu and Dudu on a pumpkin!",
+      isVideo: false,
+      imgClass: "img",
+      imgPath: "/images/timeline/2023/oct_31_halloween.jpg",
+      month: "October 2023",
+      title: "🎃🎃🎃 Happy Halloween 🎃🎃🎃",
+      link: "",
+    },
+    {
+      description: "",
+      isVideo: false,
+      imgClass: "img",
+      imgPath: "/images/timeline/2023/nov_18_baby_in_a_suit.jpg",
+      month: "November 2023",
+      title: "",
+      link: "",
+    },
+    {
+      description: "",
+      isVideo: false,
+      imgClass: "img",
+      imgPath: "/images/timeline/2023/nov_19_thai_buri.jpg",
+      month: "November 2023",
+      title: "",
+      link: "",
+    },
+    {
+      description:
+        "Anna and Zac went to see each other at Whataburger and had a thanksgiving lunch with each other and her dad! They had some fun!",
+      isVideo: false,
+      imgClass: "img",
+      imgPath: "/images/timeline/2023/nov_25_thanksgiving.jpg",
+      month: "November 2023",
+      title: "HAPPY THANKSGIVING! 🦃🦃💖💖",
+      link: "",
+    },
+    {
+      description:
+        "This day Anna had a BIG interview for a company she really wants to intern for. It went well and she got the internship. CONGRATULATIONS 🎉🎉🎉🥳🥳🥳🎊🎊🎊🎊",
+      isVideo: false,
+      imgClass: "img",
+      imgPath: "/images/timeline/2023/dec_11_interview_day.jpg",
+      month: "December 2023",
+      title: "Interview Day",
+      link: "",
+    },
+
+    // TODO : End here for updating
+
     // Template for new Events
     // {
     //      description:
