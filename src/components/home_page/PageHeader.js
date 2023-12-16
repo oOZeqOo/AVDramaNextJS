@@ -76,7 +76,7 @@ const PageHeader = ({ viewWidth, height, isMobile }) => {
             <h2 className={styles.title_outline}>A-V-Drama</h2>
 
             <h3 style={myStyles.subText} className="">
-              The All New American-Vietnamese Experience Coming Soon
+              The All New American-Vietnamese Experience Coming Your Way
             </h3>
             <video
               width="100"

@@ -891,7 +891,7 @@ export const timelineData = {
       imgClass: "img",
       imgPath: "/images/timeline/2023/dec_11_interview_day.jpg",
       month: "December 2023",
-      title: "Interview Day",
+      title: "Interview Day 😎🤓",
       link: "",
     },
 
