@@ -806,30 +806,33 @@ export const timelineData = {
 
     // TODO : Start here for updating
     {
-      description: "",
+      description:
+        "Zac got to see Anna on this day and went to one of his favorite restaurants: China Stix",
       isVideo: false,
       imgClass: "img",
       imgPath: "/images/timeline/2023/oct_3_z_china_stix.jpg",
       month: "October 2023",
-      title: "",
+      title: "National Boyfriend Day 😁😀😎",
       link: "",
     },
     {
-      description: "",
+      description:
+        "Zac and Anna went to Barnes and Noble so Zac could help her with her resume",
       isVideo: false,
       imgClass: "img",
       imgPath: "/images/timeline/2023/oct_6_.jpg",
       month: "October 2023",
-      title: "",
+      title: "Resume Help! 📃📃",
       link: "",
     },
     {
-      description: "",
+      description:
+        "Zac and Anna went to a pumpkin patch, they got to make 5 new friends and let them all be free! They even took 1 new friend to Annas house 🦋",
       isVideo: false,
       imgClass: "img",
       imgPath: "/images/timeline/2023/oct_8_pumpkin_patch.jpg",
       month: "October 2023",
-      title: "",
+      title: "Butterfly Pumpkin Patch 🦋🦋🦋🦋🦋",
       link: "",
     },
     {
@@ -843,15 +846,6 @@ export const timelineData = {
       link: "",
     },
     {
-      description: "",
-      isVideo: false,
-      imgClass: "img",
-      imgPath: "/images/timeline/2023/oct_25_utsa.jpg",
-      month: "October 2023",
-      title: "",
-      link: "",
-    },
-    {
       description:
         "Zac and Anna got together to celebrate Halloween and went to a Barnes and Noble to paint Bubu and Dudu on a pumpkin!",
       isVideo: false,
@@ -862,21 +856,22 @@ export const timelineData = {
       link: "",
     },
     {
-      description: "",
+      description: "Zac went with Anna so she could get a suit to use",
       isVideo: false,
       imgClass: "img",
       imgPath: "/images/timeline/2023/nov_18_baby_in_a_suit.jpg",
       month: "November 2023",
-      title: "",
+      title: "Suit Time 🤵",
       link: "",
     },
     {
-      description: "",
+      description:
+        "Zac and Anna went to try Black Rifle Coffee, Thai Buri and saw a Christmas tree, and some home stores to look for things for Zac's new Apartment!",
       isVideo: false,
       imgClass: "img",
       imgPath: "/images/timeline/2023/nov_19_thai_buri.jpg",
       month: "November 2023",
-      title: "",
+      title: "Furniture Time!! 🪑",
       link: "",
     },
     {

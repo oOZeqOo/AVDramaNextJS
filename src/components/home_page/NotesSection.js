@@ -18,15 +18,24 @@ const buildNoteSection = (viewWidth) => {
         <div>{getElementsContent(homePageNotes?.extraNote)}</div>
         <div>{getElementsContent(homePageNotes?.extras)}</div>
         <div style={styles.gifWrapper}>
-          {homePageNotes?.pics?.map((url, index) => (
-            <Image
-              key={index}
-              src={url}
-              width={width}
-              height={width}
-              alt={"gif"}
-            />
-          ))}
+          {homePageNotes?.pics?.map((url, index) => {
+            let imgWidth = Math.min(width, 300);
+            let imgHeight = Math.min(width, 300);
+            const mode = url.style;
+
+            if (mode === "landscape") imgWidth = Math.min(viewWidth, 400);
+            else if (mode === "portrait") imgHeight = Math.min(viewWidth, 400);
+
+            return (
+              <Image
+                key={index}
+                src={url.src}
+                width={imgWidth}
+                height={imgHeight}
+                alt={"gif"}
+              />
+            );
+          })}
         </div>
       </div>
     </div>
@@ -78,7 +87,7 @@ const getElementsContent = (item) => {
           key={index}
           style={{
             ...styles.blackText,
-            fontSize: 10,
+            fontSize: 5,
           }}
         >
           {item}

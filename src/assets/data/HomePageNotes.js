@@ -46,7 +46,11 @@ export const homePageNotes = {
     element: "h3",
     content: [""],
   },
-  //   pics: ["/images/front_page/"],
+  pics: [
+    // styles = [null, "landscape", "portrait"]
+    { src: "/images/front_page/bubu_dudu_1.gif", style: "landscape" },
+    { src: "/images/front_page/bubu_dudu_2.gif", style: null },
+  ],
 };
 
 

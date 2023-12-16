@@ -306,5 +306,12 @@ export const imageGalleryData = {
     "0504.jpg",
     "0505.jpg",
     "0506.jpg",
+    "0507.jpg",
+    "0508.jpg",
+    "0509.jpg",
+    "0510.jpg",
+    "0511.jpg",
+    "0512.jpg",
+    "0513.jpg",
    ],
 };
