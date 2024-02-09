@@ -827,12 +827,12 @@ export const timelineData = {
     },
     {
       description:
-        "Zac and Anna went to a pumpkin patch, they got to make 5 new friends and let them all be free! They even took 1 new friend to Annas house 🦋",
+        "Zac and Anna went to a pumpkin patch 🎃🎃, they got to make 5 new friends and let them all be free! They even took 1 new friend to Annas house 🦋",
       isVideo: false,
       imgClass: "img",
       imgPath: "/images/timeline/2023/oct_8_pumpkin_patch.jpg",
       month: "October 2023",
-      title: "Butterfly Pumpkin Patch 🦋🦋🦋🦋🦋",
+      title: "Butterfly Pumpkin Patch 🦋🦋🦋🦋🦋🎃🎃🎃🎃",
       link: "",
     },
     {
@@ -842,7 +842,7 @@ export const timelineData = {
       imgClass: "img",
       imgPath: "/images/timeline/2023/oct_18_professionals.jpg",
       month: "October 2023",
-      title: "Professional Couple 📷👩‍🎓",
+      title: "Professional Photo Shoot 📷",
       link: "",
     },
     {
@@ -886,7 +886,7 @@ export const timelineData = {
     },
     {
       description:
-        "This day Anna had a BIG interview for a company she really wants to intern for. It went well and she got the internship. CONGRATULATIONS 🎉🎉🎉🥳🥳🥳🎊🎊🎊🎊",
+        "This day Anna had a BIG interview for a company she really wants to intern for. It went well and she got the internship. CONGRATULATIONS 🎉🎉🎉🥳🥳🥳🎊🎊🎊🎊. WELL DONE AND SHE DESERVES IT 😎😎!",
       isVideo: false,
       imgClass: "img",
       imgPath: "/images/timeline/2023/dec_11_interview_day.jpg",
@@ -894,7 +894,16 @@ export const timelineData = {
       title: "Interview Day 😎🤓",
       link: "",
     },
-
+    // TODO: VALENTINES DAY START UPDATE
+    {
+      description: "",
+      isVideo: false,
+      imgClass: "img",
+      imgPath: "/images/timeline/2024/",
+      month: "January 2024",
+      title: "",
+      link: "",
+    },
     // TODO : End here for updating
 
     // Template for new Events

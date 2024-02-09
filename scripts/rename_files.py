@@ -17,7 +17,7 @@ def rename_more_images_folder() -> list[str]:
             continue
 
         os.rename(file, new_name)
-        print(f'Renamed {file} -> {new_name}')
+        # print(f'Renamed {file} -> {new_name}')
     return file_names
 
 
@@ -29,7 +29,6 @@ def set_up_more_images_data(files: list[str]) -> None:
                 '  ],\n' \
                 '};'
 
-    print(template)
     with open(MORE_IMAGES_DATA_FILE, 'w+') as file:
         file.write(template)
 

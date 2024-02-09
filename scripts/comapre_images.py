@@ -83,8 +83,11 @@ def check_cache(img_path, model ):
         flat = features.flatten()
         cache[img_path] = flat
     else:
-        img = cache[img_path]
+        flat = cache[img_path]
     return flat
+# TODO GET IMG
+def flatten(img, model):
+    ...
 
 # def compare_images(image_path1, image_path2):
 #     try:
@@ -106,12 +109,16 @@ def check_cache(img_path, model ):
 def compare_images_2(image_path1, image_path2):
     try:
         # Load pre-trained VGG16 model (without the top classification layers)
-        base_model = VGG16(weights='imagenet', include_top=False, input_shape=(224, 224, 3))
+        # base_model = VGG16(weights='imagenet', include_top=False, input_shape=(224, 224, 3))
+        base_model = VGG16(weights='imagenet', include_top=False, input_shape=(1280, 960, 3))
         model = Model(inputs=base_model.input, outputs=base_model.layers[-1].output)
 
         # Extract features for the two images using the VGG16 model
         features1 = check_cache(image_path1, model)
         features2 = check_cache(image_path2, model)
+
+        if features1.shape != features2.shape:
+            return None
 
         # Compute the similarity between the two feature vectors
         similarity = cosine_similarity([features1], [features2])[0][0]

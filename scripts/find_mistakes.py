@@ -1,10 +1,12 @@
 import os
 from pprint import pprint
 
+from cmp_imgs import find_similar_images
+
 
 def find_useless_console_logs(root_dir, level=1):
-
     if level == 1:
+        print('Finding Useless Console Logs:')
         print(f'{root_dir}/')
 
     indent = " "
@@ -82,12 +84,17 @@ def check_timeline_incorrect():
         print(f"{key:<40} on lines -> {vals:<30}")
 
     if not has_repeated:
-        print('No repeated images! ✅')
+        print('No repeated images! ✅\n')
 
 
 def main() -> None:
     find_useless_console_logs("../src/components")
+
     check_timeline_incorrect()
+
+    image_dir = "../public/images/more_images"
+    db_file = './image_similarity.json'
+    find_similar_images(image_dir, db_file)
 
 
 def set_this_dir() -> None:
