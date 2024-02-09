@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import Typography from "@mui/material/Typography";
 import Image from "next/image";
 import { isMobile } from "react-device-detect";
-import { aboutSectionData } from "../../assets/data/AboutSectionData";
+import { aboutSectionData } from "@/assets/data/AboutSectionData";
 import { FadeInUpAnimation } from "../utils/Animations";
 
 const mobileDevice = isMobile || false;

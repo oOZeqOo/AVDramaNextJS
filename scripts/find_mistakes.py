@@ -41,7 +41,7 @@ def find_useless_console_logs(root_dir, level=1):
             print(f"{indent * (level - 1)}{start}  {symbol} line: {ln:^4} - {s}")
 
 def check_timeline_incorrect():
-    location = "../src/assets/data/TimelineData.js"
+    location = "../assets/data/TimelineData.js"
     missing = []
     missing_values = ['description: ""', 'month: ""', 'title: ""', 'imgPath: ""']
     img_paths = {}
@@ -88,11 +88,11 @@ def check_timeline_incorrect():
 
 
 def main() -> None:
-    find_useless_console_logs("../src/components")
+    find_useless_console_logs("../components")
 
     check_timeline_incorrect()
 
-    image_dir = "../public/images/more_images"
+    image_dir = "public/images/more_images"
     db_file = './image_similarity.json'
     find_similar_images(image_dir, db_file)
 

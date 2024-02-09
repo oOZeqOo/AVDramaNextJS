@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "/styles/HomePage.module.css";
+import styles from "@/styles/HomePage.module.css";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -63,7 +63,7 @@ const PageHeader = ({ viewWidth, height, isMobile }) => {
       <div style={myStyles.headerWrapper}>
         <div style={myStyles.imageWrapper} className="fixed">
           <Image
-            className="fixed"
+            className="static"
             style={myStyles.image}
             src={"/images/sunflower-6.jpg"}
             alt={"Sunflowers"}

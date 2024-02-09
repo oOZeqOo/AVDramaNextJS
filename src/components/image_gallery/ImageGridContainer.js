@@ -1,11 +1,13 @@
 import React, { useEffect, useMemo, useState } from "react";
-import { imageGalleryData } from "../../assets/data/ImageGalleryData";
+import { imageGalleryData } from "@/assets/data/ImageGalleryData";
 import { FixedSizeGrid as Grid } from "react-window";
 import useDeviceSize from "../hooks/useDeviceSize";
 import IconButton from "../common/IconButton";
 import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
 import Link from "next/link";
 import Tooltip from "../common/Tooltip";
+import Image from "next/image";
+import LoadingImage from "../common/LoadingImage";
 
 const ImageGridContainer = () => {
   const [width, height] = useDeviceSize();
@@ -130,10 +132,13 @@ const ImageGridContainer = () => {
       >
         {value && (
           <Tooltip text={`${split}`}>
-            <img
+            <LoadingImage
               src={value}
               alt={`Missing Image: ${value}`}
               style={styles.image}
+              width={imgWidth}
+              height={imgHeight}
+              onLoad={() => setImgLoaded(true)}
             />
           </Tooltip>
         )}

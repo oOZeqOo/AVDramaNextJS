@@ -287,5 +287,5 @@ export const imageGalleryData = {
     "0485.jpg",
     "0486.jpg",
     "0487.jpg",
-   ],
+  ],
 };

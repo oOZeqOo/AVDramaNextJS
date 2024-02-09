@@ -1,10 +1,10 @@
 import React, { useMemo, useState } from "react";
-import { timelineData } from "../assets/data/TimelineData";
-import cssStyles from "../../styles/Timeline.module.css";
+import { timelineData } from "@/assets/data/TimelineData";
+import cssStyles from "@/styles/Timeline.module.css";
 import Link from "next/link";
 import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
 import IconButton from "./common/IconButton";
-import "../../styles/js/all";
+import "@/styles/js/all";
 import Timeline from "@mui/lab/Timeline";
 import TimelineItem, { timelineItemClasses } from "@mui/lab/TimelineItem";
 import TimelineSeparator from "@mui/lab/TimelineSeparator";
@@ -20,6 +20,7 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
 import { useRouter } from "next/router";
+import LoadingImage from "./common/LoadingImage";
 
 const TimelinePage = () => {
   return createTimeline(timelineData);
@@ -279,6 +280,12 @@ const createTimeLineItem = (
   link = null,
   index
 ) => {
+  const imgStyle =
+    imgClass == "img-small"
+      ? styles.smallerImage
+      : imgClass == "img-big"
+      ? styles.biggerImage
+      : styles.image;
   return (
     <>
       <TimelineSeparator>
@@ -329,16 +336,12 @@ const createTimeLineItem = (
             </>
           ) : (
             // eslint-disable-next-line @next/next/no-img-element
-            <img
+            <LoadingImage
               src={imgPath}
               alt={title || "Missing"}
-              style={
-                imgClass == "img-small"
-                  ? styles.smallerImage
-                  : imgClass == "img-big"
-                  ? styles.biggerImage
-                  : styles.image
-              }
+              width={imgStyle?.width}
+              height={imgStyle?.width}
+              style={imgStyle}
             />
           )}
         </div>

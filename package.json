@@ -1,15 +1,17 @@
 {
-  "name": "av-drama",
-  "version": "1.0.0",
+  "name": "avdramanextjs_1.14",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "check": "python scripts/cmp_imgs.py"
+    "lint": "next lint"
   },
   "dependencies": {
+    "react": "^18",
+    "react-dom": "^18",
+    "next": "14.1.0",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@mui/icons-material": "^5.10.16",
@@ -20,18 +22,17 @@
     "eslint": "8.28.0",
     "eslint-config-next": "13.0.5",
     "framer-motion": "^7.6.19",
-    "next": "13.0.5",
-    "react": "18.2.0",
     "react-device-detect": "^2.2.2",
-    "react-dom": "18.2.0",
     "react-three-fiber": "^6.0.13",
     "react-window": "^1.8.8",
     "screen-size-detector": "^1.0.4",
     "three": "^0.154.0"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.16",
-    "postcss": "^8.4.31",
-    "tailwindcss": "^3.3.3"
+    "autoprefixer": "^10.0.1",
+    "postcss": "^8",
+    "tailwindcss": "^3.3.0",
+    "eslint": "^8",
+    "eslint-config-next": "14.1.0"
   }
 }

@@ -15,7 +15,6 @@ export const FadeInAnimation = ({ children, transition = 1 }) => {
       transition={{
         delay: 0,
         x: { duration: transition },
-        type: "linear",
         duration: transition,
       }}
     >
@@ -39,7 +38,6 @@ export const FadeInUpAnimation = ({
         transition={{
           delay: transition,
           x: { duration: transition },
-          type: "linear",
         }}
       >
         {children}

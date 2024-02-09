@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { homePageNotes } from "../../assets/data/HomePageNotes";
+import { homePageNotes } from "@/assets/data/HomePageNotes";
 
 const NoteSection = ({ viewWidth = 200 }) => {
   return buildNoteSection(viewWidth);
