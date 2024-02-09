@@ -4,6 +4,7 @@ import Image from "next/image";
 import { isMobile } from "react-device-detect";
 import { aboutSectionData } from "@/assets/data/AboutSectionData";
 import { FadeInUpAnimation } from "../utils/Animations";
+import LoadingImage from "../common/LoadingImage";
 
 const mobileDevice = isMobile || false;
 
@@ -108,7 +109,7 @@ const getSection = ({
             <>
               {getWordSection(title, description)}
               <div style={styles.centerItems}>
-                <Image
+                <LoadingImage
                   alt={"Image"}
                   width={width}
                   height={width}
@@ -123,7 +124,7 @@ const getSection = ({
           ) : (
             <>
               <div style={styles.centerItems}>
-                <Image
+                <LoadingImage
                   alt={"Image"}
                   width={width}
                   height={width}
@@ -140,7 +141,7 @@ const getSection = ({
         ) : (
           <>
             <div style={styles.centerItems}>
-              <Image
+              <LoadingImage
                 alt={"Image"}
                 width={width}
                 height={width}

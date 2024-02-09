@@ -152,7 +152,7 @@ const createTimeline = (data) => {
             value={value}
             onChange={handleChange}
             aria-label="basic tabs example"
-            fullWidth="true"
+            // fullWidth="true"
           >
             {Object.keys(data)?.map((item, index) => (
               <Tab

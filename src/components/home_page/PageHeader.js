@@ -2,6 +2,7 @@ import React from "react";
 import styles from "@/styles/HomePage.module.css";
 import Image from "next/image";
 import Link from "next/link";
+import LoadingImage from "../common/LoadingImage";
 
 const PageHeader = ({ viewWidth, height, isMobile }) => {
   const myStyles = {
@@ -62,7 +63,7 @@ const PageHeader = ({ viewWidth, height, isMobile }) => {
     <>
       <div style={myStyles.headerWrapper}>
         <div style={myStyles.imageWrapper} className="fixed">
-          <Image
+          <LoadingImage
             className="static"
             style={myStyles.image}
             src={"/images/sunflower-6.jpg"}

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { homePageNotes } from "@/assets/data/HomePageNotes";
+import LoadingImage from "../common/LoadingImage";
 
 const NoteSection = ({ viewWidth = 200 }) => {
   return buildNoteSection(viewWidth);
@@ -27,7 +28,7 @@ const buildNoteSection = (viewWidth) => {
             else if (mode === "portrait") imgHeight = Math.min(viewWidth, 400);
 
             return (
-              <Image
+              <LoadingImage
                 key={index}
                 src={url.src}
                 width={imgWidth}

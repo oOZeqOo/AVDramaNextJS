@@ -7,6 +7,7 @@ import Image from "next/image";
 import MUICard from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Link from "next/link";
+import LoadingImage from "@/components/common/LoadingImage";
 
 const Card = ({
   icon,
@@ -27,7 +28,7 @@ const Card = ({
             alignItems: "middle",
           }}
         >
-          <Image
+          <LoadingImage
             alt={"Image"}
             width={250}
             height={200}
@@ -126,7 +127,7 @@ const VacationName = () => {
             {vacation?.title}
           </Typography>
           <div style={{ display: "flex", justifyContent: "center" }}>
-            <Image
+            <LoadingImage
               alt={"Image"}
               width={250}
               height={200}
@@ -175,7 +176,7 @@ const VacationName = () => {
         >
           {vacation?.otherImages?.map((imgPath) =>
             imgPath ? (
-              <Image
+              <LoadingImage
                 alt={"Image"}
                 width={250}
                 height={250}

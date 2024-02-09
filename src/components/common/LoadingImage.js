@@ -28,11 +28,13 @@ const LoadingImage = ({ width, height, loading = "lazy", ...rest }) => {
   };
 
   return (
-    <div className="flex">
-      {!isImageReady ? (
+    <div className="flex justify-center items-center">
+      {!isImageReady && (
         <div
           style={{ ...rest?.style, width, height }}
-          className="flex justify-center items-center"
+          width={width}
+          height={height}
+          className="flex justify-center items-center absolute"
         >
           <div
             style={{ width: "fit-content", height: "fit-content" }}
@@ -41,15 +43,15 @@ const LoadingImage = ({ width, height, loading = "lazy", ...rest }) => {
             <Spinner />
           </div>
         </div>
-      ) : (
-        <Image
-          {...rest}
-          width={width}
-          height={height}
-          loading={loading}
-          onLoad={onLoadCallBack}
-        />
       )}
+      <Image
+        {...rest}
+        style={{ ...rest?.style, zIndex: !isImageReady ? -1 : undefined }}
+        width={width}
+        height={height}
+        loading={loading}
+        onLoad={onLoadCallBack}
+      />
     </div>
   );
 };
