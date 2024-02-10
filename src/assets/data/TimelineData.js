@@ -894,6 +894,16 @@ export const timelineData = {
       title: "Interview Day 😎🤓",
       link: "",
     },
+
+    {
+      description: "I love you so much babyyyyy 💖💖💝💝🥰🥰🥰",
+      imgClass: "img-big",
+      imgPath: "/images/timeline/sunflower-6.jpg",
+      month: "More to come!",
+      title: "I Can't Wait",
+    },
+  ],
+  2024: [
     // TODO: VALENTINES DAY START UPDATE
     {
       description: "",
@@ -917,12 +927,5 @@ export const timelineData = {
     //      title: "",
     //      link: "",
     //   },
-    {
-      description: "I love you so much babyyyyy 💖💖💝💝🥰🥰🥰",
-      imgClass: "img-big",
-      imgPath: "/images/timeline/sunflower-6.jpg",
-      month: "More to come!",
-      title: "I Can't Wait",
-    },
   ],
 };
