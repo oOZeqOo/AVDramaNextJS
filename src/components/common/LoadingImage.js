@@ -22,6 +22,7 @@ const Spinner = () => (
 
 const LoadingImage = ({ width, height, loading = "lazy", ...rest }) => {
   const [isImageReady, setIsImageReady] = useState(false);
+  const [isImageMissing, setIsImageMissing] = useState(false);
 
   const onLoadCallBack = (e) => {
     setIsImageReady(true);
@@ -29,7 +30,7 @@ const LoadingImage = ({ width, height, loading = "lazy", ...rest }) => {
 
   return (
     <div className="flex justify-center items-center">
-      {!isImageReady && (
+      {!isImageReady && !isImageMissing && (
         <div
           style={{ ...rest?.style, width, height }}
           width={width}
@@ -44,13 +45,32 @@ const LoadingImage = ({ width, height, loading = "lazy", ...rest }) => {
           </div>
         </div>
       )}
+      {isImageMissing && (
+        <div
+          style={{ ...rest?.style, width, height }}
+          width={width}
+          height={height}
+          className="flex justify-center items-center absolute"
+        >
+          <div
+            style={{ width: "fit-content", height: "fit-content" }}
+            className="flex flex-row justify-center items-center absolute self-center justify-self-center bg-black"
+          >
+            <h4>Missing Image</h4>
+          </div>
+        </div>
+      )}
       <Image
         {...rest}
         style={{ ...rest?.style, zIndex: !isImageReady ? -1 : undefined }}
         width={width}
         height={height}
         loading={loading}
+        alt={"Missing Image"}
         onLoad={onLoadCallBack}
+        onError={() => {
+          setIsImageMissing(true);
+        }}
       />
     </div>
   );

@@ -32,7 +32,11 @@ const VacationPage = () => {
           borderBottom: "1px solid black",
         }}
       >
-        <Button variant="contained" onClick={() => router.back()}>
+        <Button
+          variant="contained"
+          onClick={() => router.back()}
+          className="bg-blue-500"
+        >
           Back
         </Button>
       </div>
@@ -100,7 +104,11 @@ const VacationPage = () => {
             margin: 5,
           }}
         >
-          <Button variant="contained" onClick={goToVacation}>
+          <Button
+            variant="contained"
+            onClick={goToVacation}
+            className="bg-blue-500"
+          >
             View Details
           </Button>
         </div>

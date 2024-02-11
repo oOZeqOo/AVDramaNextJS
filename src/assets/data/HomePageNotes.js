@@ -3,7 +3,7 @@ export const homePageNotes = {
     element: "h1",
     content: [
       "💖💖💖💖💖🌸🌸🌸🌸🌸🌸🌸🌸💘💘💘💘💘",
-      "🦋🦋🦋🦋🦋🦋 Chúc mừng năm mới 🦋🦋🦋🦋🦋🦋",
+      "🍀🍀🍀🎆🎆🎆 Chúc mừng năm mới 🎆🎆🎆🍀🍀🍀",
       "💖💖💖💖💖🌸🌸🌸🌸🌸🌸🌸🌸💘💘💘💘💘",
     ],
   },
@@ -23,8 +23,8 @@ export const homePageNotes = {
   },
   pics: [
     // styles = [null, "landscape", "portrait"]
-    { src: "/images/front_page/bubu_dudu_1.gif", style: "landscape" },
-    { src: "/images/front_page/bubu_dudu_2.gif", style: null },
+    { src: "/gifs/happy_new_year_2024.webp", style: null },
+    { src: "/gifs/dragon.webp", style: null },
   ],
 };
 

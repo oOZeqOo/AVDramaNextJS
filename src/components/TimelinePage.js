@@ -140,6 +140,7 @@ const CreateTimeline = ({ data }) => {
             variant="contained"
             onClick={() => router.push("/")}
             style={{ margin: "5px 10px" }}
+            className="bg-blue-500"
           >
             Back
           </Button>
