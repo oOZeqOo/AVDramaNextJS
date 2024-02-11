@@ -14,13 +14,19 @@ const PageHeader = ({ viewWidth, height, isMobile }) => {
     },
     header: {
       display: "flex",
+      minHeight: "100vh",
       flexDirection: "column",
       justifyContent: "center",
       maxWidth: 800,
       marginLeft: isMobile ? "5%" : "25%",
       marginRight: isMobile ? "5%" : "25%",
     },
-    imageWrapper: { position: "absolute", zIndex: -1, overflowX: "hidden" },
+    imageWrapper: {
+      position: "absolute",
+      zIndex: -1,
+      overflow: "hidden",
+      height: "100vh",
+    },
     image: {
       objectFit: "cover",
       alignItems: "center",
@@ -62,7 +68,7 @@ const PageHeader = ({ viewWidth, height, isMobile }) => {
   return (
     <>
       <div style={myStyles.headerWrapper}>
-        <div style={myStyles.imageWrapper} className="fixed">
+        <div style={myStyles.imageWrapper} className="absolute">
           <LoadingImage
             className="static"
             style={myStyles.image}
@@ -73,7 +79,7 @@ const PageHeader = ({ viewWidth, height, isMobile }) => {
           />
         </div>
         <div style={myStyles.header}>
-          <div>
+          <div className="flex flex-col justify-center items-center">
             <h2 className={styles.title_outline}>A-V-Drama</h2>
 
             <h3 style={myStyles.subText} className="">

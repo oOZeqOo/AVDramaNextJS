@@ -894,13 +894,75 @@ export const timelineData = {
       title: "Interview Day 😎🤓",
       link: "",
     },
-
     {
-      description: "I love you so much babyyyyy 💖💖💝💝🥰🥰🥰",
+      description:
+        "Zac and Anna celebrated their 4 year anniversary together! Wow Such a great achievement for the couple! 🤟🤟🤟🤘🤘🤘",
+      isVideo: false,
       imgClass: "img-big",
-      imgPath: "/images/timeline/sunflower-6.jpg",
-      month: "More to come!",
-      title: "I Can't Wait",
+      imgPath: "/images/timeline/2023/dec_16_anniversary.jpg",
+      month: "December 2023",
+      title: "4 Year Anniversary! 💖💖💝💝🥰🥰🥰",
+      link: "",
+    },
+    {
+      description:
+        "Zac celebrated for Anna's achievements of getting through the tough semester and her accomplishments during the semester!",
+      isVideo: false,
+      imgClass: "img-big",
+      imgPath: "/images/timeline/2023/dec_18_celebrate.jpg",
+      month: "December 2023",
+      title: "Celebrate Anna's achievements 🥳🎊🥳🎊",
+      link: "",
+    },
+    {
+      description:
+        "Zac and Anna went to Houston for Zac's birthday! It didn't go as planned but they still had am amazing time!",
+      isVideo: false,
+      imgClass: "img",
+      imgPath: "/images/timeline/2023/dec_20_houston.jpg",
+      month: "December 2023",
+      title: "Zac's Birthday 🎂🎂",
+      link: "",
+    },
+    {
+      description:
+        "Zac and Anna went to Natural Bridge Caverns to see the lights!",
+      isVideo: false,
+      imgClass: "img",
+      imgPath: "/images/timeline/2023/dec_24_christmas_eve.jpg",
+      month: "December 2023",
+      title: "Natural Bridge Caverns 🎄",
+      link: "",
+    },
+    {
+      description:
+        "Zac and Anna got to see each other and celebrate Christmas Day together! They opened presents together 🎁🎁🎁",
+      isVideo: false,
+      imgClass: "img",
+      imgPath: "/images/timeline/2023/dec_25_christmas.jpg",
+      month: "December 2023",
+      title: "Christmas Time 🎄🎄",
+      link: "",
+    },
+    {
+      description:
+        "Zac and Anna went to Austin to go mini golfing at the Dirdie Birdie, get some bread from 85 Degrees Bakery, get Milk Tea and go to Otopia Rooftop to have a private Igloo reservation to celebrate for Anna getting an internship offer",
+      isVideo: false,
+      imgClass: "img-big",
+      imgPath: "/images/timeline/2023/dec_28_celebrate_job_offer.jpg",
+      month: "December 2023",
+      title: "Job Offer Celebration 🎉🎉🥳🥳🎊🎊",
+      link: "",
+    },
+    {
+      description:
+        "Zac and Anna went to see the new Aquaman movie, get coffee, bowl with Zac's family, have a nice dinner at BJ's and do some sparklers!",
+      isVideo: true,
+      imgClass: "img-small",
+      imgPath: "/images/timeline/2023/dec_31_new_year.mp4",
+      month: "December 2023",
+      title: "New Year's Eve celebration! 🎆🎆🎆🎇🎇",
+      link: "",
     },
   ],
   2024: [
@@ -927,5 +989,12 @@ export const timelineData = {
     //      title: "",
     //      link: "",
     //   },
+    {
+      description: "I love you so much babyyyyy 💖💖💝💝🥰🥰🥰",
+      imgClass: "img-big",
+      imgPath: "/images/timeline/sunflower-6.jpg",
+      month: "More to come!",
+      title: "I Can't Wait",
+    },
   ],
 };

@@ -23,7 +23,7 @@ import { useRouter } from "next/router";
 import LoadingImage from "./common/LoadingImage";
 
 const TimelinePage = () => {
-  return createTimeline(timelineData);
+  return <CreateTimeline data={timelineData} />;
 };
 
 export default TimelinePage;
@@ -56,7 +56,7 @@ function a11yProps(index) {
   };
 }
 
-const createTimeline = (data) => {
+const CreateTimeline = ({ data }) => {
   const [loadingSection, setLoadingSection] = useState(false);
   const [links, setLinks] = useState([]);
   const [width, height] = useDeviceSize();
@@ -302,7 +302,7 @@ const createTimeLineItem = (
           <h3 style={styles.title}>{title}</h3>
           <p
             className={cssStyles.description}
-            style={{ fontSize: "large", fontWeight: "bold" }}
+            style={{ fontSize: "large", fontWeight: "bold", marginBottom: 20 }}
           >
             {description}
           </p>
@@ -366,10 +366,12 @@ const styles = {
   year: {
     fontSize: 30,
     fontWeight: "bold",
+    margin: "10px 0px",
   },
   title: {
     fontSize: 25,
     fontWeight: "bold",
+    margin: "10px 0px",
   },
   biggerImage: {
     width: 300,

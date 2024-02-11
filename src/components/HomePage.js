@@ -22,7 +22,7 @@ const HomePage = () => {
       textAlign: "center",
     },
     divider: {
-      margin: "40px 5%",
+      margin: "40px 10%",
       fontWeight: "bold",
       fontSize: 100,
       borderBottomWidth: 3,
