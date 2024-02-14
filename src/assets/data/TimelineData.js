@@ -856,17 +856,8 @@ export const timelineData = {
       link: "",
     },
     {
-      description: "Zac went with Anna so she could get a suit to use",
-      isVideo: false,
-      imgClass: "img",
-      imgPath: "/images/timeline/2023/nov_18_baby_in_a_suit.jpg",
-      month: "November 2023",
-      title: "Suit Time 🤵",
-      link: "",
-    },
-    {
       description:
-        "Zac and Anna went to try Black Rifle Coffee, Thai Buri and saw a Christmas tree, and some home stores to look for things for Zac's new Apartment!",
+        "Zac and Anna went to try Black Rifle Coffee, go to Rooms To Go, at home look for things for Zac's new apartment, then to Thai Buri and saw a Christmas tree, and then went to Gong Cha!",
       isVideo: false,
       imgClass: "img",
       imgPath: "/images/timeline/2023/nov_19_thai_buri.jpg",
@@ -896,7 +887,7 @@ export const timelineData = {
     },
     {
       description:
-        "Zac and Anna celebrated their 4 year anniversary together! Wow Such a great achievement for the couple! 🤟🤟🤟🤘🤘🤘",
+        "Zac and Anna celebrated their 4 year anniversary together! Wow such a great achievement for the couple! 🤟🤟🤟🤘🤘🤘",
       isVideo: false,
       imgClass: "img-big",
       imgPath: "/images/timeline/2023/dec_16_anniversary.jpg",
@@ -916,7 +907,7 @@ export const timelineData = {
     },
     {
       description:
-        "Zac and Anna went to Houston for Zac's birthday! It didn't go as planned but they still had am amazing time!",
+        "Zac and Anna went to Houston for Zac's birthday! It didn't go as planned but they still had an amazing time!",
       isVideo: false,
       imgClass: "img",
       imgPath: "/images/timeline/2023/dec_20_houston.jpg",
@@ -959,7 +950,7 @@ export const timelineData = {
         "Zac and Anna went to see the new Aquaman movie, get coffee, bowl with Zac's family, have a nice dinner at BJ's and do some sparklers!",
       isVideo: true,
       imgClass: "img-small",
-      imgPath: "/images/timeline/2023/dec_31_new_year.mp4",
+      imgPath: "/images/timeline/2023/507.mp4",
       month: "December 2023",
       title: "New Year's Eve celebration! 🎆🎆🎆🎇🎇",
       link: "",
@@ -968,12 +959,33 @@ export const timelineData = {
   2024: [
     // TODO: VALENTINES DAY START UPDATE
     {
-      description: "",
+      description:
+        "Zac and Anna went to Pho place for lunch and then went to Barnes & Noble to paint a snowman and create a MASTERPIECE!!! They also celebrated the new year",
       isVideo: false,
       imgClass: "img",
-      imgPath: "/images/timeline/2024/",
+      imgPath: "/images/timeline/2024/jan_1_snowman.jpg",
       month: "January 2024",
-      title: "",
+      title: "ANOTHER MASTERPIECE ⛄💖💖",
+      link: "",
+    },
+    {
+      description:
+        "Zac and Anna went to the dealership to ask questions for Anna's car, get drinks and lunch and go to Monza Chocolate to create some chocolate together!",
+      isVideo: false,
+      imgClass: "img",
+      imgPath: "/images/timeline/2024/jan_11_monzo.jpg",
+      month: "January 2024",
+      title: "Chocolate Time 🍫",
+      link: "",
+    },
+    {
+      description:
+        "Zac, Anna and her dad all went to Austin for a trip to get bread, milk tea, visit a Pagoda to celebrate for Lunar New Year and get dinner on the way home!",
+      isVideo: false,
+      imgClass: "img",
+      imgPath: "/images/timeline/2024/feb_11_lunar_new_year.jpg",
+      month: "February 2024",
+      title: "LUNAR NEW YEAR 2024 🧧🧧🎉🎉🥳🥳",
       link: "",
     },
     // TODO : End here for updating

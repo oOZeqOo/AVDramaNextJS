@@ -85,7 +85,8 @@ def find_similar_images(folder_path, db_file):
     print(f'Finished checking {len(image_files)} in {round(perf_counter() - start, 3)} s')
     # Save the updated image similarity database to file
     with open(db_file, 'w') as f:
-        json.dump(image_db.sort(), f, indent=2)
+        image_db.sort()
+        json.dump(image_db, f, indent=2)
 
 
 def main() -> None:

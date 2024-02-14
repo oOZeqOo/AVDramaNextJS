@@ -28,7 +28,7 @@ def set_up_more_images_data(files: list[str]) -> None:
                 f'{data} ' \
                 '  ],\n' \
                 '};'
-
+    print(template)
     with open(MORE_IMAGES_DATA_FILE, 'w+') as file:
         file.write(template)
 
