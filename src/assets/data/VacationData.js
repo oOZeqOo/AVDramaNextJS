@@ -5,13 +5,13 @@ export const vacationData = {
     description: (
       <div style={{ display: "flex", justifyContent: "center" }}>
         <h5>
-          Zac and Anna went to Anna\'s home country: Vietnam. They had a lot
+          Zac and Anna went to Anna&apos;s home country: Vietnam. They had a lot
           of fun and created a lot of memories they will cherish forever. Zac
-          got to meet Anna\'s dad\'s side of the family. They were all
+          got to meet Anna&apos;s dad&apos;s side of the family. They were all
           really nice and very welcoming to Zac. Zac is extremely happy to have
           been able to go on vacation with Anna to meet such wonderful people
           and experience her home country! Zac is very thankful for all Anna and
-          her family did for him! He can\'t wait for many more vacations in
+          her family did for him! He can&apos;t wait for many more vacations in
           the future 😁😁😀😀😇😇
         </h5>
       </div>
@@ -23,7 +23,7 @@ export const vacationData = {
         imgPath: "/images/vacations/vietnam_1/flight_leave_san_antonio.jpg",
       },
       {
-        title: "Anna\'s favorite milk tea 🥛🍵",
+        title: "Anna's favorite milk tea 🥛🍵",
         imgPath: "/images/vacations/vietnam_1/koi.jpg",
       },
 
@@ -97,12 +97,12 @@ export const vacationData = {
         imgPath: "/images/vacations/vietnam_1/motorbike.jpg",
       },
       {
-        title: "Anna and Zac celebrated her and her grandma\'s birthday",
+        title: "Anna and Zac celebrated her and her grandma's birthday",
         description: " ",
         imgPath: "/images/vacations/vietnam_1/ana_bday.jpg",
       },
       {
-        title: "Anna\'s favorite: Phuc Long 💖💖💖",
+        title: "Anna's favorite: Phuc Long 💖💖💖",
         imgPath: "/images/vacations/vietnam_1/phuc_long.jpg",
       },
       {
@@ -142,7 +142,7 @@ export const vacationData = {
         imgPath: "/images/vacations/vietnam_1/zac_go_back_flight.jpg",
       },
       {
-        title: "Anna\'s family picture with Zac",
+        title: "Anna's family picture with Zac",
         imgPath: "/images/vacations/vietnam_1/anna_family.JPG",
       },
       {
