@@ -41,8 +41,8 @@ export const homePageNotes = {
 //   message: {
 //     element: "h3",
 //     content: [
-//       "I can't believe we have been dating for 3 years already!",
-//       "I can't wait for many more years to come!",
+//       "I can&apos;t believe we have been dating for 3 years already!",
+//       "I can&apos;t wait for many more years to come!",
 //     ],
 //   },
 //   extraNote: {

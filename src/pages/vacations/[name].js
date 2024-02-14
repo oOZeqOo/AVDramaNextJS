@@ -174,9 +174,10 @@ const VacationName = () => {
             justifyContent: "center",
           }}
         >
-          {vacation?.otherImages?.map((imgPath) =>
+          {vacation?.otherImages?.map((imgPath, index) =>
             imgPath ? (
               <LoadingImage
+                key={index}
                 alt={"Image"}
                 width={250}
                 height={250}
