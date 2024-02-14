@@ -48,8 +48,8 @@ const LoadingImage = ({ width, height, loading = "lazy", ...rest }) => {
       {isImageMissing && (
         <div
           style={{ ...rest?.style, width, height }}
-          width={width}
-          height={height}
+          //   width={width}
+          //   height={height}
           className="flex justify-center items-center absolute"
         >
           <div className="flex flex-row w-fit h-fit justify-center items-center absolute self-center justify-self-center bg-black">
