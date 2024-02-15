@@ -129,7 +129,7 @@ const VacationName = () => {
             {vacation?.title}
           </Typography>
           <div style={{ display: "flex", justifyContent: "center" }}>
-            <LoadingImage
+            <Image
               alt={"Image"}
               width={250}
               height={200}
