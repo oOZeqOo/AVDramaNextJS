@@ -109,7 +109,11 @@ const VacationName = () => {
           borderBottom: "2px solid black",
         }}
       >
-        <Button variant="contained" onClick={() => router.back()}>
+        <Button
+          variant="contained"
+          className="bg-blue-500"
+          onClick={() => router.back()}
+        >
           Back
         </Button>
       </div>
