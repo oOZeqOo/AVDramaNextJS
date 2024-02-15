@@ -52,7 +52,7 @@ export const timelineData = {
     },
     {
       description:
-        ' Anna and Zac went to a park to hang out and there were a group of kids there. There was a memorable moment where the kids said "Ooh they"re kissing!!!',
+        'Anna and Zac went to a park to hang out and there were a group of kids there. There was a memorable moment where the kids said "Ooh they\'re kissing!!!"',
       imgClass: "img",
       imgPath: "/images/timeline/2020/ooh_theyre_kissing.jpg",
       month: "February 2020",

@@ -24,7 +24,7 @@ const Card = ({
         <div
           style={{
             display: "flex",
-            justifyContent: "center",
+            justifyContent: "start",
             alignItems: "middle",
           }}
         >
@@ -35,6 +35,8 @@ const Card = ({
             src={imgPath}
             style={{
               objectFit: "contain",
+              width: 250,
+              height: 200,
             }}
           />
         </div>
