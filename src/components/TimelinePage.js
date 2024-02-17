@@ -109,31 +109,21 @@ const CreateTimeline = ({ data }) => {
   };
 
   return (
-    <Box
-      sx={{
-        width: "100%",
+    <div
+      style={{
         transition: "all 0.5s ease",
         scrollbarGutter: "stable",
       }}
-      className={cssStyles.root}
+      className="w-full sm:pl-0 bg-[lightyellow] h-fit"
     >
-      <Box
-        sx={{
-          borderBottom: 1,
-          borderColor: "divider",
-          height: width < 900 ? 150 : 50,
-          overflowX: "auto",
-          flexWrap: "wrap",
+      <div
+        style={{
+          backgroundColor: "#FFC0CB",
         }}
-        className={cssStyles.timeline_nav}
+        className="flex flex-wrap items-center lg:justify-between border-b h-fit flex-col lg:flex-row w-full sticky"
       >
         <div
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "space-between",
-            width: "40%",
-          }}
+          className="flex flex-row justify-center lg:justify-between w-[40%] "
           id="first"
         >
           <Button
@@ -146,13 +136,15 @@ const CreateTimeline = ({ data }) => {
           </Button>
         </div>
         <div
-          className="flex-1 flex flex-col justify-start"
-          style={{ width: "max(fit-content, 60%)", marginLeft: 40, height: 50 }}
+          className="flex-1 flex flex-col justify-start  sm:ml-10 md:ml-2 overflow-x-scroll sm:overflow-x-hidden"
+          style={{ maxWidth: "100vw", height: 50 }}
         >
           <Tabs
             value={value}
             onChange={handleChange}
             aria-label="basic tabs example"
+            style={{ width: "fit-content" }}
+            // className="scrollbar-thumb-sky-700 overflow-x-scroll sm:overflow-x-hidden scrollbar-thin"
             // fullWidth="true"
           >
             {Object.keys(data)?.map((item, index) => (
@@ -181,7 +173,7 @@ const CreateTimeline = ({ data }) => {
             ))}
           </Tabs>
         </div>
-      </Box>
+      </div>
       <div
         style={{
           display: "flex",
@@ -208,7 +200,12 @@ const CreateTimeline = ({ data }) => {
         </Link>
       </div>
       {Object.entries(data)?.map(([key, v], index) => (
-        <CustomTabPanel value={value} index={index} key={index}>
+        <CustomTabPanel
+          value={value}
+          index={index}
+          key={index}
+          className="sm:!pl-0"
+        >
           <Timeline
             position={width < 1200 || isSmallScreen ? "right" : "alternate"}
             sx={timelineClass}
@@ -266,7 +263,7 @@ const CreateTimeline = ({ data }) => {
           Go back to the top
         </Link>
       </div>
-    </Box>
+    </div>
   );
 };
 

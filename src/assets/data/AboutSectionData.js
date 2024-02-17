@@ -28,7 +28,7 @@ export const aboutSectionData = [
       "He is reaaaaaally tall and handsome ",
       "He absolutely adores and is in love with Anna Dang",
       "He can not live without his true-love!",
-      "He is really smart and superficial at times",
+      "He is really smart and chill!",
       "He is inexperienced and is learning a lot to be a better man for Anna",
       "He enjoys spending time with Anna even if they do something Zac isn't good at",
       "Also known as 'Steam Bun' 😎",

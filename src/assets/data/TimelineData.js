@@ -857,7 +857,7 @@ export const timelineData = {
     },
     {
       description:
-        "Zac and Anna went to try Black Rifle Coffee, go to Rooms To Go, at home look for things for Zac's new apartment, then to Thai Buri and saw a Christmas tree, and then went to Gong Cha!",
+        "Zac and Anna went to try Black Rifle Coffee, go to Rooms To Go, At Home look for things for Zac's new apartment, then to Thai Buri and saw a Christmas tree, and then went to Gong Cha!",
       isVideo: false,
       imgClass: "img",
       imgPath: "/images/timeline/2023/nov_19_thai_buri.jpg",
@@ -887,7 +887,7 @@ export const timelineData = {
     },
     {
       description:
-        "Zac and Anna celebrated their 4 year anniversary together! Wow such a great achievement for the couple! 🤟🤟🤟🤘🤘🤘",
+        "Zac and Anna celebrated their 4 year anniversary together! Wow such a great achievement for the couple! 🤟🤟🤟🤘🤘🤘. The couple went to K-BOP for lunch, then went to Gen BobaBee & Coffee house in Austin, then went to see the Godzilla Movie and then had a 5 star meal at McDonald's on the way back home! 🥳🥳🥳🎊🎊🎊",
       isVideo: false,
       imgClass: "img-big",
       imgPath: "/images/timeline/2023/dec_16_anniversary.jpg",
@@ -937,7 +937,7 @@ export const timelineData = {
     },
     {
       description:
-        "Zac and Anna went to Austin to go mini golfing at the Dirdie Birdie, get some bread from 85 Degrees Bakery, get Milk Tea and go to Otopia Rooftop to have a private Igloo reservation to celebrate for Anna getting an internship offer",
+        "Zac and Anna went to K-BOP for lunch, then went to get some bread from 85 Degrees Bakery in Austin, then to Milk Tea, then they went mini golfing at the Dirdie Birdie, then went to Otopia Rooftop to have a private Igloo reservation to celebrate for Anna getting an internship offer. Then they went to Chick-fil-a",
       isVideo: false,
       imgClass: "img-big",
       imgPath: "/images/timeline/2023/dec_28_celebrate_job_offer.jpg",
@@ -950,7 +950,7 @@ export const timelineData = {
         "Zac and Anna went to see the new Aquaman movie, get coffee, bowl with Zac's family, have a nice dinner at BJ's and do some sparklers!",
       isVideo: true,
       imgClass: "img-small",
-      imgPath: "/images/timeline/2023/507.mp4",
+      imgPath: "/images/timeline/2023/0507.mp4",
       month: "December 2023",
       title: "New Year's Eve celebration! 🎆🎆🎆🎇🎇",
       link: "",
@@ -965,12 +965,12 @@ export const timelineData = {
       imgClass: "img",
       imgPath: "/images/timeline/2024/jan_1_snowman.jpg",
       month: "January 2024",
-      title: "ANOTHER MASTERPIECE ⛄💖💖",
+      title: "New Year's Day Celebration 🎇🎇🎆🎆⛄💖",
       link: "",
     },
     {
       description:
-        "Zac and Anna went to the dealership to ask questions for Anna's car, get drinks and lunch and go to Monza Chocolate to create some chocolate together!",
+        "Zac and Anna went to the dealership to ask questions for Anna's car, get drinks and lunch. Anna took Zac to go to Monza Chocolate and got him some chocolate and they had a memorable moment to create some lovely chocolate with each other!",
       isVideo: false,
       imgClass: "img",
       imgPath: "/images/timeline/2024/jan_11_monzo.jpg",
