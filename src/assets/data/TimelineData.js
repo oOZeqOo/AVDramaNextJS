@@ -937,7 +937,7 @@ export const timelineData = {
     },
     {
       description:
-        "Zac and Anna went to K-BOP for lunch, then went to get some bread from 85 Degrees Bakery in Austin, then to Milk Tea, then they went mini golfing at the Dirdie Birdie, then went to Otopia Rooftop to have a private Igloo reservation to celebrate for Anna getting an internship offer. Then they went to Chick-fil-a",
+        "Zac and Anna went to K-BOP for lunch, then went to get some bread from 85 Degrees Bakery in Austin, get Milk Tea, then they went mini golfing at the Dirdie Birdie, then went to Otopia Rooftop to have a private Igloo reservation to celebrate for Anna getting an internship offer. Then they went to Chick-fil-a",
       isVideo: false,
       imgClass: "img-big",
       imgPath: "/images/timeline/2023/dec_28_celebrate_job_offer.jpg",
