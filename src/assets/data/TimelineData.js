@@ -546,7 +546,7 @@ export const timelineData = {
         "Zac and Anna went to a new Gong Cha location and to a fancy restaurant! Then they celebrated New Years together",
       isVideo: false,
       imgClass: "img",
-      imgPath: "/images/timeline/2022/new_year.jpg",
+      imgPath: "/images/timeline/2023/new_year.jpg",
       month: "January 2023",
       title: "New Year 2023!!! 🎉🥳🥳🎊",
     },
@@ -887,7 +887,7 @@ export const timelineData = {
     },
     {
       description:
-        "Zac and Anna celebrated their 4 year anniversary together! Wow such a great achievement for the couple! 🤟🤟🤟🤘🤘🤘. The couple went to K-BOP for lunch, then went to Gen BobaBee & Coffee house in Austin, then went to see the Godzilla Movie and then had a 5 star meal at McDonald's on the way back home! 🥳🥳🥳🎊🎊🎊",
+        "Zac and Anna celebrated their 4 year anniversary together! Wow such a great achievement for the couple! 🤟🤟🤟🤘🤘🤘. The couple went to K-BOP for lunch, then went to Gen BobaBee & Coffee house in Austin, then went to see the Godzilla Movie and then had a 5 star meal to go from McDonald's on the way back home! 🥳🥳🥳🎊🎊🎊",
       isVideo: false,
       imgClass: "img-big",
       imgPath: "/images/timeline/2023/dec_16_anniversary.jpg",
