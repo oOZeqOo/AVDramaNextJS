@@ -3,12 +3,10 @@ export const homePageNotes = {
     element: "h1",
     content: [
       "💖💖💖💖💖💖💖💖💖💖",
-      "🤟🤟🤟💌💌💝💝😘😘💋🦋",
-      "💖💖💖💖💖💖💖💖💖💖",
-      "💖HAPPY VALENTINES DAY💖",
+      "🤟🤟🤟🍰🍰🍰🍰🍰🍰🎈🎈🎊🎊🎉🎉🥳🥳🦋",
+      "💖HAPPY BIRTHDAY💖",
       "💖😘😘 I LOVE YOU SO MUCH BABE 😘😘💖",
-      "💖💖💖💖💖💖💖💖💖💖",
-      "🤟🤟🤟💌💌💝💝😘😘💋🦋",
+      "🤟🤟🤟🍰🍰🍰🍰🍰🍰🎈🎈🎊🎊🎉🎉🥳🥳🦋",
       "💖💖💖💖💖💖💖💖💖💖",
     ],
   },
@@ -26,8 +24,8 @@ export const homePageNotes = {
   },
   pics: [
     // styles = [null, "landscape", "portrait"]
-    { src: "/gifs/valentines_1.jpg", style: null },
-    { src: "/gifs/valentines_2.jpg", style: null },
+    // { src: "/gifs/valentines_1.jpg", style: null },
+    // { src: "/gifs/valentines_2.jpg", style: null },
   ],
 };
 
