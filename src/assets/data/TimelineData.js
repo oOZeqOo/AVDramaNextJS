@@ -957,7 +957,6 @@ export const timelineData = {
     },
   ],
   2024: [
-    // TODO: VALENTINES DAY START UPDATE
     {
       description:
         "Zac and Anna went to Pho place for lunch and then went to Barnes & Noble to paint a snowman and create a MASTERPIECE!!! They also celebrated the new year",
@@ -996,6 +995,16 @@ export const timelineData = {
       imgPath: "/images/timeline/2024/feb_14_valentines_day.jpg",
       month: "February 2024",
       title: "Valentine's Day 💖💖💖💖",
+      link: "",
+    },
+    {
+      description:
+        "Zac got drinks from Feng Cha and met Anna at her starbucks and celebrated for her!",
+      isVideo: true,
+      imgClass: "img",
+      imgPath: "/images/timeline/2024/march_9_womens_day.mp4",
+      month: "March 2024",
+      title: "International Women's Day 🌷🌹🌺",
       link: "",
     },
     {
@@ -1049,97 +1058,106 @@ export const timelineData = {
       link: "",
     },
     {
-      description: "",
+      description:
+        "Zac got Chick-Fil-A for them and brought it to NLC. Zac and Anna tried to watch the solar eclipse together, they couldn't see it sadly. He then took her to work, then brought Artea later for them to eat",
       isVideo: false,
       imgClass: "img",
       imgPath: "/images/timeline/2024/april_08_2024.jpg",
       month: "April 2024",
-      title: "",
+      title: "Solar Eclipse 🌝🌞",
       link: "",
     },
     {
-      description: "",
+      description:
+        "Zac and Anna went to Matcha Maiko and then went to BJ's for dinner. Zac gave Anna a tour of what the Lyticsly website will look like!",
       isVideo: false,
       imgClass: "img",
       imgPath: "/images/timeline/2024/april_28_2024.jpg",
       month: "April 2024",
-      title: "",
+      title: "Zac's Project! 📂📂📂",
       link: "",
     },
     {
-      description: "",
+      description: "Zac went to visit Anna at UTSA",
       isVideo: false,
       imgClass: "img",
       imgPath: "/images/timeline/2024/april_30_2024.jpg",
       month: "April 2024",
-      title: "",
+      title: "UTSA Time! ⏲",
       link: "",
     },
     {
-      description: "",
+      description:
+        "Zac took Anna to Black Rock Coffee and then to UTSA. They wrote a greeting card for Anna's dad's birthday",
       isVideo: false,
       imgClass: "img",
       imgPath: "/images/timeline/2024/may_04_2024.jpg",
       month: "May 2024",
-      title: "",
+      title: "More UTSA Time! ⏲⏲⏲",
       link: "",
     },
     {
-      description: "",
+      description: "Zac and Anna went to Artea and had some fun!",
       isVideo: false,
       imgClass: "img",
       imgPath: "/images/timeline/2024/may_07_2024.jpg",
       month: "May 2024",
-      title: "",
+      title: "NEW Artea! 🥛☕",
       link: "",
     },
     {
-      description: "",
+      description:
+        "Zac took Anna and her dad to the hospital so Anna's dad can have his procedure done and Anna and her dad ended up staying overnight",
       isVideo: false,
       imgClass: "img",
       imgPath: "/images/timeline/2024/may_10_2024.jpg",
       month: "May 2024",
-      title: "",
+      title: "Hospital Time 🏥🩺",
       link: "",
     },
     {
-      description: "",
+      description:
+        "Zac took Anna to her starbucks so she can talk to Richie. They went to Famous Footwear to get shoes for Zac! They went to Gong Cha? They went to 375 Social Kitchen for dinner",
       isVideo: false,
       imgClass: "img",
       imgPath: "/images/timeline/2024/may_12_2024.jpg",
       month: "May 2024",
-      title: "",
+      title: "Productive Day 💪💪💪",
       link: "",
     },
     {
-      description: "",
+      description:
+        "Zac took Anna to IcyRolls in San Marcos and had some interesting Ice Cream rolls. Then they went to Kate Spade at the Premium Outlets to look for a purse for Anna. They went to K-BOP for dinner. They celebrated for Anna's achievements throughout the semester",
       isVideo: false,
       imgClass: "img",
       imgPath: "/images/timeline/2024/may_19_2024.jpg",
       month: "May 2024",
-      title: "",
+      title: "Semester Celebration 🎉🎉🎊🥳🥳🎈🎈",
       link: "",
     },
     {
-      description: "",
+      description:
+        "Zac and Anna discovered a great new Milk Tea place called Woo Ri Teahouse. Zac did a celebration for Anna",
       isVideo: false,
       imgClass: "img",
       imgPath: "/images/timeline/2024/may_23_2024.jpg",
       month: "May 2024",
-      title: "",
+      title: "A New Wonder 🌟✨",
       link: "",
     },
     {
-      description: "",
+      description:
+        "Zac and Anna went to North Star Mall and then to Woo Ri Teahouse to get some delicious Milk Tea. Then they went to the Botanical Garden to see Huntopia",
       isVideo: false,
       imgClass: "img",
       imgPath: "/images/timeline/2024/may_26_2024.jpg",
       month: "May 2024",
-      title: "",
+      title: "Huntopia 🐇🦋🐇🦋",
       link: "",
     },
     {
-      description: "",
+      description:
+        "Zac went with Anna to get a refund from Eyemart! Then they went to BC Bubble Tea and then to Lens Crafter's at Rolling Oaks Mall. They went to Moon's Daughter for a fancy dinner reservation!",
       isVideo: false,
       imgClass: "img",
       imgPath: "/images/timeline/2024/may_30_2024.jpg",
@@ -1147,7 +1165,46 @@ export const timelineData = {
       title: "",
       link: "",
     },
-
+    {
+      description:
+        "Zac and Anna took a trip to Houston. They stopped at Buc-ees on the way, then got lunch at a Sonic Themed fast food restaurant and Subway! Then they went to Kinokuniya and The Bếp Teahouse and got some delicious drinks. They ended up resting a little bit and went to The POST Market Food Hall!",
+      isVideo: false,
+      imgClass: "img",
+      imgPath: "/images/timeline/2024/june_2_houston_trip.jpg",
+      month: "June 2024",
+      title: "Houston Trip 🚗",
+      link: "",
+    },
+    {
+      description:
+        "Zac and Anna went to Feng Cha to get drinks and then went to UTSA to watch a movie together and do some art! They also ate food they both brought for each other!",
+      isVideo: false,
+      imgClass: "img",
+      imgPath: "/images/timeline/2024/june_9_movie_art_day.jpg",
+      month: "June 2024",
+      title: "Art Movie Day 🎨🍿🎥",
+      link: "",
+    },
+    {
+      description:
+        "Zac picked up Anna from work and they went to Woo Ri Teahouse to get drinks and then went to Sushishima for dinner with Anna's Dad",
+      isVideo: false,
+      imgClass: "img",
+      imgPath: "/images/timeline/2024/june_18_early_dinner.jpg",
+      month: "June 2024",
+      title: "Early Birthday Dinner 🍚🍜",
+      link: "",
+    },
+    {
+      description:
+        "Zac and Anna went to Best Buy and then went to Lustea and then to their Hip-Hop Dance class",
+      isVideo: false,
+      imgClass: "img",
+      imgPath: "/images/timeline/2024/june_19_best_buy.jpg",
+      month: "June 2024",
+      title: "Dance class 🕺💃",
+      link: "",
+    },
     // TODO : End here for updating
 
     // Template for new Events
