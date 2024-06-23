@@ -4,7 +4,7 @@ export const homePageNotes = {
     content: [
       "💖💖💖💖💖💖💖💖💖💖",
       "🤟🤟🤟🍰🍰🍰🍰🍰🍰🎈🎈🎊🎊🎉🎉🥳🥳🦋",
-      "💖HAPPY BIRTHDAY💖",
+      "💖HAPPY BIRTHDAY MY LOVE💖",
       "💖😘😘 I LOVE YOU SO MUCH BABE 😘😘💖",
       "🤟🤟🤟🍰🍰🍰🍰🍰🍰🎈🎈🎊🎊🎉🎉🥳🥳🦋",
       "💖💖💖💖💖💖💖💖💖💖",

@@ -420,5 +420,11 @@ export const imageGalleryData = {
     "0618.jpg",
     "0619.jpg",
     "0620.jpg",
+    "0621.jpg",
+    "0622.jpg",
+    "0623.jpg",
+    "0624.jpg",
+    "0625.jpg",
+    "0626.jpg",
    ],
 };
