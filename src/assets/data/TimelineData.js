@@ -1207,7 +1207,7 @@ export const timelineData = {
     },
     {
       description:
-        "Zac and Anna got Subway and Starbucks and wen to Austin! Zac dropped off some decorations at the restaurant. They went to TSAOCAA and then the couple went to the Domain to get Anna an Apple watch ⌚. Then they went and had a fancy dinner at Oseyo!",
+        "Zac and Anna got Subway and Starbucks and went to Austin! Zac dropped off some decorations at the restaurant. They went to TSAOCAA and then the couple went to the Domain to get Anna an Apple watch ⌚. Then they went and had a fancy dinner at Oseyo!",
       isVideo: false,
       imgClass: "img",
       imgPath: "/images/timeline/2024/june_20_bday.jpg",
