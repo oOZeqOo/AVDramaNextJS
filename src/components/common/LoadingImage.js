@@ -23,7 +23,7 @@ const Spinner = () => (
 const LoadingImage = ({ width, height, loading = "lazy", ...rest }) => {
   const [isImageReady, setIsImageReady] = useState(false);
   const [isImageMissing, setIsImageMissing] = useState(false);
-
+  const src = rest?.src?.includes(".mp4");
   const onLoadCallBack = (e) => {
     setIsImageReady(true);
   };
@@ -57,18 +57,36 @@ const LoadingImage = ({ width, height, loading = "lazy", ...rest }) => {
           </div>
         </div>
       )}
-      <Image
-        {...rest}
-        style={{ ...rest?.style, zIndex: !isImageReady ? -1 : undefined }}
-        width={width}
-        height={height}
-        loading={loading}
-        alt={"Missing Image"}
-        onLoad={onLoadCallBack}
-        onError={() => {
-          setIsImageMissing(true);
-        }}
-      />
+      {!!src ? (
+        <>
+          <video
+            {...rest}
+            controls={true}
+            loop={true}
+            style={{ ...rest?.style, zIndex: !isImageReady ? -1 : undefined }}
+            onLoadStart={onLoadCallBack}
+            playsInline={true}
+            alt={"Missing Video"}
+            onError={(e) => {
+              setIsImageMissing(true);
+            }}
+          />
+          <source type="video/mp4" />
+        </>
+      ) : (
+        <Image
+          {...rest}
+          style={{ ...rest?.style, zIndex: !isImageReady ? -1 : undefined }}
+          width={width}
+          height={height}
+          loading={loading}
+          alt={"Missing Image"}
+          onLoad={onLoadCallBack}
+          onError={() => {
+            setIsImageMissing(true);
+          }}
+        />
+      )}
     </div>
   );
 };
