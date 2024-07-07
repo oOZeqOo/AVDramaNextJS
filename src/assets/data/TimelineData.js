@@ -1029,7 +1029,7 @@ export const timelineData = {
     },
     {
       description:
-        "Zac and Anna went to Austin again to go to the Tea Cup Boba House and then go see the part of the Mai Movie they missed on the last trip to Austin! Then they get K-BOP to go for dinner",
+        "Zac and Anna went to Austin again to go to the Tea Cup Boba House and then go see the part of the Mai Movie they missed on the last trip to Austin! Then they got K-BOP to go for dinner",
       isVideo: false,
       imgClass: "img",
       imgPath: "/images/timeline/2024/march_27_mai_movie_2.jpg",
@@ -1039,7 +1039,7 @@ export const timelineData = {
     },
     {
       description:
-        "Zac and Anna went to the Cheesecake Factory to have Lunch with Anna's dad. Then they went to Fruitilicous Bubble Tea & Smoothie to get drinks to go. Then they went to the Denman Estate Park to chill there and have some fun! They celebrated for Easter",
+        "Zac and Anna went to the Cheesecake Factory to have Lunch with Anna's dad. Then they went to the Denman Estate Park to chill there and have some fun! Then they went to Fruitilicous Bubble Tea & Smoothie to get drinks to go. They celebrated for Easter",
       isVideo: false,
       imgClass: "img",
       imgPath: "/images/timeline/2024/march_31_see.jpg",
@@ -1049,7 +1049,7 @@ export const timelineData = {
     },
     {
       description:
-        "Zac took Anna to her ceremony of being recognized by the BGS Group at UTSA! Zac is SO PROUD of Anna! They went to Feng Cha after to get some Milk Tea",
+        "Zac took Anna to her ceremony of being recognized by the BGS Organization at UTSA! She officially became a BGS lifetime member! Zac is SO PROUD of Anna! They went to Feng Cha after to get some Milk Tea. Then they went to Stix & Stone for dinner",
       isVideo: false,
       imgClass: "img",
       imgPath: "/images/timeline/2024/april_05_bgs_ceremony.jpg",
@@ -1088,7 +1088,7 @@ export const timelineData = {
     },
     {
       description:
-        "Zac took Anna to Black Rock Coffee and then to UTSA. They wrote a greeting card for Anna's dad's birthday",
+        "Zac took Anna to Black Rock Coffee and then to UTSA. Zac cooked some food and they had lunch together at UTSA. They wrote a greeting card for Anna's dad's birthday. Later on Zac brought some food from Thai Buri and drinks from Artea",
       isVideo: false,
       imgClass: "img",
       imgPath: "/images/timeline/2024/may_04_2024.jpg",
@@ -1097,7 +1097,8 @@ export const timelineData = {
       link: "",
     },
     {
-      description: "Zac and Anna went to Artea and had some fun!",
+      description:
+        "Zac and Anna went to Artea to celebrate for her hard work from school and had some fun!",
       isVideo: false,
       imgClass: "img",
       imgPath: "/images/timeline/2024/may_07_2024.jpg",
@@ -1117,7 +1118,7 @@ export const timelineData = {
     },
     {
       description:
-        "Zac took Anna to her starbucks so she can talk to Richie. They went to Famous Footwear to get shoes for Zac! They went to Gong Cha? They went to 375 Social Kitchen for dinner",
+        "Zac took Anna to her starbucks so she can talk to Richie. They went to Famous Footwear to get shoes for Zac! They went to 375 Social Kitchen for dinner. They went to Gong Cha after to get some milk tea!",
       isVideo: false,
       imgClass: "img",
       imgPath: "/images/timeline/2024/may_12_2024.jpg",
@@ -1137,7 +1138,7 @@ export const timelineData = {
     },
     {
       description:
-        "Zac and Anna discovered a great new Milk Tea place called Woo Ri Teahouse. Zac did a celebration for Anna",
+        "Zac and Anna discovered a great new Milk Tea place called Woo Ri Teahouse. They loved it so much they became regular customers!",
       isVideo: false,
       imgClass: "img",
       imgPath: "/images/timeline/2024/may_23_2024.jpg",
@@ -1147,7 +1148,7 @@ export const timelineData = {
     },
     {
       description:
-        "Zac and Anna went to North Star Mall and then to Woo Ri Teahouse to get some delicious Milk Tea. Then they went to the Botanical Garden to see Huntopia",
+        "Zac and Anna went to North Star Mall and then to Feng Cha to get some delicious Milk Tea. Then they went to the Botanical Garden to see Huntopia. They went to BJ's for dinner!",
       isVideo: false,
       imgClass: "img",
       imgPath: "/images/timeline/2024/may_26_2024.jpg",
@@ -1162,12 +1163,12 @@ export const timelineData = {
       imgClass: "img",
       imgPath: "/images/timeline/2024/may_30_2024.jpg",
       month: "May 2024",
-      title: "",
+      title: "Big Refund and Celebration Pt. 2 💵🙌",
       link: "",
     },
     {
       description:
-        "Zac and Anna took a trip to Houston. They stopped at Buc-ees on the way, then got lunch at a Sonic Themed fast food restaurant and Subway! Then they went to Kinokuniya and The Bếp Teahouse and got some delicious drinks. They ended up resting a little bit and went to The POST Market Food Hall!",
+        "Zac and Anna took a trip to Houston. They stopped at Buc-ees on the way, then got lunch at a Sonic Themed fast food restaurant and Subway! Anna got Zac a cool shirt! Then they went to Kinokuniya and The Bếp Teahouse and got some delicious drinks. They ended up resting a little bit and went to The POST Market Food Hall!",
       isVideo: false,
       imgClass: "img",
       imgPath: "/images/timeline/2024/june_2_houston_trip.jpg",
@@ -1187,12 +1188,12 @@ export const timelineData = {
     },
     {
       description:
-        "Zac picked up Anna from work and they went to Woo Ri Teahouse to get drinks and then went to Sushishima for dinner with Anna's Dad",
+        "Zac picked up Anna from work and they went to Woo Ri Teahouse to get drinks and then went to Sushishima for dinner with Anna's Dad so Anna's dad can celebrate for her!",
       isVideo: false,
       imgClass: "img",
       imgPath: "/images/timeline/2024/june_18_early_dinner.jpg",
       month: "June 2024",
-      title: "Early Birthday Dinner 🍚🍜",
+      title: "Early Birthday Dinner 🍚🍜🍰🍰🍰🍰",
       link: "",
     },
     {

@@ -74,7 +74,7 @@ def find_similar_images(folder_path, db_file):
     for s in similar:
         print(s)
 
-    dup_dir = './public/images/more_images_duplicates/'
+    dup_dir = '../public/images/more_images_duplicates/'
     if len(files_to_move) > 1:
         print(f'\nMoving duplicates to: `{dup_dir}`')
         for file in files_to_move:
