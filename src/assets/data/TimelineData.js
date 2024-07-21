@@ -1216,6 +1216,36 @@ export const timelineData = {
       title: "Anna's Birthday 🎂🎂🍰🍰🎉🎉🎈🎈🎊🎊🥳🥳",
       link: "",
     },
+    {
+      description:
+        "Zac helped fix Anna's dad's bumper! They went to Everyday Boba to get drinks. Then they went to Barnes & Noble to do the art project! They had dinner at BJ's and did some sparklers at Anna's neighborhood",
+      isVideo: false,
+      imgClass: "img",
+      imgPath: "/images/timeline/2024/july_04_2024.jpg",
+      month: "July 2024",
+      title: "July 4th 🎆🎆🎇🎇🎇",
+      link: "",
+    },
+    {
+      description:
+        "Zac and Anna took Anna's dad's car to Calliber Collision. Then they went to Subway and had lunch! Later on Zac took Anna to her dance class and they went for a walk/run together afterwards!",
+      isVideo: false,
+      imgClass: "img",
+      imgPath: "/images/timeline/2024/july_08_2024.jpg",
+      month: "July 2024",
+      title: "Car and Workout 🚗🚗💪💪",
+      link: "",
+    },
+    {
+      description:
+        "Zac and Anna went to Feng Cha to get drinks to go! Then they went to a new healthy market called Sprouts Farmers Market. Then they went back to Anna's house and ate the food Zac brought!",
+      isVideo: false,
+      imgClass: "img",
+      imgPath: "/images/timeline/2024/july_18_2024.jpg",
+      month: "July 2024",
+      title: "New Foods 🍖🍤🍉🍓🍍",
+      link: "",
+    },
     // TODO : End here for updating
 
     // Template for new Events

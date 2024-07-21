@@ -4,7 +4,7 @@ const SearchBar = ({ onChange }) => {
   const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
-    if (isNaN(parseInt(searchTerm))) return;
+    if (searchTerm && isNaN(parseInt(searchTerm))) return;
     const t = setTimeout(() => {
       onChange(searchTerm);
     }, 1000);
