@@ -8,6 +8,15 @@ import Link from "next/link";
 import Tooltip from "../common/Tooltip";
 import Image from "next/image";
 import LoadingImage from "../common/LoadingImage";
+import SearchBar from "../common/SearchBar";
+
+function extractNumber(path) {
+  if (!path) return false;
+  // Use a regular expression to match the number in the string
+  const match = path.match(/\/(\d+)\.jpg$/);
+  // Return the number as a string, or null if no match is found
+  return match ? match[1] : false;
+}
 
 const ImageGridContainer = () => {
   const [width, height] = useDeviceSize();
@@ -19,6 +28,9 @@ const ImageGridContainer = () => {
     height !== 0 ? height - navBarHeight : 800 - navBarHeight
   );
   const [gridItems, setGridItems] = useState([]);
+  const [searchTerm, setSearchTerm] = useState("");
+  const [lowerBoundSearch, setLowerBoundSearch] = useState("");
+  const [upperBoundSearch, setUpperBoundSearch] = useState("");
   const gridItemsWidth = Math.max(Math.floor(gridPixelWidth / 220), 1);
   const imgWidth = gridItemsWidth > 1 ? 200 : width - 20;
   const imgHeight = gridItemsWidth > 1 ? 200 : 500;
@@ -77,18 +89,29 @@ const ImageGridContainer = () => {
   useEffect(() => {
     const values = [];
 
-    const flatValues = shuffleArray(
+    let flatValues = shuffleArray(
       Object.keys(imageGalleryData)?.flatMap((key) =>
         imageGalleryData?.[key]?.flatMap((value) => `${key}${value}`)
       ),
       true
     );
+
+    let term = parseInt(searchTerm);
+    setLowerBoundSearch(parseInt(extractNumber(flatValues[0])));
+    setUpperBoundSearch(
+      parseInt(extractNumber(flatValues[flatValues?.length - 1]))
+    );
+    if (!isNaN(term)) {
+      flatValues = flatValues?.filter((item) =>
+        searchTerm?.length > 0 ? parseInt(extractNumber(item)) === term : true
+      );
+    }
     for (let i = 0; i < flatValues?.length; i += gridItemsWidth) {
       const chunk = flatValues?.slice(i, i + gridItemsWidth);
       values.push(chunk);
     }
     setGridItems(values);
-  }, [gridItemsWidth]);
+  }, [gridItemsWidth, searchTerm]);
 
   function shuffleArray(array, debug = false) {
     if (debug) return array;
@@ -196,6 +219,22 @@ const ImageGridContainer = () => {
             </div>
           </IconButton>
         </Link>
+      </div>
+      <div
+        className="flex flex-col items-center"
+        style={{ backgroundColor: "lightyellow" }}
+      >
+        <SearchBar
+          onChange={(value) => {
+            setSearchTerm(value);
+          }}
+        />
+      </div>
+      <div
+        className="flex flex-col items-center"
+        style={{ backgroundColor: "lightyellow" }}
+      >
+        {lowerBoundSearch} - {upperBoundSearch}
       </div>
       <div style={styles.imageGridWrapper}>
         {gridItems?.length > 0 && (
