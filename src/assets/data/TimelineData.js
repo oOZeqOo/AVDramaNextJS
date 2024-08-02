@@ -1246,19 +1246,48 @@ export const timelineData = {
       title: "New Foods 🍖🍤🍉🍓🍍",
       link: "",
     },
+    {
+      description:
+        "Zac and Anna went to the hospital to visit Jared and Ashleigh as they had a new baby! Then they went to Lustea to get drinks! Then they went to Trader Joes to look around!",
+      isVideo: false,
+      imgClass: "img",
+      imgPath: "/images/timeline/2024/july_26.jpg",
+      month: "July 2024",
+      title: "",
+      link: "",
+    },
+    {
+      description:
+        "Zac and Anna went to AutoZone to change her Dad's car battery! Then they went to Teazzty to get drinks and then to Embers for dinner!",
+      isVideo: false,
+      imgClass: "img",
+      imgPath: "/images/timeline/2024/july_28.jpg",
+      month: "July 2024",
+      title: "",
+      link: "",
+    },
+    {
+      description:
+        "Zac and Anna went to Austin. They stopped at HEB on the way. They went to the Zilker Botanical Garden, then they went to TSAOCAA to get drinks there and Anna opened her gifts! THen they went to Torii Kawaii and got some stuff there for Anna. Then they went to DK Sushi & Seoul Korean Restaurant for dinner. They went to HEB and Bucee's on the way home",
+      isVideo: false,
+      imgClass: "img",
+      imgPath: "/images/timeline/2024/august_1.jpg",
+      month: "August 2024",
+      title: "National Girlfriend Day 💝💝💖💖🥰🥰",
+      link: "",
+    },
     // TODO : End here for updating
 
     // Template for new Events
     // {
-    //      description:
-    //          "",
-    //      isVideo: false,
-    //      imgClass: "img",
-    //      imgPath: "/images/timeline/2022/Support_Anna.jpg",
-    //      month: "",
-    //      title: "",
-    //      link: "",
-    //   },
+    //   description: "",
+    //   isVideo: false,
+    //   imgClass: "img",
+    //   imgPath: "/images/timeline/2022/Support_Anna.jpg",
+    //   month: "",
+    //   title: "",
+    //   link: "",
+    // },
     {
       description: "I love you so much babyyyyy 💖💖💝💝🥰🥰🥰",
       imgClass: "img-big",
