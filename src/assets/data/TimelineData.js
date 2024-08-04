@@ -1253,7 +1253,7 @@ export const timelineData = {
       imgClass: "img",
       imgPath: "/images/timeline/2024/july_26.jpg",
       month: "July 2024",
-      title: "",
+      title: "New Things 👶🍵☕",
       link: "",
     },
     {
@@ -1263,7 +1263,7 @@ export const timelineData = {
       imgClass: "img",
       imgPath: "/images/timeline/2024/july_28.jpg",
       month: "July 2024",
-      title: "",
+      title: "Taking care of things 🚗🔋",
       link: "",
     },
     {
