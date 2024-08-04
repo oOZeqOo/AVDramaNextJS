@@ -1,10 +1,23 @@
 import React, { useEffect, useState } from "react";
 
+function validPlus(string) {
+  if (string.indexOf("+") === -1) return true;
+
+  return string.indexOf("+") === string.length - 1;
+}
+
+function isNumeric(str) {
+  if (typeof str != "string") return false; // we only process strings!
+  return !isNaN(str) && !isNaN(parseFloat(str));
+}
+
 const SearchBar = ({ onChange }) => {
   const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
-    if (searchTerm && isNaN(parseInt(searchTerm))) return;
+    if (!validPlus(searchTerm)) return;
+
+    if (searchTerm && !isNumeric(searchTerm) && !validPlus(searchTerm)) return;
     const t = setTimeout(() => {
       onChange(searchTerm);
     }, 1000);
@@ -14,7 +27,7 @@ const SearchBar = ({ onChange }) => {
   }, [searchTerm]);
 
   return (
-    <div className="relative flex flex-1 flex-shrink-0">
+    <div className="relative flex flex-1 flex-shrink-0 mt-2">
       <label htmlFor="search" className="sr-only">
         Search
       </label>

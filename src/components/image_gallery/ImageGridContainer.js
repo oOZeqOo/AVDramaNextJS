@@ -9,6 +9,7 @@ import Tooltip from "../common/Tooltip";
 import Image from "next/image";
 import LoadingImage from "../common/LoadingImage";
 import SearchBar from "../common/SearchBar";
+import ResponsiveGrid from "./ResponsiveGrid";
 
 function extractNumber(path) {
   if (!path) return false;
@@ -31,8 +32,8 @@ const ImageGridContainer = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [lowerBoundSearch, setLowerBoundSearch] = useState("");
   const [upperBoundSearch, setUpperBoundSearch] = useState("");
-  const gridItemsWidth = Math.max(Math.floor(gridPixelWidth / 220), 1);
-  const imgWidth = gridItemsWidth > 1 ? 200 : width - 20;
+  const gridItemsWidth = Math.max(Math.floor(gridPixelWidth / 240), 1);
+  const imgWidth = gridItemsWidth > 1 ? 200 : width - 40;
   const imgHeight = gridItemsWidth > 1 ? 200 : 500;
   const styles = {
     navBar: {
@@ -55,6 +56,8 @@ const ImageGridContainer = () => {
       flex: 1,
       marginLeft: 0,
       marginRight: 0,
+      display: "flex",
+      justifyContent: "center",
     },
     imageWrapper: {
       border: "1px solid black",
@@ -95,15 +98,20 @@ const ImageGridContainer = () => {
       ),
       true
     );
-
+    let onWard = searchTerm.indexOf("+") === searchTerm.length - 1;
     let term = parseInt(searchTerm);
+
     setLowerBoundSearch(parseInt(extractNumber(flatValues[0])));
     setUpperBoundSearch(
       parseInt(extractNumber(flatValues[flatValues?.length - 1]))
     );
     if (!isNaN(term)) {
       flatValues = flatValues?.filter((item) =>
-        searchTerm?.length > 0 ? parseInt(extractNumber(item)) === term : true
+        searchTerm?.length > 0
+          ? onWard
+            ? parseInt(extractNumber(item)) >= term
+            : parseInt(extractNumber(item)) === term
+          : true
       );
     }
     for (let i = 0; i < flatValues?.length; i += gridItemsWidth) {
@@ -148,6 +156,7 @@ const ImageGridContainer = () => {
           ...style,
           display: "flex",
           justifyContent: "center",
+          alignItems: "center",
           //   left:
           //     Number.parseInt(`${style.left}`) + (gridItemsWidth > 1 ? 100 : 0),
         }}
@@ -231,13 +240,22 @@ const ImageGridContainer = () => {
         />
       </div>
       <div
-        className="flex flex-col items-center"
+        className="flex flex-col items-center text-center"
         style={{ backgroundColor: "lightyellow" }}
       >
-        {lowerBoundSearch} - {upperBoundSearch}
+        <p>
+          Values: {lowerBoundSearch} - {upperBoundSearch}
+        </p>
+        <p>Add a '+' to get all pics after a certain number</p>
       </div>
       <div style={styles.imageGridWrapper}>
         {gridItems?.length > 0 && (
+          // <ResponsiveGrid
+          //   items={gridItems}
+          //   itemWidth={imgWidth + 20}
+          //   itemHeight={imgHeight + 20}
+          //   gridHeight={gridPixelHeight}
+          // />
           <Grid
             style={styles.gridStyle}
             width={gridPixelWidth}

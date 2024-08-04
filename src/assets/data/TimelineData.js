@@ -1138,7 +1138,7 @@ export const timelineData = {
     },
     {
       description:
-        "Zac and Anna discovered a great new Milk Tea place called Woo Ri Teahouse. They loved it so much they became regular customers!",
+        "Zac and Anna discovered a great new Milk Tea place called Woo Ri Teahouse. They love it so much and they became regular customers!",
       isVideo: false,
       imgClass: "img",
       imgPath: "/images/timeline/2024/may_23_2024.jpg",
@@ -1193,7 +1193,7 @@ export const timelineData = {
       imgClass: "img",
       imgPath: "/images/timeline/2024/june_18_early_dinner.jpg",
       month: "June 2024",
-      title: "Early Birthday Dinner 🍚🍜🍰🍰🍰🍰",
+      title: "Early Birthday Dinner 🍚🍜🎂🎂🎂🎂",
       link: "",
     },
     {
