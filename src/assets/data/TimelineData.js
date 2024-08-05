@@ -1218,7 +1218,7 @@ export const timelineData = {
     },
     {
       description:
-        "Zac helped fix Anna's dad's bumper! They went to Everyday Boba to get drinks. Then they went to Barnes & Noble to do the art project! They had dinner at BJ's and did some sparklers at Anna's neighborhood",
+        "Zac got Artea to go for Anna and her dad. Zac helped fix Anna's dad's bumper! Then they went to Barnes & Noble to do the art project! They went to TJ Maxx. They had dinner at BJ's and did some sparklers at Anna's neighborhood",
       isVideo: false,
       imgClass: "img",
       imgPath: "/images/timeline/2024/july_04_2024.jpg",
@@ -1228,7 +1228,7 @@ export const timelineData = {
     },
     {
       description:
-        "Zac and Anna took Anna's dad's car to Calliber Collision. Then they went to Subway and had lunch! Later on Zac took Anna to her dance class and they went for a walk/run together afterwards!",
+        "Zac and Anna took Anna's dad's car to Calliber Collision. Then they went to Subway and had lunch! Then they went to Smoothie King and got some smoothies! Later on Zac took Anna to her dance class and they went for a walk/run together afterwards!",
       isVideo: false,
       imgClass: "img",
       imgPath: "/images/timeline/2024/july_08_2024.jpg",
@@ -1238,7 +1238,7 @@ export const timelineData = {
     },
     {
       description:
-        "Zac and Anna went to Feng Cha to get drinks to go! Then they went to a new healthy market called Sprouts Farmers Market. Then they went back to Anna's house and ate the food Zac brought!",
+        "Zac and Anna went to Woo Ri to get drinks to go! Then they went to Pink Victoria Secret at North Start Mall! Then they went to their dance class. Then they went to Stix & Stone for dinner. After that they went to Chick Fil A to get food to go for Anna and sat in the parking lot. A crazy homeless guy came up to the car and started yelling and they booked it out of there!",
       isVideo: false,
       imgClass: "img",
       imgPath: "/images/timeline/2024/july_18_2024.jpg",
