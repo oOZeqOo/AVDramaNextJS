@@ -2,12 +2,12 @@ export const homePageNotes = {
   title: {
     element: "h1",
     content: [
-      "💖💖💖💖💖💖💖💖💖💖",
-      "🤟🤟🤟🍰🍰🍰🍰🍰🍰🎈🎈🎊🎊🎉🎉🥳🥳🦋",
-      "💖HAPPY BIRTHDAY MY LOVE💖",
-      "💖😘😘 I LOVE YOU SO MUCH BABE 😘😘💖",
-      "🤟🤟🤟🍰🍰🍰🍰🍰🍰🎈🎈🎊🎊🎉🎉🥳🥳🦋",
-      "💖💖💖💖💖💖💖💖💖💖",
+      // "💖💖💖💖💖💖💖💖💖💖",
+      // "🤟🤟🤟🍰🍰🍰🍰🍰🍰🎈🎈🎊🎊🎉🎉🥳🥳🦋",
+      // "💖HAPPY BIRTHDAY MY LOVE💖",
+      // "💖😘😘 I LOVE YOU SO MUCH BABE 😘😘💖",
+      // "🤟🤟🤟🍰🍰🍰🍰🍰🍰🎈🎈🎊🎊🎉🎉🥳🥳🦋",
+      // "💖💖💖💖💖💖💖💖💖💖",
     ],
   },
   message: {
