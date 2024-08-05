@@ -14,7 +14,7 @@ import ResponsiveGrid from "./ResponsiveGrid";
 function extractNumber(path) {
   if (!path) return false;
   // Use a regular expression to match the number in the string
-  const match = path.match(/\/(\d+)\.jpg$/);
+  const match = path.match(/\/(\d+)\.(jpg|mp4)$/);
   // Return the number as a string, or null if no match is found
   return match ? match[1] : false;
 }
