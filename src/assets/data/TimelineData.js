@@ -1218,7 +1218,7 @@ export const timelineData = {
     },
     {
       description:
-        "Zac got Artea to go for Anna and her dad. Zac helped fix Anna's dad's bumper! Then they went to Barnes & Noble to do the art project! They went to TJ Maxx. They had dinner at BJ's and did some sparklers at Anna's neighborhood",
+        "Zac got Artea to bring for Anna, her dad and himself. Zac helped fix Anna's dad's bumper! Then they went to Barnes & Noble to do the art project! They went to TJ Maxx. They had dinner at BJ's and did some sparklers at Anna's neighborhood! They had fun celebrating!",
       isVideo: false,
       imgClass: "img",
       imgPath: "/images/timeline/2024/july_04_2024.jpg",
@@ -1228,7 +1228,7 @@ export const timelineData = {
     },
     {
       description:
-        "Zac and Anna took Anna's dad's car to Calliber Collision. Then they went to Subway and had lunch! Then they went to Smoothie King and got some smoothies! Later on Zac took Anna to her dance class and they went for a walk/run together afterwards!",
+        "Zac and Anna took Anna's dad's car to Calliber Collision. Then they went to Subway and had lunch! Then they went to Smoothie King and got some smoothies! Later on Zac took Anna to her dance class and they went for a walk/run together afterwards and had some fun!",
       isVideo: false,
       imgClass: "img",
       imgPath: "/images/timeline/2024/july_08_2024.jpg",
@@ -1243,12 +1243,12 @@ export const timelineData = {
       imgClass: "img",
       imgPath: "/images/timeline/2024/july_18_2024.jpg",
       month: "July 2024",
-      title: "New Foods 🍖🍤🍉🍓🍍",
+      title: "Interesting and Crazy Moments 💖😲",
       link: "",
     },
     {
       description:
-        "Zac and Anna went to the hospital to visit Jared and Ashleigh as they had a new baby! Then they went to Lustea to get drinks! Then they went to Trader Joes to look around!",
+        "Anna and Zac went to Feng Cha to get drinks to go, then they went to Trader Joes near North Star Mall for the first time and found it interesting! 😊 Then they went back to Anna's house to eat in Zac's car.",
       isVideo: false,
       imgClass: "img",
       imgPath: "/images/timeline/2024/july_26.jpg",
@@ -1258,7 +1258,7 @@ export const timelineData = {
     },
     {
       description:
-        "Zac and Anna went to AutoZone to change her Dad's car battery! Then they went to Teazzty to get drinks and then to Embers for dinner!",
+        "Zac and Anna went to AutoZone to change her Dad's car battery! Then they went to Teazzty to get drinks and had some fun! Then they went to Embers for dinner!",
       isVideo: false,
       imgClass: "img",
       imgPath: "/images/timeline/2024/july_28.jpg",
@@ -1268,12 +1268,22 @@ export const timelineData = {
     },
     {
       description:
-        "Zac and Anna went to Austin. They stopped at HEB on the way. They went to the Zilker Botanical Garden, then they went to TSAOCAA to get drinks there and Anna opened her gifts! THen they went to Torii Kawaii and got some stuff there for Anna. Then they went to DK Sushi & Seoul Korean Restaurant for dinner. They went to HEB and Bucee's on the way home",
+        "Zac and Anna went to Austin. They stopped at HEB on the way. They went to the Zilker Botanical Garden, then they went to TSAOCAA to get drinks there and Anna opened her gifts! Then they went to Torii Kawaii and got some stuff there for Anna. Then they went to DK Sushi & Seoul Korean Restaurant for dinner. They went to HEB and Bucee's on the way home. They had a blast this day! 🎉🎉",
       isVideo: false,
       imgClass: "img",
       imgPath: "/images/timeline/2024/august_1.jpg",
       month: "August 2024",
       title: "National Girlfriend Day 💝💝💖💖🥰🥰",
+      link: "",
+    },
+    {
+      description:
+        "Zac got to see Anna at Lustea a little bit before her class and they had some fun!",
+      isVideo: false,
+      imgClass: "img",
+      imgPath: "/images/timeline/2024/august_5_2024.jpg",
+      month: "August 2024",
+      title: "Surprise 🙌😆😄💝💝",
       link: "",
     },
     // TODO : End here for updating
