@@ -33,7 +33,7 @@ const ImageGridContainer = () => {
   const [lowerBoundSearch, setLowerBoundSearch] = useState("");
   const [upperBoundSearch, setUpperBoundSearch] = useState("");
   const gridItemsWidth = Math.max(Math.floor(gridPixelWidth / 240), 1);
-  const imgWidth = gridItemsWidth > 1 ? 200 : width - 40;
+  const imgWidth = gridItemsWidth > 1 ? 200 : width - 20;
   const imgHeight = gridItemsWidth > 1 ? 200 : 500;
   const styles = {
     navBar: {
