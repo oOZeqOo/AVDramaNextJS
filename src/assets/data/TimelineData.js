@@ -803,8 +803,6 @@ export const timelineData = {
       title: "Rice Day 🍚🍙",
       link: "",
     },
-
-    // TODO : Start here for updating
     {
       description:
         "Zac got to see Anna on this day and went to one of his favorite restaurants: China Stix",
@@ -1284,6 +1282,17 @@ export const timelineData = {
       imgPath: "/images/timeline/2024/august_5_2024.jpg",
       month: "August 2024",
       title: "Surprise 🙌😆😄💝💝",
+      link: "",
+    },
+    // TODO : Start here for updating
+    {
+      description:
+        "Zac and Anna went to Feng Cha and then went to the dance class for their last dance class this session. They had a fun time dancing and went back to Annas house to eat food that Anna cooked",
+      isVideo: false,
+      imgClass: "img",
+      imgPath: "/images/timeline/2024/august_07_2024.jpg",
+      month: "August 2024",
+      title: "Last Dance class... For Now 💝💃🕺💝",
       link: "",
     },
     // TODO : End here for updating
