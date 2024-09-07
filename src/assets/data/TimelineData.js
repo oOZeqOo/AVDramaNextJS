@@ -1295,6 +1295,26 @@ export const timelineData = {
       title: "Last Dance class... For Now 💝💃🕺💝",
       link: "",
     },
+    {
+      description:
+        "Zac and Anna went to the Japanese Tea Garden 🍵 and took some awesome pics! Then they went to 85 degrees to get some milk tea and bread! Then they went to see Despicable Me 4! Then they went to dinner at Bohanans to celebrate Anna's hard work and achieving the healthy triglyceride level! They had some fun 💖",
+      isVideo: false,
+      imgClass: "img",
+      imgPath: "/images/timeline/2024/august_11_2024.jpg",
+      month: "August 2024",
+      title: "Anna's Achievement",
+      link: "",
+    },
+    {
+      description:
+        "Zac and Anna went to Houston! They stopped at The Bếp Teahouse to get some delicious milk tea! Then they went to the Houston Space Center and got to look around! It was super cool! Then they went to dinner at MaKiin and they really enjoyed it! After that they went to The Bếp Teahouse again to get some drinks to go and they also got some tumblers from there! Those are super cool! 🥤🥤",
+      isVideo: false,
+      imgClass: "img",
+      imgPath: "/images/timeline/2024/august_18_2024.jpg",
+      month: "August 2024",
+      title: "Last Dance class... For Now 💝💃🕺💝",
+      link: "",
+    },
     // TODO : End here for updating
 
     // Template for new Events
