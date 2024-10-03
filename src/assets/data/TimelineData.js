@@ -1327,7 +1327,7 @@ export const timelineData = {
     },
     {
       description:
-        "Zac took Anna to UTSA so she could study! He got Feng Cha and trie dto help Anna with her HW. They went to Best Buy to get Anna a new mouse and then went to BJ's for dinner!",
+        "Zac took Anna to UTSA so she could study! He got Feng Cha and tried to help Anna with her HW. They went to Best Buy to get Anna a new mouse and then went to BJ's for dinner!",
       isVideo: false,
       imgClass: "img",
       imgPath: "/images/timeline/2024/september_02_2024.jpg",
@@ -1337,7 +1337,7 @@ export const timelineData = {
     },
     {
       description:
-        "Zac took Anna to UTSA and got Artea and Anna gave Zac food to cook and he brought it for them to eat!",
+        "Zac took Anna to UTSA and got Artea and Anna gave Zac food to cook and he brought it for them to eat! 🤤🤤",
       isVideo: false,
       imgClass: "img",
       imgPath: "/images/timeline/2024/september_15_2024.jpg",
@@ -1347,7 +1347,7 @@ export const timelineData = {
     },
     {
       description:
-        "Zac got Lustea and picked up Anna from NLS. They went to pick up Anna's mom from Walmart and went to her Mom's appointment. They dropped her mom off at Walmart and then Zac took Anna back to NLC",
+        "Zac got Lustea and picked up Anna from NLC. They went to pick up Anna's mom from Walmart and went to her Mom's appointment. They dropped her mom off at Walmart and then Zac took Anna back to NLC",
       isVideo: false,
       imgClass: "img-small",
       imgPath: "/images/timeline/2024/september_23_2024.jpg",
@@ -1357,7 +1357,7 @@ export const timelineData = {
     },
     {
       description:
-        "Zac took Anna to work and then got flowers and gave them to her after her work! ",
+        "Zac took Anna to work and then got flowers and gave them to her after her work day! 💐",
       isVideo: false,
       imgClass: "img-small",
       imgPath: "/images/timeline/2024/september_25_2024.jpg",
