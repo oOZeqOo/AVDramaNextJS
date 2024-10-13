@@ -1340,7 +1340,7 @@ export const timelineData = {
         "Zac took Anna to UTSA and got Artea and Anna gave Zac food to cook and he brought it for them to eat! 🤤🤤",
       isVideo: false,
       imgClass: "img",
-      imgPath: "/images/timeline/2024/september_15_2024-1.jpg",
+      imgPath: "/images/timeline/2024/september_15_2024.jpg",
       month: "September 2024",
       title: "Cooked Food Time 🥘",
       link: "",
