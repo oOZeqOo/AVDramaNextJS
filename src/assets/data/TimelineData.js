@@ -1365,6 +1365,47 @@ export const timelineData = {
       title: "Help her feel better! 🌷🌷🌸🌸🌹🌹🌺🌺",
       link: "",
     },
+    // NEW ***********************************************
+    {
+      description:
+        "Zac got Anna's item from North Star Mall. They ended up going to Artea for dinner!",
+      isVideo: false,
+      imgClass: "img",
+      imgPath: "/images/timeline/2024/oct_03_2024.jpg",
+      month: "October 2024",
+      title: "National Boyfriend Day 😊😇",
+      link: "",
+    },
+    {
+      description:
+        "Anna met Zac at his apartment so he could drive them to UTSA. Zac got Feng Cha and brought it to Anna. They ate food that Zac cooked! 🍱🍱",
+      isVideo: false,
+      imgClass: "img",
+      imgPath: "/images/timeline/2024/oct_06_2024.jpg",
+      month: "October 2024",
+      title: "Anna's Car 🚙",
+      link: "",
+    },
+    {
+      description:
+        "Zac and Anna went to go register to vote! He took Anna to NLC so she could study! He then picked her up later and took her home!",
+      isVideo: false,
+      imgClass: "img",
+      imgPath: "/images/timeline/2024/oct_07_2024.jpg",
+      month: "October 2024",
+      title: "Register to vote! 🗳️",
+      link: "",
+    },
+    {
+      description:
+        "Zac took Anna to UTSA and got Artea! He worked at the office while she studied on campus! Zac brought food and met Anna later in the evening so they could eat together",
+      isVideo: false,
+      imgClass: "img-big",
+      imgPath: "/images/timeline/2024/oct_14_2024.jpg",
+      month: "October 2024",
+      title: "",
+      link: "",
+    },
     // TODO : End here for updating
 
     // Template for new Events

@@ -123,7 +123,7 @@ const CreateTimeline = ({ data }) => {
         className="flex flex-wrap items-center lg:justify-between border-b h-fit flex-col lg:flex-row w-full sticky"
       >
         <div
-          className="flex flex-row justify-center lg:justify-between w-[40%] "
+          className="flex flex-row justify-center lg:justify-between min-w-[10%] max-w-[40%] "
           id="first"
         >
           <Button
@@ -136,7 +136,7 @@ const CreateTimeline = ({ data }) => {
           </Button>
         </div>
         <div
-          className="flex-1 flex flex-col justify-start  sm:ml-10 md:ml-2 overflow-x-scroll sm:overflow-x-hidden"
+          className="flex-1 flex flex-col justify-start items-center sm:ml-10 md:ml-2 overflow-x-scroll sm:overflow-x-hidden"
           style={{ maxWidth: "100vw", height: 50 }}
         >
           <Tabs
@@ -173,6 +173,10 @@ const CreateTimeline = ({ data }) => {
             ))}
           </Tabs>
         </div>
+        <div
+          className="flex flex-row justify-center lg:justify-between  min-w-[10%] max-w-[40%] "
+          id="third"
+        ></div>
       </div>
       <div
         style={{
