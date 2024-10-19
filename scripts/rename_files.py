@@ -7,18 +7,24 @@ MORE_IMAGES_DATA_FILE = './src/assets/data/ImageGalleryData.js'
 def rename_more_images_folder() -> list[str]:
     file_names = []
     files = os.listdir('.')
-    for index, file in enumerate(files):
+    total_files = len(files) + 200
+    print(total_files)
+    for index, file in enumerate(files[::-1]):
         end = file.split('.')[1].lower()
         if end == 'jpeg':
             end = 'jpg'
-        new_name = f'{index + 201}'.rjust(4, '0') + '.' + end
+
+        number = f"{total_files - index}".rjust(4, "0")
+        new_name = number + "." + end
         file_names.append(new_name)
+
         if new_name == file:
             continue
 
         os.rename(file, new_name)
-        # print(f'Renamed {file} -> {new_name}')
-    return file_names
+        print(f"Renamed {file} -> {new_name}")
+
+    return file_names[::-1]
 
 
 def set_up_more_images_data(files: list[str]) -> None:
@@ -28,7 +34,7 @@ def set_up_more_images_data(files: list[str]) -> None:
                 f'{data} ' \
                 '  ],\n' \
                 '};'
-    print(template)
+    # print(template)
     with open(MORE_IMAGES_DATA_FILE, 'w+') as file:
         file.write(template)
 
