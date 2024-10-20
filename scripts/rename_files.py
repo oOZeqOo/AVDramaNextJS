@@ -4,11 +4,10 @@ PARENT_DIR = os.path.abspath('.')
 MORE_IMAGES_DIR = './public/images/more_images/'
 MORE_IMAGES_DATA_FILE = './src/assets/data/ImageGalleryData.js'
 
-def rename_more_images_folder() -> list[str]:
+def rename_more_images_folder(starting=200) -> list[str]:
     file_names = []
     files = os.listdir('.')
-    total_files = len(files) + 200
-    print(total_files)
+    total_files = len(files) + starting
     for index, file in enumerate(files[::-1]):
         end = file.split('.')[1].lower()
         if end == 'jpeg':
@@ -21,8 +20,17 @@ def rename_more_images_folder() -> list[str]:
         if new_name == file:
             continue
 
-        os.rename(file, new_name)
-        print(f"Renamed {file} -> {new_name}")
+        try:
+            os.rename(file, new_name)
+        except Exception as e:
+            # The case where the renamed file already exists (A file was removed)
+            print(e)
+            if index == 0:
+                rename_more_images_folder(starting + total_files + 5)
+                return rename_more_images_folder(starting)
+
+        # print(f"Renamed {file} -> {new_name}")
+    print("Done Renaming")
 
     return file_names[::-1]
 

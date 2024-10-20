@@ -1302,17 +1302,17 @@ export const timelineData = {
       imgClass: "img",
       imgPath: "/images/timeline/2024/august_11_2024.jpg",
       month: "August 2024",
-      title: "Anna's Achievement",
+      title: "Anna's Achievement 💪💪🥳🥳",
       link: "",
     },
     {
       description:
-        "Zac and Anna went to Houston! They stopped at The Bếp Teahouse to get some delicious milk tea! Then they went to the Houston Space Center and got to look around! It was super cool! Then they went to dinner at MaKiin and they really enjoyed it! After that they went to The Bếp Teahouse again to get some drinks to go and they also got some tumblers from there! Those are super cool! 🥤🥤",
+        "Zac and Anna went to Houston! They stopped at The Bếp Teahouse to get some delicious milk tea! Then they went to the Houston Space Center and got to look around! It was super cool! Then they went to dinner at MaKiin and they really enjoyed it! After that they went to The Bếp Teahouse again to get some drinks to go and they also got some tumblers from there! Those are super cool! 🧋🧋",
       isVideo: false,
-      imgClass: "img",
+      imgClass: "img-big",
       imgPath: "/images/timeline/2024/august_18_2024.jpg",
       month: "August 2024",
-      title: "Last Dance class... For Now 💝💃🕺💝",
+      title: "Houston Space Center 🚀👩‍🚀👨‍🚀",
       link: "",
     },
     {
@@ -1327,12 +1327,12 @@ export const timelineData = {
     },
     {
       description:
-        "Zac took Anna to UTSA so she could study! He got Feng Cha and tried to help Anna with her HW. They went to Best Buy to get Anna a new mouse and then went to BJ's for dinner!",
+        "Zac took Anna to UTSA so she could study! He got Feng Cha and tried to help Anna with her project. They went to Best Buy to get Anna a new mouse and then went to BJ's for dinner!",
       isVideo: false,
       imgClass: "img",
       imgPath: "/images/timeline/2024/september_02_2024.jpg",
       month: "September 2024",
-      title: "School and Technology Time 🎒👩‍💻👨‍💻",
+      title: "Labor Day Celebration 🎉🥳",
       link: "",
     },
     {
@@ -1347,17 +1347,17 @@ export const timelineData = {
     },
     {
       description:
-        "Zac got Lustea and picked up Anna from NLC. They went to pick up Anna's mom from Walmart and went to her Mom's appointment. They dropped her mom off at Walmart and then Zac took Anna back to NLC",
+        "Zac and Anna went to Woo Ri to get drinks to go and then he took Anna to UTSA!",
       isVideo: false,
       imgClass: "img-small",
       imgPath: "/images/timeline/2024/september_23_2024.jpg",
       month: "September 2024",
-      title: "Appointment Time ⌚👩‍⚕️",
+      title: "Study and Drink Time ⌚🍵",
       link: "",
     },
     {
       description:
-        "Zac took Anna to work and then got flowers and gave them to her after her work day! 💐",
+        "Zac took Anna to work and then got flowers to gave to her after her work day! He then went to Everyday Boba to get drinks for them and picked her up from work. She wasnt satisfied with the drink so they went to Woo Ri to get food and drinks! 💐🍚🍣🥘",
       isVideo: false,
       imgClass: "img-small",
       imgPath: "/images/timeline/2024/september_25_2024.jpg",
@@ -1406,6 +1406,16 @@ export const timelineData = {
       title: "",
       link: "",
     },
+    {
+      description:
+        "Zac took Anna to school this day. He got Feng Cha and brought it to her. Later they went to Artea to do a little celebration for Anna since she got an A on her EXAM!!!!!!!!! WOOOP 🎉🎉🎉",
+      isVideo: false,
+      imgClass: "img-big",
+      imgPath: "/images/timeline/2024/oct_17_2024.jpg",
+      month: "October 2024",
+      title: "Amazing NEWS 🥳🥳🎊🎊",
+      link: "",
+    },
     // TODO : End here for updating
 
     // Template for new Events
@@ -1413,7 +1423,7 @@ export const timelineData = {
     //   description: "",
     //   isVideo: false,
     //   imgClass: "img",
-    //   imgPath: "/images/timeline/2022/Support_Anna.jpg",
+    //   imgPath: "/images/timeline/2024/test.jpg",
     //   month: "",
     //   title: "",
     //   link: "",
