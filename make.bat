@@ -3,10 +3,12 @@
 SET command=%1
 
 @REM Decide what to do from this Windows Equivalent of a makefile
-if %command%==start GOTO :START
-if %command%==rename GOTO :RENAME
-if %command%==check-mistakes GOTO :CHECK
-if %command%==check-images GOTO :COMPARE_IMAGES
+
+if %command%==start GOTO :START @REM make start
+if %command%==rename GOTO :RENAME @REM make rename
+if %command%==check-mistakes GOTO :CHECK @REM make check-mistakes
+if %command%==check-images GOTO :COMPARE_IMAGES @REM make check-images
+
 GOTO :END
 
 :START

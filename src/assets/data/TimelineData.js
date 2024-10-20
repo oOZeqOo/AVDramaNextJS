@@ -1357,7 +1357,7 @@ export const timelineData = {
     },
     {
       description:
-        "Zac took Anna to work and then got flowers to gave to her after her work day! He then went to Everyday Boba to get drinks for them and picked her up from work. She wasnt satisfied with the drink so they went to Woo Ri to get food and drinks! 💐🍚🍣🥘",
+        "Zac took Anna to work and then got flowers to gave to her after her work day! He then went to Everyday Boba to get drinks for them and picked her up from work. She wasn't satisfied with the drink so they went to Woo Ri to get food and drinks! 💐🍚🍣🥘",
       isVideo: false,
       imgClass: "img-small",
       imgPath: "/images/timeline/2024/september_25_2024.jpg",
@@ -1388,7 +1388,7 @@ export const timelineData = {
     },
     {
       description:
-        "Zac and Anna went to go register to vote! He took Anna to NLC so she could study! He then picked her up later and took her home!",
+        "Zac and Anna went to go register to vote! They went to Woo Ri and then Zac took Anna to NLC so she could study! He then picked her up later and took her home!",
       isVideo: false,
       imgClass: "img",
       imgPath: "/images/timeline/2024/oct_07_2024.jpg",
@@ -1403,7 +1403,7 @@ export const timelineData = {
       imgClass: "img-big",
       imgPath: "/images/timeline/2024/oct_14_2024.jpg",
       month: "October 2024",
-      title: "",
+      title: "UTSA Day 🎈🎈🎈 ",
       link: "",
     },
     {

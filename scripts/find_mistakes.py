@@ -94,7 +94,7 @@ def main() -> None:
 
     image_dir = "../public/images/more_images"
     db_file = './image_similarity.json'
-    find_similar_images(image_dir, db_file)
+    # find_similar_images(image_dir, db_file)
 
 
 def set_this_dir() -> None:
