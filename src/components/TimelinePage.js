@@ -143,7 +143,7 @@ const CreateTimeline = ({ data }) => {
             value={value}
             onChange={handleChange}
             aria-label="basic tabs example"
-            style={{ width: "fit-content" }}
+            className="w-fit max-w-full overflow-x-auto"
             // className="scrollbar-thumb-sky-700 overflow-x-scroll sm:overflow-x-hidden scrollbar-thin"
             // fullWidth="true"
           >

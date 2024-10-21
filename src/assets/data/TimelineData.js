@@ -1398,7 +1398,7 @@ export const timelineData = {
     },
     {
       description:
-        "Zac took Anna to UTSA and got Artea! He worked at the office while she studied on campus! Zac brought food and met Anna later in the evening so they could eat together",
+        "Zac got Lustea and met Anna at UTSA! He worked at the office while she studied on campus! Zac brought food and met Anna later in the evening so they could eat together",
       isVideo: false,
       imgClass: "img-big",
       imgPath: "/images/timeline/2024/oct_14_2024.jpg",
@@ -1408,7 +1408,7 @@ export const timelineData = {
     },
     {
       description:
-        "Zac took Anna to school this day. He got Feng Cha and brought it to her. Later they went to Artea to do a little celebration for Anna since she got an A on her EXAM!!!!!!!!! WOOOP 🎉🎉🎉",
+        "Zac took Anna to school this day. He got Feng Cha and brought it to her. Later they went to Artea to do a little celebration for Anna since she got an A on her EXAM!!!!!!!!! WOOOP 🎉🎉🎉!! GREAT JOB BABE 🎈🎈🥳🥳🎊🎊",
       isVideo: false,
       imgClass: "img-big",
       imgPath: "/images/timeline/2024/oct_17_2024.jpg",
