@@ -1387,7 +1387,7 @@ export const timelineData = {
     },
     {
       description:
-        "Zac and Anna went to go register to vote! They went to Woo Ri and then Zac took Anna to NLC so she could study! He then picked her up later and took her home!",
+        "Zac and Anna went to go register to vote! Zac dropped Anna off at Lustea and he went to Panda. Zac took Anna to NLC so she could study! He then picked her up later and took her home! Anna dropped Zac off at his apartment and did some romantic moments in front of his apartment",
       isVideo: false,
       imgClass: "img",
       imgPath: "/images/timeline/2024/oct_07_2024.jpg",
@@ -1402,7 +1402,7 @@ export const timelineData = {
       imgClass: "img-big",
       imgPath: "/images/timeline/2024/oct_14_2024.jpg",
       month: "October 2024",
-      title: "UTSA Day 🎈🎈🎈 ",
+      title: "UTSA ALVEREZ Day 🎈🎈🎈 ",
       link: "",
     },
     {
