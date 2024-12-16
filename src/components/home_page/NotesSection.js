@@ -94,6 +94,22 @@ const getElementsContent = (item) => {
           {item}
         </h6>
       ));
+
+    case "img":
+      return item?.content?.map((item, index) => (
+        <div style={styles.gifWrapper} key={index}>
+          <Image
+            alt={"Image"}
+            width={300}
+            height={300}
+            src={item}
+            style={{
+              ...styles.imageStyle,
+              objectFit: "contain",
+            }}
+          />
+        </div>
+      ));
     default:
       return item?.content?.map((item, index) => (
         <p key={index} style={styles.blackText}>

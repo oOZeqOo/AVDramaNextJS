@@ -1284,7 +1284,6 @@ export const timelineData = {
       title: "Surprise 🙌😆😄💝💝",
       link: "",
     },
-    // TODO : Start here for updating
     {
       description:
         "Zac and Anna went to Feng Cha and then went to the dance class for their last dance class this session. They had a fun time dancing and went back to Annas house to eat food that Anna cooked",
@@ -1414,6 +1413,127 @@ export const timelineData = {
       imgPath: "/images/timeline/2024/oct_17_2024.jpg",
       month: "October 2024",
       title: "Amazing NEWS 🥳🥳🎊🎊",
+      link: "",
+    },
+    // TODO : Start here for updating
+    {
+      description:
+        "Zac took Anna to Boba Tea Banh Mi Pho Corn Dog for lunch to celebrate for her completing the exam and doing super good on it! He then dropper her off at UTSA so she could study and then he came back later to bring food for them to eat and he showed her the updated AV Drama",
+      isVideo: false,
+      imgClass: "img-big",
+      imgPath: "/images/timeline/2024/oct_20_2024.jpg",
+      month: "October 2024",
+      title: "Exam Celebration! 💯💯",
+      link: "",
+    },
+    {
+      description:
+        "Zac and Anna went to a Pumpkin Patch and got some butterflies to release! Then they went to Woo Ri to get drinks to go and then to UTSA to have lunch. Zac went home and came back later to bring food and have dinner together!",
+      isVideo: false,
+      imgClass: "img-big",
+      imgPath: "/images/timeline/2024/oct_27_2024.jpg",
+      month: "October 2024",
+      title: "Pumpkin Patch with Butterflies 🎃🎃🦋🦋💖💖",
+      link: "",
+    },
+    {
+      description:
+        "Zac picked up Anna and dropped her off at UTSA. Zac had to get new tires so he went to Discount Tire! Zac got Teazzty and went back to Anna. They had dinner at Yozora and then went to Artea to color a pumpkin together!",
+      isVideo: false,
+      imgClass: "img-big",
+      imgPath: "/images/timeline/2024/oct_31_2024.jpg",
+      month: "October 2024",
+      title: "Happy Halloween 🎃👻",
+      link: "",
+    },
+    {
+      description:
+        "Zac and Anna went to Woo Ri to get drinks to go. They had a small photo shoot there! Then Zac took Anna to UTSA so she could study and he stayed there until he went to his dads house for his dad's birthday! He came back later to take Anna home! 🍵",
+      isVideo: false,
+      imgClass: "img-big",
+      imgPath: "/images/timeline/2024/november_10_2024.jpg",
+      month: "November 2024",
+      title: "Woo Ri + Study Time 🍵🤟💝",
+      link: "",
+    },
+    {
+      description:
+        "Zac went to get Milk Tea from Boba Tea Banh Mi Pho Corn Dog to go. He picked up Anna and they went to the San Marcos Outlets! They then met Anna's dad at Sakana for dinner! 🍣🍥",
+      isVideo: false,
+      imgClass: "img-big",
+      imgPath: "/images/timeline/2024/november_29_2024.jpg",
+      month: "November 2024",
+      title: "Black Friday Fun 🎉🎈",
+      link: "",
+    },
+    {
+      description:
+        "Zac met Anna at NLC and they went to HEB to get their flu shots! They went to Feng Cha together to get drinks! They had a photo shoot in the parking lot and Anna is so woo woo 😘😘. he then took her back to NLC. He came back later to take her to her car and guide her home!",
+      isVideo: false,
+      imgClass: "img-big",
+      imgPath: "/images/timeline/2024/december_02_2024.jpg",
+      month: "December 2024",
+      title: "Flu Shots! 💉💉",
+      link: "",
+    },
+    {
+      description:
+        "Zac got Woo Ri to go and went to UTSA to meet Anna! He took the food Anna brought to the office to keep it cold! He then came back later to UTSA to meet her. They had dinner sometime later and then Zac guided Anna home! 🚗",
+      isVideo: false,
+      imgClass: "img-big",
+      imgPath: "/images/timeline/2024/december_05_2024.jpg",
+      month: "December 2024",
+      title: "School Day 🏫📝📓📒",
+      link: "",
+    },
+    {
+      description:
+        "Zac and Anna went to Noodles and Dumplings for lunch! Then they went to Boba Tea & Crumbs to get drinks! Anna wasn't a fan of the drink there! They went to Teazzty to get a drink for Anna instead! Zac dropped Anna off at UTSA and stayed there! They had dinner later and went home!",
+      isVideo: false,
+      imgClass: "img-big",
+      imgPath: "/images/timeline/2024/december_08_2024.jpg",
+      month: "December 2024",
+      title: "New Places Even Though One Wasn't New 😅😅",
+      link: "",
+    },
+    {
+      description:
+        "Zac got Lustea drinks to go and met Anna at UTSA! They went to the library and had a small photo shoot in the library to show how studious they are! 📚📚📖. They then had dinner and Zac took Anna to her car and guided her home!",
+      isVideo: false,
+      imgClass: "img-big",
+      imgPath: "/images/timeline/2024/december_09_2024.jpg",
+      month: "December 2024",
+      title: "Library Couple 📚📖📕📔",
+      link: "",
+    },
+    {
+      description:
+        "Zac picked up Anna from UTSA and they went to Feng Cha to chill there a little bit! They then went to BJ's and met Annas dad and had a little celebration for Anna since she finished her semester! Woop Woop 🎉🎈🎊🥳",
+      isVideo: false,
+      imgClass: "img-big",
+      imgPath: "/images/timeline/2024/december_10_2024.jpg",
+      month: "December 2024",
+      title: "Finally Done 🥳🥳🎈🎊🎈🎊",
+      link: "",
+    },
+    {
+      description:
+        "Zac met Anna at her appointment and they drove to BC Bubble Tea and Banh Mi. Then Zac took Anna to Woo Ri and they chilled a little bit and then Zac went back to Annas car!",
+      isVideo: false,
+      imgClass: "img-big",
+      imgPath: "/images/timeline/2024/december_12_2024.jpg",
+      month: "December 2024",
+      title: "Small Seeing Time ⌚💖🌹💝",
+      link: "",
+    },
+    {
+      description:
+        "Zac picked up Anna and they went to James Avery and exchanged one of her rings! They then went to Lustea to get drinks to go and went to North Star Mall. They looked around in Forever 21 and then went to their dinner reservation at Best Quality Daughter and had a good dinner and celebrated for Anna 🎊🎊!",
+      isVideo: false,
+      imgClass: "img-big",
+      imgPath: "/images/timeline/2024/december_15_2024.jpg",
+      month: "December 2024",
+      title: "Celebration 🎉🎉🎉🎉🥳🥳🥳🎊",
       link: "",
     },
     // TODO : End here for updating

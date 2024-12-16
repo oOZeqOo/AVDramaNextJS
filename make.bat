@@ -6,7 +6,9 @@ SET command=%1
 
 if %command%==start GOTO :START @REM make start
 if %command%==rename GOTO :RENAME @REM make rename
-if %command%==check-mistakes GOTO :CHECK @REM make check-mistakes
+if %command%==add-pics GOTO :ADD_PICS @REM make add-pics
+if %command%==check GOTO :CHECK @REM make check
+if %command%==check-mistakes GOTO :CHECK_MISTAKES @REM make check-mistakes
 if %command%==check-images GOTO :COMPARE_IMAGES @REM make check-images
 
 GOTO :END
@@ -20,7 +22,18 @@ GOTO :END
     python scripts/rename_files.py
     GOTO :END
 
+:ADD_PICS
+    git add ./public/
+    git commit -m "added new pics"
+    GOTO :END
+
 :CHECK
+    ECHO Do:
+    ECHO  - make check-mistakes
+    ECHO  - make check-images
+    GOTO :END
+
+:CHECK_MISTAKES
     python scripts/find_mistakes.py
     GOTO :END
 
