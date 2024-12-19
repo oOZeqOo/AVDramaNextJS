@@ -1536,6 +1536,16 @@ export const timelineData = {
       title: "Celebration 🎉🎉🎉🎉🥳🥳🥳🎊",
       link: "",
     },
+    {
+      description:
+        "Zac picked up Anna and they went to James Avery and exchanged one of her rings! They then went to Lustea to get drinks to go and went to North Star Mall. They looked around in Forever 21 and then went to their dinner reservation at Best Quality Daughter and had a good dinner and celebrated for Anna 🎊🎊!",
+      isVideo: false,
+      imgClass: "img-big",
+      imgPath: "/images/timeline/2024/december_16_2024.jpg",
+      month: "December 2024",
+      title: "Celebration 🎉🎉🎉🎉🥳🥳🥳🎊",
+      link: "",
+    },
     // TODO : End here for updating
 
     // Template for new Events

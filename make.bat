@@ -10,6 +10,8 @@ if %command%==add-pics GOTO :ADD_PICS @REM make add-pics
 if %command%==check GOTO :CHECK @REM make check
 if %command%==check-mistakes GOTO :CHECK_MISTAKES @REM make check-mistakes
 if %command%==check-images GOTO :COMPARE_IMAGES @REM make check-images
+if %command%==commit GOTO :COMMIT @REM make commit
+if %command%==push GOTO :PUSH @REM make push
 
 GOTO :END
 
@@ -39,6 +41,14 @@ GOTO :END
 
 :COMPARE_IMAGES
     python scripts/compare_images.py
+    GOTO :END
+
+:COMMIT
+    git commit -am 'Update'
+    GOTO :END
+
+:PUSH
+    git push
     GOTO :END
 
 :END
