@@ -1538,12 +1538,12 @@ export const timelineData = {
     },
     {
       description:
-        "Zac picked up Anna and they went to James Avery and exchanged one of her rings! They then went to Lustea to get drinks to go and went to North Star Mall. They looked around in Forever 21 and then went to their dinner reservation at Best Quality Daughter and had a good dinner and celebrated for Anna 🎊🎊!",
+        "Zac and Anna went to Artea to get drinks and eat home-cooked food! They had some fun and got matching keychains from there! Zac dropped her off at Hollister so she could return her item! They then went to their igloo experience at Chicken n Pickle! After that they went to La Cantera to go to Forever 21 to return Annas items, she ended up also getting some new items! Then they went to Kay Jewelers and Zac got Anna a promise ring! They ended up going to In n Out for dinner! Somethings didnt go as expected but they still had fun! 💖💖💖",
       isVideo: false,
       imgClass: "img-big",
       imgPath: "/images/timeline/2024/december_16_2024.jpg",
       month: "December 2024",
-      title: "Celebration 🎉🎉🎉🎉🥳🥳🥳🎊",
+      title: "ANNIVERSARY 💖💖💝💝💗💗🤟🤟🌹💐💕",
       link: "",
     },
     // TODO : End here for updating

@@ -71,7 +71,7 @@ def check_timeline_incorrect():
         print('No missing items! ✅')
     else:
         for item in missing:
-            print(f'Line {item[0]:>4} -> {item[1]}')
+            print(f"❌ {location.lstrip('../')}:{item[0]:>4} -> {item[1]}")
 
     print()
     print('Repeating images:')
