@@ -1,7 +1,7 @@
 import os
-from pprint import pprint
+# from pprint import pprint
 
-from cmp_imgs import find_similar_images
+# from cmp_imgs import find_similar_images
 
 
 def find_useless_console_logs(root_dir, level=1):
@@ -45,7 +45,7 @@ def check_timeline_incorrect():
     missing = []
     missing_values = ['description: ""', 'month: ""', 'title: ""', 'imgPath: ""']
     img_paths = {}
-    same = []
+    # same = []
 
     contents = []
     with open(location, encoding="utf-8") as f:
@@ -92,8 +92,8 @@ def main() -> None:
 
     check_timeline_incorrect()
 
-    image_dir = "../public/images/more_images"
-    db_file = './image_similarity.json'
+    # image_dir = "../public/images/more_images"
+    # db_file = './image_similarity.json'
     # find_similar_images(image_dir, db_file)
 
 

@@ -1,4 +1,3 @@
-import itertools
 import json
 import os
 from time import perf_counter
