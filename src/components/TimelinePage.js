@@ -136,7 +136,7 @@ const CreateTimeline = ({ data }) => {
           </Button>
         </div>
         <div
-          className="flex-1 flex flex-col justify-start items-center sm:ml-10 md:ml-2 overflow-x-scroll sm:overflow-x-hidden"
+          className="flex-1 flex flex-col justify-start items-center sm:ml-10 md:ml-2 overflow-x-scroll"
           style={{ maxWidth: "100vw", height: 50 }}
         >
           <Tabs
