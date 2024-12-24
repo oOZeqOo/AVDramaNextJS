@@ -1546,6 +1546,16 @@ export const timelineData = {
       title: "ANNIVERSARY 💖💖💝💝💗💗🤟🤟🌹💐💕",
       link: "",
     },
+    {
+      description:
+        "Zac and Anna went to San Marcos to get Anna's new ring! Then they went to 85 Degrees and Milk + Tea! Then they went to Otopia Rooftop for the Igloo experience to celebrate Zac's Birthday and have a small celebration for their anniversary! Then they got Subway to go and went to Classic Christmas to enjoy the lights!",
+      isVideo: false,
+      imgClass: "img-big",
+      imgPath: "/images/timeline/2024/december_20_2024.jpg",
+      month: "December",
+      title: "Zac's Birthday!",
+      link: "",
+    },
     // TODO : End here for updating
     {
       description: "I love you so much babyyyyy 💖💖💝💝🥰🥰🥰",
