@@ -133,7 +133,7 @@ export const timelineData = {
   2021: [
     {
       description:
-        " Zac and Anna got to spend another New Years together and met Annas family at One Pocha",
+        " Zac and Anna got to spend another New Years together and met Anna's family at One Pocha",
       imgClass: "img",
       imgPath: "/images/timeline/2021/jan.jpg",
       month: "January 2021",
@@ -193,7 +193,7 @@ export const timelineData = {
       imgClass: "img",
       imgPath: "/images/timeline/2021/anna_bday.jpg",
       month: "June 2021",
-      title: "Annas Birthday 🎂🎊🥳",
+      title: "Anna's Birthday 🎂🎊🥳",
     },
     {
       description:
@@ -245,7 +245,7 @@ export const timelineData = {
     },
     {
       description:
-        " Anna and Zac went to the Texas Selfie Museum, Zac broke Annas selfie stick on accident and got her a new one!",
+        " Anna and Zac went to the Texas Selfie Museum, Zac broke Anna's selfie stick on accident and got her a new one!",
       imgClass: "img",
       imgPath: "/images/timeline/2021/selfie_museum.jpg",
       month: "October 2021",
@@ -568,7 +568,7 @@ export const timelineData = {
     },
     {
       description:
-        "Zac and Anna went with Annas family to a Pagoda and then to Anna's Aunt's house to celebrate Lunar New Year",
+        "Zac and Anna went with Anna's family to a Pagoda and then to Anna's Aunt's house to celebrate Lunar New Year",
       imgClass: "img",
       imgPath: "/images/timeline/2023/lunar_new_year.jpg",
       month: "January 2023",
@@ -665,7 +665,7 @@ export const timelineData = {
     },
     {
       description:
-        "Zac and Anna celebrated Annas birthday! They went to her starbucks, the wax museum and Biga for a fancy dinner!",
+        "Zac and Anna celebrated Anna's birthday! They went to her starbucks, the wax museum and Biga for a fancy dinner!",
       imgClass: "img",
       imgPath: "/images/timeline/2023/annas_birthday.jpg",
       month: "June 2023",
@@ -766,7 +766,7 @@ export const timelineData = {
     },
     {
       description:
-        "Zac and Anna went to UTSA to look at Annas classes for the semester and had a fun time!",
+        "Zac and Anna went to UTSA to look at Anna's classes for the semester and had a fun time!",
       isVideo: false,
       imgClass: "img",
       imgPath: "/images/timeline/2023/August_15_see_Annas_Classes.jpg",
@@ -825,7 +825,7 @@ export const timelineData = {
     },
     {
       description:
-        "Zac and Anna went to a pumpkin patch 🎃🎃, they got to make 5 new friends and let them all be free! They even took 1 new friend to Annas house 🦋",
+        "Zac and Anna went to a pumpkin patch 🎃🎃, they got to make 5 new friends and let them all be free! They even took 1 new friend to Anna's house 🦋",
       isVideo: false,
       imgClass: "img",
       imgPath: "/images/timeline/2023/oct_8_pumpkin_patch.jpg",
@@ -1286,7 +1286,7 @@ export const timelineData = {
     },
     {
       description:
-        "Zac and Anna went to Feng Cha and then went to the dance class for their last dance class this session. They had a fun time dancing and went back to Annas house to eat food that Anna cooked",
+        "Zac and Anna went to Feng Cha and then went to the dance class for their last dance class this session. They had a fun time dancing and went back to Anna's house to eat food that Anna cooked",
       isVideo: false,
       imgClass: "img",
       imgPath: "/images/timeline/2024/august_07_2024.jpg",
@@ -1448,7 +1448,7 @@ export const timelineData = {
     },
     {
       description:
-        "Zac and Anna went to Woo Ri to get drinks to go. They had a small photo shoot there! Then Zac took Anna to UTSA so she could study and he stayed there until he went to his dads house for his dad's birthday! He came back later to take Anna home! 🍵",
+        "Zac and Anna went to Woo Ri to get drinks to go. They had a small photo shoot there! Then Zac took Anna to UTSA so she could study and he stayed there until they went to a murder mystery dinner for his dad's birthday! they came back later so Anna could study some more and then he took Anna home! 🍵",
       isVideo: false,
       imgClass: "img-big",
       imgPath: "/images/timeline/2024/november_10_2024.jpg",
@@ -1458,7 +1458,7 @@ export const timelineData = {
     },
     {
       description:
-        "Zac went to get Milk Tea from Boba Tea Banh Mi Pho Corn Dog to go. He picked up Anna and they went to the San Marcos Outlets! They then met Anna's dad at Sakana for dinner! 🍣🍥",
+        "Zac went to get Milk Tea from Boba Tea Banh Mi Pho Corn Dog to go. He picked up Anna and they went to the San Marcos Outlets to go shopping! They then met Anna's dad at Sakana for dinner! 🍣🍥",
       isVideo: false,
       imgClass: "img-big",
       imgPath: "/images/timeline/2024/november_29_2024.jpg",
@@ -1468,7 +1468,7 @@ export const timelineData = {
     },
     {
       description:
-        "Zac met Anna at NLC and they went to HEB to get their flu shots! They went to Feng Cha together to get drinks! They had a photo shoot in the parking lot and Anna is so woo woo 😘😘. he then took her back to NLC. He came back later to take her to her car and guide her home!",
+        "Zac met Anna at NLC and they went to HEB to get their flu shots! They went to Feng Cha together to get drinks! They had a photo shoot in the parking lot and Anna is so woo woo 😘😘. He then took her back to NLC. He came back later to take her to her car and guided her home!",
       isVideo: false,
       imgClass: "img-big",
       imgPath: "/images/timeline/2024/december_02_2024.jpg",
@@ -1478,7 +1478,7 @@ export const timelineData = {
     },
     {
       description:
-        "Zac got Woo Ri to go and went to UTSA to meet Anna! He took the food Anna brought to the office to keep it cold! He then came back later to UTSA to meet her. They had dinner sometime later and then Zac guided Anna home! 🚗",
+        "Zac got Woo Ri to go and went to UTSA to meet Anna! He took the food Anna brought to the office to keep it cold! He then came back later to UTSA to meet her. They had dinner sometime later and then Zac took Anna to Artea to reward her for her hard work! He then guided Anna home! 🚗",
       isVideo: false,
       imgClass: "img-big",
       imgPath: "/images/timeline/2024/december_05_2024.jpg",
@@ -1508,7 +1508,7 @@ export const timelineData = {
     },
     {
       description:
-        "Zac picked up Anna from UTSA and they went to Feng Cha to chill there a little bit! They then went to BJ's and met Annas dad and had a little celebration for Anna since she finished her semester! Woop Woop 🎉🎈🎊🥳",
+        "Zac picked up Anna from UTSA and they went to Feng Cha to chill there a little bit! They then went to BJ's and met Anna's dad and had a little celebration for Anna since she finished her semester! Woop Woop 🎉🎈🎊🥳",
       isVideo: false,
       imgClass: "img-big",
       imgPath: "/images/timeline/2024/december_10_2024.jpg",
@@ -1518,7 +1518,7 @@ export const timelineData = {
     },
     {
       description:
-        "Zac met Anna at her appointment and they drove to BC Bubble Tea and Banh Mi. Then Zac took Anna to Woo Ri and they chilled a little bit and then Zac went back to Annas car!",
+        "Zac met Anna at her appointment and they drove to BC Bubble Tea and Banh Mi. Then Zac took Anna to Woo Ri and they chilled a little bit and then Zac went back to Anna's car!",
       isVideo: false,
       imgClass: "img-big",
       imgPath: "/images/timeline/2024/december_12_2024.jpg",
@@ -1538,7 +1538,7 @@ export const timelineData = {
     },
     {
       description:
-        "Zac and Anna went to Artea to get drinks and eat home-cooked food! They had some fun and got matching keychains from there! Zac dropped her off at Hollister so she could return her item! They then went to their igloo experience at Chicken n Pickle! After that they went to La Cantera to go to Forever 21 to return Annas items, she ended up also getting some new items! Then they went to Kay Jewelers and Zac got Anna a promise ring! They ended up going to In n Out for dinner! Somethings didnt go as expected but they still had fun! 💖💖💖",
+        "Zac and Anna went to Artea to get drinks and eat home-cooked food! They had some fun and got matching keychains from there! Zac dropped her off at Hollister so she could return her item! They then went to their igloo experience at Chicken n Pickle! After that they went to La Cantera to go to Forever 21 to return Anna's items, she ended up also getting some new items! Then they went to Kay Jewelers and Zac got Anna a promise ring! They ended up going to In n Out for dinner! Somethings didnt go as expected but they still had fun! 💖💖💖",
       isVideo: false,
       imgClass: "img-big",
       imgPath: "/images/timeline/2024/december_16_2024.jpg",
@@ -1547,17 +1547,6 @@ export const timelineData = {
       link: "",
     },
     // TODO : End here for updating
-
-    // Template for new Events
-    // {
-    //   description: "",
-    //   isVideo: false,
-    //   imgClass: "img",
-    //   imgPath: "/images/timeline/2024/test.jpg",
-    //   month: "",
-    //   title: "",
-    //   link: "",
-    // },
     {
       description: "I love you so much babyyyyy 💖💖💝💝🥰🥰🥰",
       imgClass: "img-big",
@@ -1567,3 +1556,17 @@ export const timelineData = {
     },
   ],
 };
+
+const template = [
+  {},
+  {
+    description: "",
+    isVideo: false,
+    imgClass: "img",
+    imgPath: "/images/timeline/2025/month-day-year.jpg",
+    month: "",
+    title: "",
+    link: "",
+  },
+  {},
+];

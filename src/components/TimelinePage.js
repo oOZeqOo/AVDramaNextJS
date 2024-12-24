@@ -2,8 +2,6 @@ import React, { useMemo, useState } from "react";
 import { timelineData } from "@/assets/data/TimelineData";
 import cssStyles from "@/styles/Timeline.module.css";
 import Link from "next/link";
-import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
-import IconButton from "./common/IconButton";
 import "@/styles/js/all";
 import Timeline from "@mui/lab/Timeline";
 import TimelineItem, { timelineItemClasses } from "@mui/lab/TimelineItem";
@@ -14,7 +12,6 @@ import TimelineDot from "@mui/lab/TimelineDot";
 import { isMobile } from "react-device-detect";
 import useDeviceSize from "./hooks/useDeviceSize";
 import { Button, Divider, Typography } from "@mui/material";
-import { LoadingButton } from "@mui/lab";
 import { useEffect } from "react";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
@@ -64,8 +61,22 @@ const CreateTimeline = ({ data }) => {
   const [value, setValue] = useState(0);
   const router = useRouter();
 
+  useEffect(() => {
+    const query = router.query;
+    let selectedTab = parseInt(query.tab) || 0;
+    if (selectedTab >= 0 && value !== selectedTab) {
+      setValue(selectedTab);
+    }
+  }, [router.query]); //eslint-disable-line
+
   const handleChange = (event, newValue) => {
-    setValue(newValue);
+    // setValue(newValue);
+    const query = router.query;
+    query.tab = newValue;
+    const queryString = Object.entries(query)
+      .map(([key, value]) => `${key}=${value}`)
+      .join("&");
+    router.push(`${router.route}?${queryString}`);
   };
 
   const flattenData = useMemo(() => {
@@ -136,14 +147,16 @@ const CreateTimeline = ({ data }) => {
           </Button>
         </div>
         <div
-          className="flex-1 flex flex-col justify-start items-center sm:ml-10 md:ml-2 overflow-x-scroll"
+          className="flex-1 flex flex-col justify-start items-center sm:ml-10 md:ml-2 w-full overflow-scroll"
           style={{ maxWidth: "100vw", height: 50 }}
         >
           <Tabs
             value={value}
             onChange={handleChange}
-            aria-label="basic tabs example"
-            className="w-fit max-w-full overflow-x-auto"
+            aria-label="year-tabs"
+            className="w-full max-w-full [&>div]:!overflow-x-auto "
+            scrollButtons="auto"
+            // style={{ "&::div": { overflow: "auto" } }}
             // className="scrollbar-thumb-sky-700 overflow-x-scroll sm:overflow-x-hidden scrollbar-thin"
             // fullWidth="true"
           >
@@ -217,7 +230,7 @@ const CreateTimeline = ({ data }) => {
           >
             {v?.map((item, index) => (
               <TimelineItem
-                id={index !== v?.length - 1 ? index : "latest"}
+                id={index !== v?.length - 1 ? `${index}` : "latest"}
                 key={index}
                 className={index % 2 ? "ListItemOdd" : "ListItemEven"}
               >

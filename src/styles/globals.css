@@ -200,3 +200,7 @@ a:hover, a:active, a:focus {
 @keyframes spinner {
   to {transform: rotate(360deg);}
 }
+
+.MuiTabs-scoller{
+  overflow-x: auto !important;
+}
