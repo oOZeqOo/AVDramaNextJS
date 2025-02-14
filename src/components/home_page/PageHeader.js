@@ -56,7 +56,6 @@ const PageHeader = ({ viewWidth, height, isMobile }) => {
       padding: 20,
       width: "200px",
     },
-    moreInfoWrapper: { backgroundColor: "white" },
     moreInfo: { color: "black" },
     rowCenter: {
       display: "flex",
@@ -105,7 +104,7 @@ const PageHeader = ({ viewWidth, height, isMobile }) => {
           </div>
         </div>
       </div>
-      <div style={myStyles.moreInfoWrapper} id={"more"}>
+      <div id={"more"}>
         <h1 style={myStyles.moreInfo}>More Information about the A-V-Drama</h1>
       </div>
     </>

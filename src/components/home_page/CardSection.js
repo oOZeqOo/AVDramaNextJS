@@ -31,7 +31,6 @@ const CardSection = () => {
     <div
       style={{
         height: "fit-content",
-        backgroundColor: "white",
         display: "flex",
         flexDirection: "row",
         justifyContent: "center",

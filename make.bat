@@ -6,6 +6,7 @@ SET command=%1
 
 if %command%==start GOTO :START @REM make start
 if %command%==rename GOTO :RENAME @REM make rename
+if %command%==update GOTO :UPDATE @REM make update
 if %command%==add-pics GOTO :ADD_PICS @REM make add-pics
 if %command%==check GOTO :CHECK @REM make check
 if %command%==check-mistakes GOTO :CHECK_MISTAKES @REM make check-mistakes
@@ -22,6 +23,11 @@ GOTO :END
 
 :RENAME
     python scripts/rename_files.py
+    GOTO :END
+
+:UPDATE
+    git commit -am 'Update'
+    git push
     GOTO :END
 
 :ADD_PICS

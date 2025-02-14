@@ -104,7 +104,13 @@
 export const homePageNotes = {
   title: {
     element: "h1",
-    content: ["Happy Valentines Day Babe 💘💝💝💝💝"],
+    content: [
+      "Happy Valentines Day Babe",
+      " 💘💘💘💘💘💘💘💘💘💘💘💘",
+      " 💘💘💘💘💘💘💘💘💘💘💘💘",
+      " 💘💘💘💘💘💘💘💘💘💘💘💘",
+      " 💘💘💘💘💘💘💘💘💘💘💘💘",
+    ],
   },
   message: {
     element: "h3",
@@ -112,10 +118,10 @@ export const homePageNotes = {
   },
   extraNote: {
     element: "h2",
-    content: ["I love you so much babyyyyyy!!!", "💝💝💝💝💝💝💝💝💝💝💝💝"],
+    content: ["I love you so matcha!!!", "💝💝💝💝💝💝💝💝💝💝💝💝"],
   },
   extras: {
     element: "img",
-    content: ["/gifs/anniversary_5.jpg"],
+    content: ["/images/front_page/bubu_dudu_valentines_day.jpg"],
   },
 };
