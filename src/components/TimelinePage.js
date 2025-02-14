@@ -124,14 +124,15 @@ const CreateTimeline = ({ data }) => {
       style={{
         transition: "all 0.5s ease",
         scrollbarGutter: "stable",
+        // height: "80vh",
       }}
-      className="w-full sm:pl-0 bg-[lightyellow] h-fit"
+      className="w-full sm:pl-0 bg-[lightyellow]"
     >
       <div
         style={{
           backgroundColor: "#FFC0CB",
         }}
-        className="flex flex-wrap items-center lg:justify-between border-b h-fit flex-col lg:flex-row w-full sticky"
+        className="flex flex-wrap items-center lg:justify-between border-b h-[55px] flex-col lg:flex-row w-full sticky"
       >
         <div
           className="flex flex-row justify-center lg:justify-between min-w-[10%] max-w-[40%] "
@@ -147,18 +148,15 @@ const CreateTimeline = ({ data }) => {
           </Button>
         </div>
         <div
-          className="flex-1 flex flex-col justify-start items-center sm:ml-10 md:ml-2 w-full overflow-scroll"
+          className="flex-1 flex flex-col justify-center items-center sm:ml-10 md:ml-2 w-full overflow-auto"
           style={{ maxWidth: "100vw", height: 50 }}
         >
           <Tabs
             value={value}
             onChange={handleChange}
             aria-label="year-tabs"
-            className="w-full max-w-full [&>div]:!overflow-x-auto "
+            className="w-fit max-w-full [&>div]:!overflow-x-auto h-full"
             scrollButtons="auto"
-            // style={{ "&::div": { overflow: "auto" } }}
-            // className="scrollbar-thumb-sky-700 overflow-x-scroll sm:overflow-x-hidden scrollbar-thin"
-            // fullWidth="true"
           >
             {Object.keys(data)?.map((item, index) => (
               <Tab
@@ -180,6 +178,7 @@ const CreateTimeline = ({ data }) => {
                 style={{
                   transition: "0.5s all ease",
                   padding: 0,
+                  height: "fit-content",
                 }}
                 sx={{}}
               />
@@ -221,7 +220,7 @@ const CreateTimeline = ({ data }) => {
           value={value}
           index={index}
           key={index}
-          className="sm:!pl-0"
+          className="sm:!pl-0 h-full"
         >
           <Timeline
             position={width < 1200 || isSmallScreen ? "right" : "alternate"}
