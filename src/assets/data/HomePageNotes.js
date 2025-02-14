@@ -104,14 +104,11 @@
 export const homePageNotes = {
   title: {
     element: "h1",
-    content: ["Happy Anniversary Baby 😍😍💕😍💝💋💗💖💘"],
+    content: ["Happy Valentines Day Babe 💘💝💝💝💝"],
   },
   message: {
     element: "h3",
-    content: [
-      "I can't believe we have been dating for 5 years already!",
-      "I can't wait for many more years to come!",
-    ],
+    content: [],
   },
   extraNote: {
     element: "h2",
