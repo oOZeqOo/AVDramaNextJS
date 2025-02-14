@@ -26,7 +26,8 @@ GOTO :END
     GOTO :END
 
 :UPDATE
-    git commit -am 'Update'
+    git add ./public/
+    git commit -am "CLI Update"
     git push
     GOTO :END
 

@@ -52,6 +52,9 @@ def check_timeline_incorrect():
         contents = f.readlines()
 
     for idx, line in enumerate(contents):
+        if "const template = [" in line:
+            break
+
         if '//' in line:
             continue
 
