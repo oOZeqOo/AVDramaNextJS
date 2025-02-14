@@ -132,7 +132,7 @@ const CreateTimeline = ({ data }) => {
         style={{
           backgroundColor: "#FFC0CB",
         }}
-        className="flex flex-wrap items-center lg:justify-between border-b h-[55px] flex-col lg:flex-row w-full sticky"
+        className="flex flex-wrap items-center lg:justify-between border-b h-fit flex-col lg:flex-row w-full sticky"
       >
         <div
           className="flex flex-row justify-center lg:justify-between min-w-[10%] max-w-[40%] "

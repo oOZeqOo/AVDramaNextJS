@@ -7,7 +7,7 @@ from keras.api.applications import VGG16
 from keras.api.applications.vgg16 import preprocess_input
 from keras.api.models import Model
 from PIL import Image, ImageChops
-from skimage import io
+import skimage as ski
 from sklearn.metrics.pairwise import cosine_similarity
 
 cache = {}
@@ -94,7 +94,7 @@ def update_image_similarity_db(image_dir, db_file):
 
 def check_cache(img_path, model: Model):
     if img_path not in cache.keys():
-        img = io.imread(img_path)
+        img = ski.io.imread(img_path)
         img = np.expand_dims(img, axis=0)
         img = preprocess_input(img)
         features = model.predict(img)
