@@ -51,7 +51,7 @@ GOTO :END
     GOTO :END
 
 :COMMIT
-    git commit -am 'Update'
+    git commit -am "Update"
     GOTO :END
 
 :PUSH

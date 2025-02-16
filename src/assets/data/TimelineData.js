@@ -1651,7 +1651,7 @@ export const timelineData = {
     },
     {
       description:
-        "Zac and Anna went to a Đạo Tràng Liên Hoa for a Lunar New Year celebration. After that they went to get Teazzty drinks to go! Zac dropped Anna off at UTSA. Zac came back later to pick up Anna dn they went to Canes for dinner!",
+        "Zac and Anna went to a Đạo Tràng Liên Hoa for a Lunar New Year celebration. After that they went to get Teazzty drinks to go! Zac dropped Anna off at UTSA. Zac came back later to pick up Anna and they went to Canes for dinner!",
       isVideo: false,
       imgClass: "img-big",
       imgPath: "/images/timeline/2025/jan_26_2025.jpg",
@@ -1687,6 +1687,16 @@ export const timelineData = {
       imgPath: "/images/timeline/2025/feb_09_2025.jpg",
       month: "February",
       title: "Austin Lunar New Year Event 🎉🎊🥳",
+      link: "",
+    },
+    {
+      description:
+        "Zac took Anna to Woo Ri and they got drinks to go! Then they went to a paint and sip class together to paint some art! After that, they went to Uniko for dinner. They really liked the food there! Zac gave Anna the promise ring there and they celebrated Valentines day! 💐💕",
+      isVideo: false,
+      imgClass: "img-big",
+      imgPath: "/images/timeline/2025/feb_14_2025.jpg",
+      month: "February",
+      title: "Valentines Day 💘💘💘",
       link: "",
     },
     {
