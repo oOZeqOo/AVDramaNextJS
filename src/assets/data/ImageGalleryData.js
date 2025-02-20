@@ -673,5 +673,13 @@ export const imageGalleryData = {
     "0871.jpg",
     "0872.jpg",
     "0873.jpg",
+    "0874.jpg",
+    "0875.jpg",
+    "0876.jpg",
+    "0877.jpg",
+    "0878.jpg",
+    "0879.jpg",
+    "0880.jpg",
+    "0881.jpg",
    ],
 };

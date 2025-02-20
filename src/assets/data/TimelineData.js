@@ -1116,7 +1116,7 @@ export const timelineData = {
     },
     {
       description:
-        "Zac took Anna to her starbucks so she can talk to Richie. They went to Famous Footwear to get shoes for Zac! They went to 375 Social Kitchen for dinner. They went to Gong Cha after to get some milk tea!",
+        "Zac took Anna to her starbucks so she can talk to Richie. They went to Famous Footwear to get shoes for Zac and Anna! They went to 375 Social Kitchen for dinner. They went to Gong Cha after to get some milk tea!",
       isVideo: false,
       imgClass: "img",
       imgPath: "/images/timeline/2024/may_12_2024.jpg",
@@ -1568,7 +1568,7 @@ export const timelineData = {
     },
     {
       description:
-        "Zac met Anna and her dad at Suko for lunch! They then went to Windsor at North Star Mall to return Anna's dress and order a new one online 👗👗. They then went to Artea and opened presents there and celebrated Christmas Eve!",
+        "Zac met Anna and her dad at Suko for lunch! They then went to Windsor at North Star Mall to return Anna's dress and order a new one online 👗👗. They also went to Zara to get Anna a coat! They then went to Artea and opened presents there and celebrated Christmas Eve!",
       isVideo: false,
       imgClass: "img",
       imgPath: "/images/timeline/2024/december_24_2024.jpg",
@@ -1588,7 +1588,7 @@ export const timelineData = {
     },
     {
       description:
-        "Zac, Anna and her dad went to the Tax Office and then they all went to Austin. They ate at a Vietnamese restaurant near the Asian Market and then went to the Asian Market and looked around! Then they went to Gen BobaBee & Coffee house and got some milk tea. Then they went to the Aboretum to go shopping! Then they went to Oseyo for dinner and went back home!",
+        "Zac, Anna and her dad went to Starbucks and then they all went to Austin. They ate at a Vietnamese restaurant near the Asian Market and then went to the Asian Market and looked around! Then they went to Gen BobaBee & Coffee house and got some milk tea. Then they went to the Aboretum to go shopping! Then they went to Oseyo for dinner and went back home!",
       isVideo: false,
       imgClass: "img-big",
       imgPath: "/images/timeline/2024/december_26_2024.jpg",
@@ -1611,12 +1611,12 @@ export const timelineData = {
   2025: [
     {
       description:
-        "Zac took Anna to work and then later picked her up after work and they went to the New Artea and talked about New Year resolutions! Then they went to Godori Japanese & Korean Fusion for dinner. 🥣🍚🍜",
+        "Zac took Anna to work and then later picked her up after work and they went to the New Artea and talked about New Year resolutions! Then they went to Godori Japanese & Korean Fusion for dinner. 🥣🍚🍜. After that they went to Urgent Care since Zac was having some heart burn and everything turned out ok",
       isVideo: false,
       imgClass: "img-big",
       imgPath: "/images/timeline/2025/jan_01_2025.jpg",
       month: "January",
-      title: "New Years Day! 🍚",
+      title: "New Years Day! 🍚🎇🎇🎆🎆",
       link: "",
     },
     {
@@ -1631,7 +1631,7 @@ export const timelineData = {
     },
     {
       description:
-        "Zac and Anna went to Woo Ri to get drinks to go and at lunch on the way. After that they went to an anime convention downtown. After that they went to Burlington and then went to Canes to have dinner! Zac brought some treats for Anna and her family! 🍪🍪🍪",
+        "Zac and Anna went to Woo Ri to get drinks to go and ate lunch on the way. After that they went to an anime convention downtown. After that they went to Burlington and then went to Canes to have dinner! Zac brought some treats for Anna and her family! 🍪🍪🍪",
       isVideo: false,
       imgClass: "img",
       imgPath: "/images/timeline/2025/jan_19_2025.jpg",
@@ -1641,7 +1641,7 @@ export const timelineData = {
     },
     {
       description:
-        "Zac took Anna to work and after her shift they went to HEB Pharmacy, then they went to get drinks at Lustea to go and then went to Dillards to get some ear muffs for Anna 🎧. After that they went to the Alan Walker concert! They had so much fun there! After that they went to Whataburger to get food to go and then went home",
+        "Zac took Anna to work and after her shift they went to HEB Pharmacy, then they went to get drinks at Lustea to go and then went to Dillards to get some ear muffs for Anna 🎧. They got Subway for dinner! After that they went to the Alan Walker concert! They had so much fun there! After that they went to Whataburger to get a drink to go and then went home",
       isVideo: false,
       imgClass: "img",
       imgPath: "/images/timeline/2025/jan_22_2025.jpg",
@@ -1651,7 +1651,7 @@ export const timelineData = {
     },
     {
       description:
-        "Zac and Anna went to a Đạo Tràng Liên Hoa for a Lunar New Year celebration. After that they went to get Teazzty drinks to go! Zac dropped Anna off at UTSA. Zac came back later to pick up Anna and they went to Canes for dinner!",
+        "Zac and Anna went to a Đạo Tràng Liên Hoa for a Lunar New Year celebration. After that they went to get Teazzty drinks to go! Zac dropped Anna off at UTSA. Zac came back later to pick up Anna and they went to Godori for dinner!",
       isVideo: false,
       imgClass: "img-big",
       imgPath: "/images/timeline/2025/jan_26_2025.jpg",
@@ -1661,7 +1661,7 @@ export const timelineData = {
     },
     {
       description:
-        "Zac picked up Anna from NLC and they went to Famous Footwear to get shoes for Zac! Then they went to Ulta Beauty to pick up Anna's item. Then they went to Woo Ri to get drinks to go and then went to Ruth Chris' House for dinner and celebrated Lunar New Year! Zac took Anna back to NLC",
+        "Zac took Anna to NLC so she could study! Zac picked up Anna from NLC and they went to Famous Footwear to get shoes for Zac! Then they went to Ulta Beauty to pick up Anna's item. Then they went to Woo Ri to get drinks to go and then went to Ruth Chris' House for dinner and celebrated Lunar New Year!",
       isVideo: false,
       imgClass: "img",
       imgPath: "/images/timeline/2025/jan_29_2025.jpg",
@@ -1697,6 +1697,16 @@ export const timelineData = {
       imgPath: "/images/timeline/2025/feb_14_2025.jpg",
       month: "February",
       title: "Valentines Day 💘💘💘",
+      link: "",
+    },
+    {
+      description:
+        "Zac gave Anna a promise ring to assure her of his love! Anh yêu Em rất nhiều 💞💖💞💖💞💖💞. Vợ yêu tương lai của Anh 💖💖💖💞💞💟💟💖💖💖",
+      isVideo: false,
+      imgClass: "img-big",
+      imgPath: "/images/timeline/2025/feb_14_promise_ring.jpg",
+      month: "February",
+      title: "Promise Ring 💍",
       link: "",
     },
     {
