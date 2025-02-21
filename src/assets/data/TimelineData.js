@@ -1701,7 +1701,7 @@ export const timelineData = {
     },
     {
       description:
-        "Zac gave Anna a promise ring to assure her of his love! Anh yêu Em rất nhiều 💞💖💞💖💞💖💞. Vợ yêu tương lai của Anh 💖💖💖💞💞💟💟💖💖💖",
+        "Zac gave Anna a promise ring to assure her of his love! Anh yêu Em rất nhiều 💞💖💞💖💞💖💞. Vợ yêu tương lai của Anh 💖💖💖💞💞💖💖💖",
       isVideo: false,
       imgClass: "img-big",
       imgPath: "/images/timeline/2025/feb_14_promise_ring.jpg",
