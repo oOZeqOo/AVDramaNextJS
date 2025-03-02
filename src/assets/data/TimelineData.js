@@ -1116,7 +1116,7 @@ export const timelineData = {
     },
     {
       description:
-        "Zac took Anna to her starbucks so she can talk to Richie. They went to Famous Footwear to get shoes for Zac and Anna! They went to 375 Social Kitchen for dinner. They went to Gong Cha after to get some milk tea!",
+        "Zac took Anna to her starbucks so she can talk to Richie. They went to Famous Footwear to get shoes for Zac! They went to 375 Social Kitchen for dinner. They went to Gong Cha after to get some milk tea!",
       isVideo: false,
       imgClass: "img",
       imgPath: "/images/timeline/2024/may_12_2024.jpg",
@@ -1661,7 +1661,7 @@ export const timelineData = {
     },
     {
       description:
-        "Zac took Anna to NLC so she could study! Zac picked up Anna from NLC and they went to Famous Footwear to get shoes for Zac! Then they went to Ulta Beauty to pick up Anna's item. Then they went to Woo Ri to get drinks to go and then went to Ruth Chris' House for dinner and celebrated Lunar New Year!",
+        "Zac took Anna to NLC so she could study! Zac picked up Anna from NLC and they went to Famous Footwear to get shoes for Zac and Anna! Then they went to Ulta Beauty to pick up Anna's item. Then they went to Woo Ri to get drinks to go and then went to Ruth Chris' House for dinner and celebrated Lunar New Year!",
       isVideo: false,
       imgClass: "img",
       imgPath: "/images/timeline/2025/jan_29_2025.jpg",
@@ -1707,6 +1707,26 @@ export const timelineData = {
       imgPath: "/images/timeline/2025/feb_14_promise_ring.jpg",
       month: "February",
       title: "Promise Ring 💍",
+      link: "",
+    },
+    {
+      description:
+        "Zac dropped Anna off at UTSA. He later picked up Anna and they went to the Track at the UTSA gym to run! Zac took Anna back to UTSA to study. After that they went to get Artea! They went back to Annas house to eat some home cooked food! 🥘🥗",
+      isVideo: false,
+      imgClass: "img",
+      imgPath: "/images/timeline/2025/feb_16_2025.jpg",
+      month: "February",
+      title: "UTSA GYM TIME 💪💪🏃‍♀️🏃‍♂️",
+      link: "",
+    },
+    {
+      description:
+        "Zac took Anna to UTSA. He went to Kay but Anna's ring wasn't ready yet. He got Feng Cha and met Anna and stayed on campus. Later Zac got Teriyaki Madness to go and picked up Anna and they went to Artea to eat there! 🍵☕",
+      isVideo: false,
+      imgClass: "img",
+      imgPath: "/images/timeline/2025/feb_27_2025.jpg",
+      month: "February",
+      title: "Teriyaki Couple 🥩🥩",
       link: "",
     },
     {
