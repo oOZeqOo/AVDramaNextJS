@@ -1847,7 +1847,7 @@ export const timelineData = {
 		},
 		{
 			description:
-				"Zac took Anna to her hair stylist appointment! Zac packed more stuff at his old apartment and put it into the car. They went to Thirty Grind to get drinks! Zac took Anna to her advisor appointment and Zac stayed at UTSA to work! They then got 85 degrees to go and went to HEB. Zac helped unload Zac's car at his new apartment. They ate home food this day",
+				"Zac took Anna to her hair stylist appointment! Zac packed more stuff at his old apartment and put it into the car. They went to Thirty Grind to get drinks! Zac took Anna to her advisor appointment and Zac stayed at UTSA to work! They then got 85 degrees to go and went to HEB. Anna helped unload Zac's car at his new apartment. They ate home food this day",
 			imgClass: "img",
 			imgPath: "/images/timeline/2025/may_21_2025.jpg",
 			month: "May",
@@ -1863,7 +1863,7 @@ export const timelineData = {
 		},
 		{
 			description:
-				"Zac dropped Anna off at the airport for her Trip to Orlando Florida for her work training!",
+				"Zac dropped Anna off at the airport for her trip to Orlando Florida for her work training!",
 			imgClass: "img",
 			imgPath: "/images/timeline/2025/jun_02_2025.jpeg",
 			month: "June",

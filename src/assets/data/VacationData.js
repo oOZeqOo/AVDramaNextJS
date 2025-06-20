@@ -165,7 +165,7 @@ export const vacationData = {
 	},
 	florida_1: {
 		title: "Florida Vacation 2025",
-		borderImage: "/public/images/sunflower-6.jpg",
+		borderImage: "/images/vacations/vietnam_1/sunflower-border.jpg",
 		description:
 			"Anna went to Orlando Florida to for training for her Internship. Zac went too to meet her and see her there. They had a lot of fun even though they didn't see each other for very long",
 		imgPath: "/images/vacations/florida_1/Snapchat-453326062.jpg",

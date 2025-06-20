@@ -102,26 +102,30 @@
 
 // Anniversary 2024 (5 years)
 export const homePageNotes = {
-  title: {
-    element: "h1",
-    content: [
-      "Happy Valentines Day Babe",
-      " 💘💘💘💘💘💘💘💘💘💘💘💘",
-      " 💘💘💘💘💘💘💘💘💘💘💘💘",
-      " 💘💘💘💘💘💘💘💘💘💘💘💘",
-      " 💘💘💘💘💘💘💘💘💘💘💘💘",
-    ],
-  },
-  message: {
-    element: "h3",
-    content: [],
-  },
-  extraNote: {
-    element: "h2",
-    content: ["I love you so matcha!!!", "💝💝💝💝💝💝💝💝💝💝💝💝"],
-  },
-  extras: {
-    element: "img",
-    content: ["/images/front_page/bubu_dudu_valentines_day.jpg"],
-  },
+	title: {
+		element: "h1",
+		content: [
+			"HAPPY BIRTHDAY EM YÊU",
+			" 🥳🎊🎊🎊🎊🎊🎊🎂🥳🥳🥳🥳🥳🥳🥳",
+			" 💘💘💘💘💝💝💝💝💝💝💘💘💘💘",
+			" 💘💘💘💘💝💝💝💝💝💝💘💘💘💘",
+			" 💘💘💘💘💝💝💝💝💝💝💘💘💘💘",
+			" 💘💘💘💘💝💝💝💝💝💝💘💘💘💘",
+		],
+	},
+	message: {
+		element: "h3",
+		content: [],
+	},
+	extraNote: {
+		element: "h2",
+		content: [
+			"You're brew-tiful, and I’m so lucky to steep in your love. Happy birthday, my milk tea queen!!!",
+			"💝💝💝💝💝💝💝💝💝💝💝💝",
+		],
+	},
+	extras: {
+		element: "img",
+		content: ["/images/front_page/bubu_dudu_bday.webp"],
+	},
 };
