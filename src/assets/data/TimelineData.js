@@ -1735,7 +1735,7 @@ export const timelineData = {
 		},
 		{
 			description:
-				"Zac and Anna went to Boba Tea Banh Mi Pho Corn Dog to get drinks! Then they went to  SUko to get a Matcha Crepe and then went to Uni'ko for dinner. Zac showed Anna the updated AV Drama!",
+				"Zac and Anna went to Boba Tea Banh Mi Pho Corn Dog to get drinks! Then they went to Suko to get a Matcha Crepe and then went to Uni'ko for dinner. Zac showed Anna the updated AV Drama!",
 			imgClass: "img-big",
 			imgPath: "/images/timeline/2025/mar_15_2025.jpeg", // March 12
 			month: "March",
