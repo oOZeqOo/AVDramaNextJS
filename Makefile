@@ -21,11 +21,11 @@ check:
 
 
 check-mistakes:
-	python scripts/find_mistakes.py
+	python3 scripts/find_mistakes.py
 
 
 compare-images:
-	python scripts/compare_images.py
+	python3 scripts/compare_images.py
 
 
 commit:
