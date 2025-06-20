@@ -1,0 +1,5 @@
+.monaco-list-row,
+.monaco-tree-row,
+.monaco-icon-label {
+  font-family: monospace !important;
+}
