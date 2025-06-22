@@ -1911,6 +1911,14 @@ export const timelineData = {
 			title: "After work things 📝🤟💘💗",
 		},
 		{
+			description:
+				"Zac took Anna to work and got Black Rock Coffee on the way! Then he picked her up after work and they went to the Hananaru Cafe to celebrate for Anna's birthday 🎂🎉🎉!",
+			imgClass: "img-big",
+			imgPath: "/images/timeline/2025/jun_20_2025.jpg",
+			month: "June",
+			title: "Anna's Birthday 🎂🎊🎊🎊🎊🥳💝💝🎉",
+		},
+		{
 			description: "I love you so much babyyyyy 💖💖💝💝🥰🥰🥰",
 			imgClass: "img-big",
 			imgPath: "/images/timeline/sunflower-6.jpg",
