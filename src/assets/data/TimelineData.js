@@ -1767,11 +1767,11 @@ export const timelineData = {
 		},
 		{
 			description:
-				"Zac went to So Seoul to get drinks to go. Then he got a Matcha Crepe from Suko and met Anna. She wasn't happy with the drink so they went to Kung Fu to get her a different drink! 🧋",
+				"Zac went to So Seoul to get drinks to go. Then he got a Matcha Crepe from Suko and met Anna. She wasn't happy with the drink so they went to Kung Fu to get her a different drink! 💖",
 			imgClass: "img",
 			imgPath: "/images/timeline/2025/mar_31_2025.jpeg",
 			month: "March",
-			title: "Drink TIMES 🍵🧋",
+			title: "Drink TIMES 🍵💖",
 		},
 		{
 			description:
@@ -1799,7 +1799,7 @@ export const timelineData = {
 		},
 		{
 			description:
-				"Zac went to QT to see if there was any evidence for Anna's dad's accident but there wasnt any evidence. They went to UTSA to practice some more for Anna's upcoming interview 💪❤️. Zac got Teriyaki Madness for them and they ate and Zac took Anna to her interview! Later on they went to Feng Cha to chill there and take care of what they needed to! Then they went to Crepeccino Cafe & Creperie! (Spoiler she got the job! 🫢)",
+				"Zac went to QT to see if there was any evidence for Anna's dad's accident but there wasnt any evidence. They went to UTSA to practice some more for Anna's upcoming interview 💪❤️. Zac got Teriyaki Madness for them and they ate and Zac took Anna to her interview! Later on they went to Feng Cha to chill there and take care of what they needed to! Then they went to Crepeccino Cafe & Creperie! (Spoiler she got the job! 😉)",
 			imgClass: "img",
 			imgPath: "/images/timeline/2025/apr_23_2025.jpeg",
 			month: "April",
@@ -1807,7 +1807,7 @@ export const timelineData = {
 		},
 		{
 			description:
-				"Zac picked up Anna and they went to the K-pop festival event! They had home cooked food for dinner!",
+				"Zac picked up Anna and they went to the K-pop festival event! 🎎 They had home cooked food for dinner!",
 			imgClass: "img",
 			imgPath: "/images/timeline/2025/apr_26_2025.jpeg",
 			month: "April",
@@ -1823,7 +1823,7 @@ export const timelineData = {
 		},
 		{
 			description:
-				"Zac met Anna and her dad at Sushi Haya to get lunch to celebrate dor Annas dad's birthday. Zac took Anna to UTSA and then later helped put up some stuff at her apartment",
+				"Zac met Anna and her dad at Sushi Haya to get lunch to celebrate for Annas dad's birthday. Zac took Anna to UTSA and then later helped put up some stuff at her apartment",
 			imgClass: "img-big",
 			imgPath: "/images/timeline/2025/may_06_2025.jpeg",
 			month: "May",
@@ -1896,7 +1896,7 @@ export const timelineData = {
 		},
 		{
 			description:
-				"Zac picked up Anna and they went to Dutch bros to get drinks to go! Zac showed Anna the website he made to help her calculate her hours. He dropped her off at work and picked her up after work! He went to Luscious Dumpling to get drinks to go. They went to Target They went to Luscious Dumplings",
+				"Zac picked up Anna and they went to Dutch bros to get drinks to go! Zac showed Anna the website he made to help her calculate her hours. He dropped her off at work and picked her up after work! He went to Luscious Dumpling to get drinks to go. They went to Target. Later they went to Luscious Dumplings for dinner",
 			imgClass: "img-big",
 			imgPath: "/images/timeline/2025/jun_16_2025.jpeg",
 			month: "June",
@@ -1917,6 +1917,22 @@ export const timelineData = {
 			imgPath: "/images/timeline/2025/jun_20_2025.jpg",
 			month: "June",
 			title: "Anna's Birthday 🎂🎊🎊🎊🎊🥳💝💝🎉",
+		},
+		{
+			description:
+				"Zac and Anna went to Austin to celebrate for Anna's birthday. They got subway on the way. They went to Terrazzo Tea and got drinks to go. Then they went to HEB. They got some drinks from Moge Tee to go. Then they went to get 1618 Asian Fusion to get food to go and eat on the way home! They had a little celebration for Anna 🎊🎊🎊",
+			imgClass: "img-big",
+			imgPath: "/images/timeline/2025/jun_22_2025.jpg",
+			month: "June",
+			title: "Austin Celebration 🎊🥳🎆🎇",
+		},
+		{
+			description:
+				"Zac and Anna went to Dutch Bros to get drinks to go. He dropped her off at work and later picked her up. He brought some homemade bibimbap. They went to Baklovah Bakery & Sweets to try out the bakery! 🍞🍞🍞",
+			imgClass: "img-big",
+			imgPath: "/images/timeline/2025/jun_23_2025.jpg",
+			month: "June",
+			title: "New Bakery 👀🤪🍞💓",
 		},
 		{
 			description: "I love you so much babyyyyy 💖💖💝💝🥰🥰🥰",
