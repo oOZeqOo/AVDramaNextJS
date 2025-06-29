@@ -738,5 +738,8 @@ export const imageGalleryData = {
     "0936.jpg",
     "0937.jpg",
     "0938.jpg",
+    "0939.jpg",
+    "0940.jpg",
+    "0941.jpg",
    ],
 };
