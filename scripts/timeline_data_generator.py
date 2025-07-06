@@ -87,7 +87,7 @@ def update_timeline_data():
         print("❌ TimelineData.js not found.")
         return
 
-    with open(TIMELINE_DATA_FILE, "r") as f:
+    with open(TIMELINE_DATA_FILE, "r", encoding="utf-8") as f:
         content = f.read()
 
     year_blocks = extract_year_blocks(content)
@@ -148,7 +148,7 @@ def update_timeline_data():
         new_lines.append("  ],")
     new_lines.append("};")
 
-    with open(TIMELINE_DATA_FILE, "w") as f:
+    with open(TIMELINE_DATA_FILE, "w", encoding="utf-8") as f:
         f.write("\n".join(new_lines))
 
     print("✅ TimelineData.js updated with new entries (sorted).")
