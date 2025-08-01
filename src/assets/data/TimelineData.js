@@ -1964,7 +1964,7 @@ export const timelineData = {
 				"Zac and Anna went to Boerne to go to Jims to eat there! 🥞🥚 Then they went to The Bubble Tea Factory to get some drinks! After that Zac took Anna home",
 			imgClass: "img-big",
 			imgPath: "/images/timeline/2025/jul_04_2025.jpg",
-			month: "June",
+			month: "July",
 			title: "July 4 🎇🎆🎆🎇",
 		},
 		{
