@@ -1737,7 +1737,7 @@ export const timelineData = {
 			description:
 				"Zac and Anna went to Boba Tea Banh Mi Pho Corn Dog to get drinks! Then they went to Suko to get a Matcha Crepe and then went to Uni'ko for dinner. Zac showed Anna the updated AV Drama!",
 			imgClass: "img-big",
-			imgPath: "/images/timeline/2025/mar_15_2025.jpeg", // March 12
+			imgPath: "/images/timeline/2025/mar_15_2025.jpeg",
 			month: "March",
 			title: "Great Times! 🍣",
 		},
@@ -1767,15 +1767,15 @@ export const timelineData = {
 		},
 		{
 			description:
-				"Zac went to So Seoul to get drinks to go. Then he got a Matcha Crepe from Suko and met Anna. She wasn't happy with the drink so they went to Kung Fu to get her a different drink! 💖",
+				"Zac went to So Seoul to get drinks to go. Then he got a Matcha Crepe from Suko and met Anna. She wasn't happy with the drink so they went to Kung Fu to get her a different drink! Anna got a call to move forward in the interview process! Zac celebrated Anna for that 💐💖",
 			imgClass: "img",
 			imgPath: "/images/timeline/2025/mar_31_2025.jpeg",
 			month: "March",
-			title: "Drink TIMES 🍵💖",
+			title: "Internship Progress 💪💪💖💖",
 		},
 		{
 			description:
-				"Zac picked up Anna early to take her to her event! He went to the office to work and picked her up after her event. They went to Teriyaki Madness to get food and then went to So Seoul to get drinks!",
+				"Zac picked up Anna early to take her to her event! He went to the office to work and picked her up after her event. They went to Teriyaki Madness to get food and then went to So Seoul to get drinks! Then they went to Home Depot to get packing supplies!",
 			imgClass: "img",
 			imgPath: "/images/timeline/2025/apr_04_2025.jpeg",
 			month: "April",
@@ -1827,7 +1827,7 @@ export const timelineData = {
 			imgClass: "img-big",
 			imgPath: "/images/timeline/2025/may_06_2025.jpeg",
 			month: "May",
-			title: "Anna Ba birthday 🎊🎉🥳🎂",
+			title: "Anna's Ba birthday 🎊🎉🥳🎂",
 		},
 		{
 			description:
@@ -1972,8 +1972,40 @@ export const timelineData = {
 				"Zac and Anna took a trip to Houston. They stopped at Bucees, got Subway to go on the way and then they went to the Bep Teahouse. After they finished there, they went to Puer Tea & Coffee to get cheesecakes and a drink to go! Then they went to R&B Tea to get drinks for the next day! After that they went to some japanese stores 🍙🎌 and they finally found dinner at Zake Sushi & Ramen. They took it to go and stopped at Buccees on the way home again! 🎉🎉🎈🎈 ",
 			imgClass: "img-big",
 			imgPath: "/images/timeline/2025/jul_05_2025.jpg",
-			month: "June",
+			month: "July",
 			title: "Houston Trip 🚗🚙💖💖",
+		},
+		{
+			description:
+				"Zac picked up Anna from work and they went to try a new Korean restaurant called Pilicana Chicken. The food was goooooood 🐔😋",
+			imgClass: "img-big",
+			imgPath: "/images/timeline/2025/jul_06_2025.jpg",
+			month: "July",
+			title: "Korean Chicken! 🐔🐔😋😋",
+		},
+		{
+			description:
+				"Zac and Anna went to  Boerne to go to the Bubble Tea Factory to get drinks to go. They then went to the Boerne state park to relax and chill! After that they went to Canes for dinner!",
+			imgClass: "img-big",
+			imgPath: "/images/timeline/2025/jul_13_2025.jpg",
+			month: "July",
+			title: "Boerne Park 🌄",
+		},
+		{
+			description:
+				"Zac picked up Anna from work and they went to Artea to get some new cute bear cups! 🐻🐼 They were so busy! They ate home cooked food there and then Zac took her back to her car so they could drive home!",
+			imgClass: "img-big",
+			imgPath: "/images/timeline/2025/jul_17_2025.jpg",
+			month: "July",
+			title: "Bubble bears ☕🐼🐼",
+		},
+		{
+			description:
+				"Zac and Anna went to the Boba Tea Factory to get drinks to go! Then they went to Boerne City Park ⛳. After that they went to North Italia for dinner ",
+			imgClass: "img-big",
+			imgPath: "/images/timeline/2025/jul_20_2025.jpg",
+			month: "July",
+			title: "A whole new park ⛳💗",
 		},
 		{
 			description: "I love you so much babyyyyy 💖💖💝💝🥰🥰🥰",

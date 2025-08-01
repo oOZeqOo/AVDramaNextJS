@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import React, { useMemo, useRef, useState } from "react";
 import { timelineData } from "@/assets/data/TimelineData";
 import cssStyles from "@/styles/Timeline.module.css";
 import Link from "next/link";
@@ -34,6 +34,7 @@ function CustomTabPanel(props) {
       //   hidden={value !== index}
       id={`simple-tabpanel-${index}`}
       aria-labelledby={`simple-tab-${index}`}
+      ref={props.forwardRef}
       style={{
         transition: "2s all ease",
         display: value !== index ? "hidden" : undefined,
@@ -56,6 +57,7 @@ function a11yProps(index) {
 const CreateTimeline = ({ data }) => {
   const [loadingSection, setLoadingSection] = useState(false);
   const [links, setLinks] = useState([]);
+  const scrollRef = useRef(null);
   const [width, height] = useDeviceSize();
   const isSmallScreen = isMobile || width < 800;
   const [value, setValue] = useState(0);
@@ -114,9 +116,15 @@ const CreateTimeline = ({ data }) => {
         }
       : {};
 
-  const setLoadingHold = () => {
+  const setLoadingHold = (spot) => {
     setLoadingSection(true);
     setTimeout(() => setLoadingSection(false), 0);
+    if (scrollRef.current) {
+      scrollRef.current.scrollTo({
+        top: spot,
+        behavior: "smooth",
+      });
+    }
   };
 
   return (
@@ -126,13 +134,13 @@ const CreateTimeline = ({ data }) => {
         scrollbarGutter: "stable",
         // height: "80vh",
       }}
-      className="w-full sm:pl-0 bg-[lightyellow]"
+      className="w-full sm:pl-0 bg-[lightyellow] flex flex-col max-h-screen"
     >
       <div
         style={{
           backgroundColor: "#FFC0CB",
         }}
-        className="flex flex-wrap items-center lg:justify-between border-b h-fit flex-col lg:flex-row w-full sticky"
+        className="flex flex-wrap items-center lg:justify-between border-b h-fit flex-col lg:flex-row w-full sticky "
       >
         <div
           className="flex flex-row justify-center lg:justify-between min-w-[10%] max-w-[40%] "
@@ -148,7 +156,7 @@ const CreateTimeline = ({ data }) => {
           </Button>
         </div>
         <div
-          className="flex-1 flex flex-col justify-center items-center sm:ml-10 md:ml-2 w-full overflow-auto"
+          className="flex-1 flex flex-col justify-center items-center sm:ml-10 md:ml-2 w-full overflow-auto "
           style={{ maxWidth: "100vw", height: 50 }}
         >
           <Tabs
@@ -190,38 +198,30 @@ const CreateTimeline = ({ data }) => {
           id="third"
         ></div>
       </div>
+
       <div
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "center",
-          margin: 10,
-        }}
+        className="flex flex-row justify-center m-2  pb-1"
       >
         <Link
           scroll={false}
-          href={"#latest"}
-          onClick={() => setLoadingHold()}
-          style={{
-            backgroundColor: "blue",
-            color: "white",
-            border: "1px solid black",
-            borderRadius: 20,
-            fontWeight: "bold",
-            fontSize: "large",
-            padding: "5px 5px",
-          }}
+          href={"#"}
+          onClick={() => setLoadingHold(scrollRef?.current?.scrollHeight)}
+          className="bg-blue-600 text-white border  text-bold text-lg p-2 rounded-xl"
+
         >
           Go to the bottom
         </Link>
       </div>
+
       {Object.entries(data)?.map(([key, v], index) => (
         <CustomTabPanel
           value={value}
           index={index}
+          forwardRef={value === index ? scrollRef : null}
           key={index}
-          className="sm:!pl-0 h-full"
+          className="sm:!pl-0  overflow-y-auto flex-2"
         >
+
           <Timeline
             position={width < 1200 || isSmallScreen ? "right" : "alternate"}
             sx={timelineClass}
@@ -264,17 +264,9 @@ const CreateTimeline = ({ data }) => {
       >
         <Link
           scroll={false}
-          href={"#first"}
-          onClick={() => setLoadingHold()}
-          style={{
-            backgroundColor: "blue",
-            color: "white",
-            border: "1px solid black",
-            borderRadius: 20,
-            fontWeight: "bold",
-            fontSize: "large",
-            padding: "5px 5px",
-          }}
+          href={"#"}
+          onClick={() => setLoadingHold(0)}
+          className="bg-blue-600 text-white border  text-bold text-lg p-2 rounded-xl"
         >
           Go back to the top
         </Link>

@@ -172,56 +172,53 @@ export const vacationData = {
 		cards: [
 			{
 				imgPath: "/images/vacations/florida_1/Snapchat-1388239894.jpg",
-				title: "",
+				title: "Anna leaving to go to Florida",
 			},
 			{
 				imgPath: "/images/vacations/florida_1/Snapchat-944459430.jpg",
-				title: "",
+				title: "Zac and Anna try a new Bakery!",
 			},
 			{
 				imgPath: "/images/vacations/florida_1/Snapchat-1789181174.jpg",
-				title: "",
+				title: "A beautiful moment caught on camera!",
 			},
 			{
 				imgPath: "/images/vacations/florida_1/Snapchat-1085021811.jpg",
-				title: "",
+				title: "Anna in Disney World!",
 			},
 			{
 				imgPath: "/images/vacations/florida_1/Snapchat-1178667519.jpg",
-				title: "",
+				title: "Anna as Minnie mouse posing for the camera!",
 			},
 			{
 				imgPath: "/images/vacations/florida_1/Snapchat-1134074910.jpg",
-				title: "",
+				title: "Such a business woman ❤️❤️❤️",
 			},
 			{
 				imgPath: "/images/vacations/florida_1/Snapchat-861697390.jpg",
-				title: "",
+				title: "Living in Harmony",
 			},
-			{
-				imgPath: "/images/vacations/florida_1/20250604_203603.jpg",
-				title: "",
-			},
+
 			{
 				imgPath: "/images/vacations/florida_1/Snapchat-1561409421.jpg",
-				title: "",
+				title: "A Professional Pose for a business woman!",
 			},
 			{
 				imgPath: "/images/vacations/florida_1/Snapchat-1576289313.jpg",
-				title: "",
+				title: "Zac picking Anna up in Disney World!",
 			},
 			{
 				imgPath: "/images/vacations/florida_1/Snapchat-1587795078.jpg",
-				title: "",
+				title: "Kissing in the rain",
 			},
 			{
 				imgPath: "/images/vacations/florida_1/Snapchat-1915742806.jpg",
-				title: "",
+				title: "Dinner Shenanigans",
 			},
 			{
 				imgPath:
 					"/images/vacations/florida_1/Screenshot_20250605_184432_Snapchat.jpg",
-				title: "",
+				title: "Video call from another state",
 			},
 		],
 		footer: "",

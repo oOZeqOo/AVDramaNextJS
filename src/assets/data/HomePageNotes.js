@@ -105,12 +105,11 @@ export const homePageNotes = {
 	title: {
 		element: "h1",
 		content: [
-			"HAPPY BIRTHDAY EM YÊU",
-			" 🥳🎊🎊🎊🎊🎊🎊🎂🥳🥳🥳🥳🥳🥳🥳",
+			"HAPPY NATIONAL GIRLFRIEND DAY BOBA QUEEN",
 			" 💘💘💘💘💝💝💝💝💝💝💘💘💘💘",
+			" 💘🎊🎊💘💝💝💝💝💝💝💘🎊🎊💘",
 			" 💘💘💘💘💝💝💝💝💝💝💘💘💘💘",
-			" 💘💘💘💘💝💝💝💝💝💝💘💘💘💘",
-			" 💘💘💘💘💝💝💝💝💝💝💘💘💘💘",
+			" 💘🎊🎊💘💝💝💝💝💝💝💘🎊🎊💘",
 		],
 	},
 	message: {
@@ -120,12 +119,12 @@ export const homePageNotes = {
 	extraNote: {
 		element: "h2",
 		content: [
-			"You're brew-tiful, and I’m so lucky to steep in your love. Happy birthday, my milk tea queen!!!",
+			"A wonderful day to be you! Keep being you babe 💝💝💝",
 			"💝💝💝💝💝💝💝💝💝💝💝💝",
 		],
 	},
 	extras: {
-		element: "img",
-		content: ["/images/front_page/bubu_dudu_bday.webp"],
+		// element: "img",
+		// content: [""],
 	},
 };
