@@ -17,7 +17,6 @@ const PageHeader = ({ viewWidth, height, isMobile }) => {
       minHeight: "100vh",
       flexDirection: "column",
       justifyContent: "center",
-      maxWidth: 800,
       marginLeft: isMobile ? "5%" : "25%",
       marginRight: isMobile ? "5%" : "25%",
     },
