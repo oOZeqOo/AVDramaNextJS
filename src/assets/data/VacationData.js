@@ -3,7 +3,7 @@ export const vacationData = {
 		title: "Vietnam Vacation Summer 2023",
 		borderImage: "/images/vacations/vietnam_1/sunflower-border.jpg",
 		description: (
-			<div style={{ display: "flex", justifyContent: "center" }}>
+			<div style={ { display: "flex", justifyContent: "center" } }>
 				<h5>
 					Zac and Anna went to Anna&apos;s home country: Vietnam. They had a lot
 					of fun and created a lot of memories they will cherish forever. Zac
@@ -161,7 +161,7 @@ export const vacationData = {
 		],
 		footer:
 			"I LOVE YOU SO MUCH BABY AND CANT WAIT FOR MORE VACATIONS WITH YOU! 💖💖💖💖💖💖💖",
-		otherImages: ["", ""],
+		otherImages: [ "", "" ],
 	},
 	florida_1: {
 		title: "Florida Vacation 2025",
@@ -222,6 +222,16 @@ export const vacationData = {
 			},
 		],
 		footer: "",
-		otherImages: ["", ""],
+		otherImages: [ "", "" ],
 	},
+
+	california_1: {
+		title: "California Vacation 2025",
+		borderImage: "/images/vacations/vietnam_1/sunflower-border.jpg",
+		description:
+			"Anna and Zac took a trip to Los Angeles, California to go on a mini vacation! ⭐⭐⭐🌟🌟🌟",
+		imgPath: "/images/vacations/california_1/Snapchat-219818726.jpg",
+		cards: [ { 'imgPath': '/images/vacations/california_1/Snapchat-1000142310.jpg', 'title': '' }, { 'imgPath': '/images/vacations/california_1/Snapchat-1180422702.jpg', 'title': '' }, { 'imgPath': '/images/vacations/california_1/Snapchat-1216367878.jpg', 'title': '' }, { 'imgPath': '/images/vacations/california_1/Snapchat-1220844131.jpg', 'title': '' }, { 'imgPath': '/images/vacations/california_1/Snapchat-1233399009.jpg', 'title': '' }, { 'imgPath': '/images/vacations/california_1/Snapchat-132898198.jpg', 'title': '' }, { 'imgPath': '/images/vacations/california_1/Snapchat-1551738303.jpg', 'title': '' }, { 'imgPath': '/images/vacations/california_1/Snapchat-1604987186.jpg', 'title': '' }, { 'imgPath': '/images/vacations/california_1/Snapchat-28555623.jpg', 'title': '' }, { 'imgPath': '/images/vacations/california_1/Snapchat-494050807.jpg', 'title': '' }, { 'imgPath': '/images/vacations/california_1/Snapchat-514203869.jpg', 'title': '' }, { 'imgPath': '/images/vacations/california_1/Snapchat-535141012.jpg', 'title': '' }, { 'imgPath': '/images/vacations/california_1/Snapchat-629511589.jpg', 'title': '' }, { 'imgPath': '/images/vacations/california_1/Snapchat-728068009.jpg', 'title': '' }, { 'imgPath': '/images/vacations/california_1/Snapchat-849555312.jpg', 'title': '' }, { 'imgPath': '/images/vacations/california_1/Snapchat-871334655.jpg', 'title': '' }, { 'imgPath': '/images/vacations/california_1/Snapchat-954883380.jpg', 'title': '' } ]
+	}
+
 };

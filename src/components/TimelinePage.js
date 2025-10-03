@@ -254,19 +254,14 @@ const CreateTimeline = ({ data }) => {
         </CustomTabPanel>
       ))}
       <div
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "center",
-          margin: 10,
-          paddingBottom: 50,
-        }}
+      className="flex flex-row justify-center m-2 pb-50 md:pb-0"
+
       >
         <Link
           scroll={false}
           href={"#"}
           onClick={() => setLoadingHold(0)}
-          className="bg-blue-600 text-white border  text-bold text-lg p-2 rounded-xl"
+          className="bg-blue-600 text-white border text-bold text-lg p-2 rounded-xl"
         >
           Go back to the top
         </Link>

@@ -10,6 +10,7 @@ import { useRouter } from "next/navigation";
 const items = [
 	{ value: 0, name: "Vietnam Vacation #1", url: "/vacations/vietnam_1" },
 	{ value: 1, name: "Florida #1", url: "/vacations/florida_1" },
+	{ value: 2, name: "California #1", url: "/vacations/california_1" },
 ];
 
 const VacationPage = () => {
