@@ -1,15 +1,15 @@
-import React, { useEffect, useMemo, useState } from "react";
-import { imageGalleryData } from "@/assets/data/ImageGalleryData";
-import { FixedSizeGrid as Grid } from "react-window";
-import useDeviceSize from "../hooks/useDeviceSize";
-import IconButton from "../common/IconButton";
-import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
-import Link from "next/link";
-import Tooltip from "../common/Tooltip";
-import Image from "next/image";
-import LoadingImage from "../common/LoadingImage";
-import SearchBar from "../common/SearchBar";
-import ResponsiveGrid from "./ResponsiveGrid";
+import React, { useEffect, useMemo, useState } from 'react';
+import { imageGalleryData } from '@/assets/data/ImageGalleryData';
+import { FixedSizeGrid as Grid } from 'react-window';
+import useDeviceSize from '../hooks/useDeviceSize';
+import IconButton from '../common/IconButton';
+import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
+import Link from 'next/link';
+import Tooltip from '../common/Tooltip';
+import Image from 'next/image';
+import LoadingImage from '../common/LoadingImage';
+import SearchBar from '../common/SearchBar';
+import ResponsiveGrid from './ResponsiveGrid';
 
 function extractNumber(path) {
   if (!path) return false;
@@ -23,63 +23,63 @@ const ImageGridContainer = () => {
   const [width, height] = useDeviceSize();
   const navBarHeight = 50;
   const [gridPixelWidth, setGridPixelWidth] = useState(
-    width !== 0 ? width : 400
+    width !== 0 ? width : 400,
   );
   const [gridPixelHeight, setGridPixelHeight] = useState(
-    height !== 0 ? height - navBarHeight : 800 - navBarHeight
+    height !== 0 ? height - navBarHeight : 800 - navBarHeight,
   );
   const [gridItems, setGridItems] = useState([]);
-  const [searchTerm, setSearchTerm] = useState("");
-  const [lowerBoundSearch, setLowerBoundSearch] = useState("");
-  const [upperBoundSearch, setUpperBoundSearch] = useState("");
+  const [searchTerm, setSearchTerm] = useState('');
+  const [lowerBoundSearch, setLowerBoundSearch] = useState('');
+  const [upperBoundSearch, setUpperBoundSearch] = useState('');
   const gridItemsWidth = Math.max(Math.floor(gridPixelWidth / 240), 1);
   const imgWidth = gridItemsWidth > 1 ? 200 : width - 20;
   const imgHeight = gridItemsWidth > 1 ? 200 : 500;
   const styles = {
     navBar: {
       height: navBarHeight,
-      backgroundColor: "pink",
-      display: "flex",
-      flexDirection: "row",
-      justifyContent: "center",
+      backgroundColor: 'pink',
+      display: 'flex',
+      flexDirection: 'row',
+      justifyContent: 'center',
     },
     imageGridWrapper: {
-      width: "100%",
+      width: '100%',
       height: gridPixelHeight,
-      backgroundColor: "lightyellow",
-      display: "flex",
-      flexDirection: "row",
-      justifyContent: "center",
+      backgroundColor: 'lightyellow',
+      display: 'flex',
+      flexDirection: 'row',
+      justifyContent: 'center',
     },
     gridStyle: {
-      margin: "auto",
+      margin: 'auto',
       flex: 1,
       marginLeft: 0,
       marginRight: 0,
-      display: "flex",
-      justifyContent: "center",
+      display: 'flex',
+      justifyContent: 'center',
     },
     imageWrapper: {
-      border: "1px solid black",
-      padding: "60px",
-      maxWidth: "650px",
-      background: "lighten(mediumseagreen, 20%)",
-      border: "5px dashed mediumseagreen",
+      border: '1px solid black',
+      padding: '60px',
+      maxWidth: '650px',
+      background: 'lighten(mediumseagreen, 20%)',
+      border: '5px dashed mediumseagreen',
       boxShadow:
-        "0 0 0 (5px / 2) darken(mediumseagreen, 20%), 0 0 0 (5px * 2.5) #fff, inset 0 0 0 (5px / 2) darken(mediumseagreen, 20%), 0 5px (5px * 2) (5px * 3) rgba(0,0,0,0.5), inset 0 0 0 (5px * 1.2) #fff, inset 0 0 100vw 100vw beige;",
-      color: "mediumseagreen",
-      fontFamily: "Marcellus, serif",
-      fontSize: "3em",
-      textShadow: "0 2px #fff",
-      textAlign: "center",
+        '0 0 0 (5px / 2) darken(mediumseagreen, 20%), 0 0 0 (5px * 2.5) #fff, inset 0 0 0 (5px / 2) darken(mediumseagreen, 20%), 0 5px (5px * 2) (5px * 3) rgba(0,0,0,0.5), inset 0 0 0 (5px * 1.2) #fff, inset 0 0 100vw 100vw beige;',
+      color: 'mediumseagreen',
+      fontFamily: 'Marcellus, serif',
+      fontSize: '3em',
+      textShadow: '0 2px #fff',
+      textAlign: 'center',
     },
     image: {
-      border: "2px solid black",
-      borderRadius: "10px",
-      backgroundColor: "black",
-      objectFit: "contain",
+      border: '2px solid black',
+      borderRadius: '10px',
+      backgroundColor: 'black',
+      objectFit: 'contain',
       width: imgWidth,
-      height: imgHeight == 200 ? imgHeight : "",
+      height: imgHeight == 200 ? imgHeight : '',
       maxHeight: imgHeight,
       margin: 10,
     },
@@ -94,16 +94,16 @@ const ImageGridContainer = () => {
 
     let flatValues = shuffleArray(
       Object.keys(imageGalleryData)?.flatMap((key) =>
-        imageGalleryData?.[key]?.flatMap((value) => `${key}${value}`)
+        imageGalleryData?.[key]?.flatMap((value) => `${key}${value}`),
       ),
-      true
+      true,
     );
-    let onWard = searchTerm.indexOf("+") === searchTerm.length - 1;
+    let onWard = searchTerm.indexOf('+') === searchTerm.length - 1;
     let term = parseInt(searchTerm);
 
     setLowerBoundSearch(parseInt(extractNumber(flatValues[0])));
     setUpperBoundSearch(
-      parseInt(extractNumber(flatValues[flatValues?.length - 1]))
+      parseInt(extractNumber(flatValues[flatValues?.length - 1])),
     );
     if (!isNaN(term)) {
       flatValues = flatValues?.filter((item) =>
@@ -111,7 +111,7 @@ const ImageGridContainer = () => {
           ? onWard
             ? parseInt(extractNumber(item)) >= term
             : parseInt(extractNumber(item)) === term
-          : true
+          : true,
       );
     }
     for (let i = 0; i < flatValues?.length; i += gridItemsWidth) {
@@ -148,15 +148,15 @@ const ImageGridContainer = () => {
 
   const ItemRenderer = ({ columnIndex, rowIndex, style }) => {
     const value = gridItems?.[rowIndex]?.[columnIndex];
-    let split = value?.split("/");
-    split = split?.[split?.length - 1]?.split(".")?.[0];
+    let split = value?.split('/');
+    split = split?.[split?.length - 1]?.split('.')?.[0];
     return (
       <div
         style={{
           ...style,
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
           //   left:
           //     Number.parseInt(`${style.left}`) + (gridItemsWidth > 1 ? 100 : 0),
         }}
@@ -182,44 +182,44 @@ const ImageGridContainer = () => {
     <>
       <div style={styles.navBar}>
         <Link
-          href={"/"}
+          href={'/'}
           style={{
-            width: "fit-content",
+            width: 'fit-content',
           }}
         >
           <IconButton
             style={{
-              color: "rgb(0, 94, 255)",
-              fontWeight: "bolder",
-              width: "fit-content",
-              height: "100%",
+              color: 'rgb(0, 94, 255)',
+              fontWeight: 'bolder',
+              width: 'fit-content',
+              height: '100%',
               marginRight: 0,
-              borderRadius: "30%",
+              borderRadius: '30%',
             }}
           >
             <div
               style={{
-                display: "flex",
-                flexDirection: "row",
-                justifyContent: "center",
+                display: 'flex',
+                flexDirection: 'row',
+                justifyContent: 'center',
                 padding: 0,
-                margin: "auto",
-                verticalAlign: "middle",
+                margin: 'auto',
+                verticalAlign: 'middle',
               }}
             >
-              <KeyboardBackspaceIcon style={{ fontSize: "40" }} />
+              <KeyboardBackspaceIcon style={{ fontSize: '40' }} />
               <div
                 style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "center",
+                  display: 'flex',
+                  flexDirection: 'column',
+                  justifyContent: 'center',
                 }}
               >
                 <h3
                   style={{
-                    textAlign: "left",
-                    margin: "0px",
-                    color: "black",
+                    textAlign: 'left',
+                    margin: '0px',
+                    color: 'black',
                   }}
                 >
                   Back to Homepage
@@ -231,7 +231,7 @@ const ImageGridContainer = () => {
       </div>
       <div
         className="flex flex-col items-center"
-        style={{ backgroundColor: "lightyellow" }}
+        style={{ backgroundColor: 'lightyellow' }}
       >
         <SearchBar
           onChange={(value) => {
@@ -241,7 +241,7 @@ const ImageGridContainer = () => {
       </div>
       <div
         className="flex flex-col items-center text-center"
-        style={{ backgroundColor: "lightyellow" }}
+        style={{ backgroundColor: 'lightyellow' }}
       >
         <p>
           Values: {lowerBoundSearch} - {upperBoundSearch}

@@ -1,7 +1,7 @@
-import "@/styles/globals.css";
-import "@/styles/css/all.min.css";
-import ConsoleErrorLogger from "@/components/common/ConsoleErrorLogger";
-import Head from "next/head";
+import '@/styles/globals.css';
+import '@/styles/css/all.min.css';
+import ConsoleErrorLogger from '@/components/common/ConsoleErrorLogger';
+import Head from 'next/head';
 
 function MyApp({ Component, pageProps }) {
   return (

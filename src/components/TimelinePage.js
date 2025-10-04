@@ -1,23 +1,23 @@
-import React, { useMemo, useRef, useState } from "react";
-import { timelineData } from "@/assets/data/TimelineData";
-import cssStyles from "@/styles/Timeline.module.css";
-import Link from "next/link";
-import "@/styles/js/all";
-import Timeline from "@mui/lab/Timeline";
-import TimelineItem, { timelineItemClasses } from "@mui/lab/TimelineItem";
-import TimelineSeparator from "@mui/lab/TimelineSeparator";
-import TimelineConnector from "@mui/lab/TimelineConnector";
-import TimelineContent from "@mui/lab/TimelineContent";
-import TimelineDot from "@mui/lab/TimelineDot";
-import { isMobile } from "react-device-detect";
-import useDeviceSize from "./hooks/useDeviceSize";
-import { Button, Divider, Typography } from "@mui/material";
-import { useEffect } from "react";
-import Tabs from "@mui/material/Tabs";
-import Tab from "@mui/material/Tab";
-import Box from "@mui/material/Box";
-import { useRouter } from "next/router";
-import LoadingImage from "./common/LoadingImage";
+import React, { useMemo, useRef, useState } from 'react';
+import { timelineData } from '@/assets/data/TimelineData';
+import cssStyles from '@/styles/Timeline.module.css';
+import Link from 'next/link';
+import '@/styles/js/all';
+import Timeline from '@mui/lab/Timeline';
+import TimelineItem, { timelineItemClasses } from '@mui/lab/TimelineItem';
+import TimelineSeparator from '@mui/lab/TimelineSeparator';
+import TimelineConnector from '@mui/lab/TimelineConnector';
+import TimelineContent from '@mui/lab/TimelineContent';
+import TimelineDot from '@mui/lab/TimelineDot';
+import { isMobile } from 'react-device-detect';
+import useDeviceSize from './hooks/useDeviceSize';
+import { Button, Divider, Typography } from '@mui/material';
+import { useEffect } from 'react';
+import Tabs from '@mui/material/Tabs';
+import Tab from '@mui/material/Tab';
+import Box from '@mui/material/Box';
+import { useRouter } from 'next/router';
+import LoadingImage from './common/LoadingImage';
 
 const TimelinePage = () => {
   return <CreateTimeline data={timelineData} />;
@@ -36,9 +36,9 @@ function CustomTabPanel(props) {
       aria-labelledby={`simple-tab-${index}`}
       ref={props.forwardRef}
       style={{
-        transition: "2s all ease",
-        display: value !== index ? "hidden" : undefined,
-        fontWeight: "bold",
+        transition: '2s all ease',
+        display: value !== index ? 'hidden' : undefined,
+        fontWeight: 'bold',
       }}
       {...other}
     >
@@ -50,7 +50,7 @@ function CustomTabPanel(props) {
 function a11yProps(index) {
   return {
     id: `simple-tab-${index}`,
-    "aria-controls": `simple-tabpanel-${index}`,
+    'aria-controls': `simple-tabpanel-${index}`,
   };
 }
 
@@ -77,7 +77,7 @@ const CreateTimeline = ({ data }) => {
     query.tab = newValue;
     const queryString = Object.entries(query)
       .map(([key, value]) => `${key}=${value}`)
-      .join("&");
+      .join('&');
     router.push(`${router.route}?${queryString}`);
   };
 
@@ -122,7 +122,7 @@ const CreateTimeline = ({ data }) => {
     if (scrollRef.current) {
       scrollRef.current.scrollTo({
         top: spot,
-        behavior: "smooth",
+        behavior: 'smooth',
       });
     }
   };
@@ -130,15 +130,15 @@ const CreateTimeline = ({ data }) => {
   return (
     <div
       style={{
-        transition: "all 0.5s ease",
-        scrollbarGutter: "stable",
+        transition: 'all 0.5s ease',
+        scrollbarGutter: 'stable',
         // height: "80vh",
       }}
       className="w-full sm:pl-0 bg-[lightyellow] flex flex-col max-h-screen"
     >
       <div
         style={{
-          backgroundColor: "#FFC0CB",
+          backgroundColor: '#FFC0CB',
         }}
         className="flex flex-wrap items-center lg:justify-between border-b h-fit flex-col lg:flex-row w-full sticky "
       >
@@ -148,8 +148,8 @@ const CreateTimeline = ({ data }) => {
         >
           <Button
             variant="contained"
-            onClick={() => router.push("/")}
-            style={{ margin: "5px 10px" }}
+            onClick={() => router.push('/')}
+            style={{ margin: '5px 10px' }}
             className="bg-blue-500"
           >
             Back
@@ -157,7 +157,7 @@ const CreateTimeline = ({ data }) => {
         </div>
         <div
           className="flex-1 flex flex-col justify-center items-center sm:ml-10 md:ml-2 w-full overflow-auto "
-          style={{ maxWidth: "100vw", height: 50 }}
+          style={{ maxWidth: '100vw', height: 50 }}
         >
           <Tabs
             value={value}
@@ -171,11 +171,11 @@ const CreateTimeline = ({ data }) => {
                 label={
                   <Typography
                     style={{
-                      backgroundColor: value !== index ? "#cd4870" : "red",
-                      color: value !== index ? "black" : "white",
+                      backgroundColor: value !== index ? '#cd4870' : 'red',
+                      color: value !== index ? 'black' : 'white',
                       borderRadius: 20,
-                      padding: "5px 10px",
-                      fontWeight: "bold",
+                      padding: '5px 10px',
+                      fontWeight: 'bold',
                     }}
                   >
                     {item}
@@ -184,9 +184,9 @@ const CreateTimeline = ({ data }) => {
                 {...a11yProps(index)}
                 key={index}
                 style={{
-                  transition: "0.5s all ease",
+                  transition: '0.5s all ease',
                   padding: 0,
-                  height: "fit-content",
+                  height: 'fit-content',
                 }}
                 sx={{}}
               />
@@ -199,15 +199,12 @@ const CreateTimeline = ({ data }) => {
         ></div>
       </div>
 
-      <div
-        className="flex flex-row justify-center m-2  pb-1"
-      >
+      <div className="flex flex-row justify-center m-2  pb-1">
         <Link
           scroll={false}
-          href={"#"}
+          href={'#'}
           onClick={() => setLoadingHold(scrollRef?.current?.scrollHeight)}
           className="bg-blue-600 text-white border  text-bold text-lg p-2 rounded-xl"
-
         >
           Go to the bottom
         </Link>
@@ -221,17 +218,16 @@ const CreateTimeline = ({ data }) => {
           key={index}
           className="sm:!pl-0  overflow-y-auto flex-2"
         >
-
           <Timeline
-            position={width < 1200 || isSmallScreen ? "right" : "alternate"}
+            position={width < 1200 || isSmallScreen ? 'right' : 'alternate'}
             sx={timelineClass}
-            id={"start"}
+            id={'start'}
           >
             {v?.map((item, index) => (
               <TimelineItem
-                id={index !== v?.length - 1 ? `${index}` : "latest"}
+                id={index !== v?.length - 1 ? `${index}` : 'latest'}
                 key={index}
-                className={index % 2 ? "ListItemOdd" : "ListItemEven"}
+                className={index % 2 ? 'ListItemOdd' : 'ListItemEven'}
               >
                 {createTimeLineItem(
                   item?.month,
@@ -242,7 +238,7 @@ const CreateTimeline = ({ data }) => {
                   item?.imgClass,
                   item?.isVideo || false,
                   item?.link,
-                  index
+                  index,
                 )}
               </TimelineItem>
             ))}
@@ -253,20 +249,12 @@ const CreateTimeline = ({ data }) => {
           </Timeline>
         </CustomTabPanel>
       ))}
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "center",
-          margin: 10,
-          paddingBottom: 50,
-        }}
-      >
+      <div className="flex flex-row justify-center m-2 pb-50 md:pb-0">
         <Link
           scroll={false}
-          href={"#"}
+          href={'#'}
           onClick={() => setLoadingHold(0)}
-          className="bg-blue-600 text-white border  text-bold text-lg p-2 rounded-xl"
+          className="bg-blue-600 text-white border text-bold text-lg p-2 rounded-xl"
         >
           Go back to the top
         </Link>
@@ -284,14 +272,14 @@ const createTimeLineItem = (
   imgClass,
   isVideo = false,
   link = null,
-  index
+  index,
 ) => {
   const imgStyle =
-    imgClass == "img-small"
+    imgClass == 'img-small'
       ? styles.smallerImage
-      : imgClass == "img-big"
-      ? styles.biggerImage
-      : styles.image;
+      : imgClass == 'img-big'
+        ? styles.biggerImage
+        : styles.image;
   return (
     <>
       <TimelineSeparator>
@@ -308,7 +296,7 @@ const createTimeLineItem = (
           <h3 style={styles.title}>{title}</h3>
           <p
             className={cssStyles.description}
-            style={{ fontSize: "large", fontWeight: "bold", marginBottom: 20 }}
+            style={{ fontSize: 'large', fontWeight: 'bold', marginBottom: 20 }}
           >
             {description}
           </p>
@@ -320,7 +308,7 @@ const createTimeLineItem = (
               </a>
             </p>
           ) : (
-            ""
+            ''
           )}
 
           <div className={cssStyles.icon}>
@@ -344,7 +332,7 @@ const createTimeLineItem = (
             // eslint-disable-next-line @next/next/no-img-element
             <LoadingImage
               src={imgPath}
-              alt={title || "Missing"}
+              alt={title || 'Missing'}
               width={imgStyle?.width}
               height={imgStyle?.width}
               style={imgStyle}
@@ -360,61 +348,61 @@ const styles = {
   imageWrapper: {
     width: 300,
     height: 300,
-    backgroundColor: "black",
-    border: "5px solid black",
-    borderRadius: "50%",
-    overflow: "hidden",
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    margin: "auto",
+    backgroundColor: 'black',
+    border: '5px solid black',
+    borderRadius: '50%',
+    overflow: 'hidden',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    margin: 'auto',
   },
   year: {
     fontSize: 30,
-    fontWeight: "bold",
-    margin: "10px 0px",
+    fontWeight: 'bold',
+    margin: '10px 0px',
   },
   title: {
     fontSize: 25,
-    fontWeight: "bold",
-    margin: "10px 0px",
+    fontWeight: 'bold',
+    margin: '10px 0px',
   },
   biggerImage: {
     width: 300,
     weight: 300,
-    margin: "auto",
-    objectFit: "contain",
+    margin: 'auto',
+    objectFit: 'contain',
   },
   image: {
     width: 250,
     weight: 250,
-    margin: "auto",
-    objectFit: "contain",
+    margin: 'auto',
+    objectFit: 'contain',
   },
   smallerImage: {
     width: 200,
     weight: 200,
-    margin: "auto",
-    objectFit: "contain",
+    margin: 'auto',
+    objectFit: 'contain',
   },
   divider: {
-    margin: "15px 0px 5%",
-    fontWeight: "bold",
+    margin: '15px 0px 5%',
+    fontWeight: 'bold',
     fontSize: 100,
     borderBottomWidth: 3,
   },
   timeline_nav: {
-    display: "flex",
-    flexDirection: "row",
-    justifyContent: "space-evenly",
-    position: "sticky",
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-evenly',
+    position: 'sticky',
   },
   timeline_link: {
-    color: "blue",
-    fontWeight: "bold",
-    fontSize: "large",
-    ":hover": {
-      color: "pink",
+    color: 'blue',
+    fontWeight: 'bold',
+    fontSize: 'large',
+    ':hover': {
+      color: 'pink',
     },
   },
 };

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState } from 'react';
 
 const Tooltip = ({ text, children }) => {
   const [showTooltip, setShowTooltip] = useState(false);
@@ -21,26 +21,26 @@ export default Tooltip;
 
 const styles = {
   tooltip_container: {
-    position: "relative",
-    display: "flex",
+    position: 'relative',
+    display: 'flex',
   },
 
   tooltip: {
-    position: "absolute",
-    top: "100%",
-    left: "50%",
-    transform: "translateX(-50%)",
-    padding: "0.5rem",
-    backgroundColor: " #333",
-    color: "#fff",
-    fontSize: "0.8rem",
-    borderRadius: "4px",
-    zIndex: "1",
+    position: 'absolute',
+    top: '100%',
+    left: '50%',
+    transform: 'translateX(-50%)',
+    padding: '0.5rem',
+    backgroundColor: ' #333',
+    color: '#fff',
+    fontSize: '0.8rem',
+    borderRadius: '4px',
+    zIndex: '1',
   },
 
   tooltip_trigger: {
-    cursor: "pointer",
-    display: "flex",
+    cursor: 'pointer',
+    display: 'flex',
     // alignSelf: "center",
   },
 };

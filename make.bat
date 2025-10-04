@@ -7,6 +7,7 @@ SET command=%1
 if %command%==start GOTO :START @REM make start
 if %command%==rename GOTO :RENAME @REM make rename
 if %command%==update GOTO :UPDATE @REM make update
+if %command%==format GOTO :FORMAT @REM make format
 if %command%==add-pics GOTO :ADD_PICS @REM make add-pics
 if %command%==check GOTO :CHECK @REM make check
 if %command%==check-mistakes GOTO :CHECK_MISTAKES @REM make check-mistakes
@@ -29,6 +30,10 @@ GOTO :END
     git add ./public/
     git commit -am "CLI Update"
     git push
+    GOTO :END
+
+:FORMAT
+    npx biome format --write
     GOTO :END
 
 :ADD_PICS

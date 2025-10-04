@@ -1,5 +1,5 @@
-import Image from "next/image";
-import React, { useState } from "react";
+import Image from 'next/image';
+import React, { useState } from 'react';
 
 const Spinner = () => (
   <svg
@@ -20,10 +20,10 @@ const Spinner = () => (
   </svg>
 );
 
-const LoadingImage = ({ width, height, loading = "lazy", ...rest }) => {
+const LoadingImage = ({ width, height, loading = 'lazy', ...rest }) => {
   const [isImageReady, setIsImageReady] = useState(false);
   const [isImageMissing, setIsImageMissing] = useState(false);
-  const src = rest?.src?.includes(".mp4");
+  const src = rest?.src?.includes('.mp4');
   const onLoadCallBack = (e) => {
     setIsImageReady(true);
   };
@@ -38,7 +38,7 @@ const LoadingImage = ({ width, height, loading = "lazy", ...rest }) => {
           className="flex justify-center items-center absolute"
         >
           <div
-            style={{ width: "fit-content", height: "fit-content" }}
+            style={{ width: 'fit-content', height: 'fit-content' }}
             className="flex flex-row justify-center items-center absolute self-center justify-self-center bg-black"
           >
             <Spinner />
@@ -66,7 +66,7 @@ const LoadingImage = ({ width, height, loading = "lazy", ...rest }) => {
             style={{ ...rest?.style, zIndex: !isImageReady ? -1 : undefined }}
             onLoadStart={onLoadCallBack}
             playsInline={true}
-            alt={"Missing Video"}
+            alt={'Missing Video'}
             onError={(e) => {
               setIsImageMissing(true);
             }}
@@ -80,7 +80,7 @@ const LoadingImage = ({ width, height, loading = "lazy", ...rest }) => {
           width={width}
           height={height}
           loading={loading}
-          alt={"Missing Image"}
+          alt={'Missing Image'}
           onLoad={onLoadCallBack}
           onError={() => {
             setIsImageMissing(true);
