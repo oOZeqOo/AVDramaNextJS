@@ -1,6 +1,6 @@
-"use client";
+'use client';
 
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 
 export default function useDeviceSize() {
   const [width, setWidth] = useState(0);
@@ -14,9 +14,9 @@ export default function useDeviceSize() {
   useEffect(() => {
     // component is mounted and window is available
     handleWindowResize();
-    window.addEventListener("resize", handleWindowResize);
+    window.addEventListener('resize', handleWindowResize);
     // unsubscribe from the event on component unmount
-    return () => window.removeEventListener("resize", handleWindowResize);
+    return () => window.removeEventListener('resize', handleWindowResize);
   }, [handleWindowResize]);
 
   return [width, height];

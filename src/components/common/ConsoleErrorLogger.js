@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
-import { Snackbar } from "@mui/material";
+import React, { useState, useEffect } from 'react';
+import { Snackbar } from '@mui/material';
 
-const EXCLUDE_ERRORS = ["Warning"];
+const EXCLUDE_ERRORS = ['Warning'];
 
 const ConsoleErrorLogger = (props) => {
   const { children } = props;

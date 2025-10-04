@@ -1,11 +1,11 @@
-import React from "react";
-import CameraAltIcon from "@mui/icons-material/CameraAlt";
-import LocationOnIcon from "@mui/icons-material/LocationOn";
-import ContactPageIcon from "@mui/icons-material/ContactPage";
-import TimelineIcon from "@mui/icons-material/Timeline";
-import TravelExploreIcon from "@mui/icons-material/TravelExplore";
-import Card from "../common/Card";
-import { FadeInAnimation } from "../utils/Animations";
+import React from 'react';
+import CameraAltIcon from '@mui/icons-material/CameraAlt';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import ContactPageIcon from '@mui/icons-material/ContactPage';
+import TimelineIcon from '@mui/icons-material/Timeline';
+import TravelExploreIcon from '@mui/icons-material/TravelExplore';
+import Card from '../common/Card';
+import { FadeInAnimation } from '../utils/Animations';
 
 const CardSection = () => {
   const getAnimatedCard = (
@@ -14,7 +14,7 @@ const CardSection = () => {
     description,
     link,
     cardColor,
-    transition
+    transition,
   ) => (
     <FadeInAnimation transition={transition}>
       <Card
@@ -30,52 +30,52 @@ const CardSection = () => {
   return (
     <div
       style={{
-        height: "fit-content",
-        display: "flex",
-        flexDirection: "row",
-        justifyContent: "center",
-        flexWrap: "wrap",
+        height: 'fit-content',
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'center',
+        flexWrap: 'wrap',
       }}
     >
       {getAnimatedCard(
         <ContactPageIcon sx={{ fontSize: 50 }} />,
-        "Intro",
-        "These two love birds find a way to make it through anything together",
-        "#info-section",
-        "",
-        0.5
+        'Intro',
+        'These two love birds find a way to make it through anything together',
+        '#info-section',
+        '',
+        0.5,
       )}
       {getAnimatedCard(
         <LocationOnIcon sx={{ fontSize: 50 }} />,
-        "Location",
-        "This Drama takes place in the 21st century USA",
-        "#secret",
-        "",
-        0.5
+        'Location',
+        'This Drama takes place in the 21st century USA',
+        '#secret',
+        '',
+        0.5,
       )}
       {getAnimatedCard(
         <TimelineIcon sx={{ fontSize: 50 }} />,
-        "Timeline",
-        "View the history of the Drama 💝💝💝💝💝💝",
-        "/timeline",
-        "pink",
-        0.5
+        'Timeline',
+        'View the history of the Drama 💝💝💝💝💝💝',
+        '/timeline',
+        'pink',
+        0.5,
       )}
       {getAnimatedCard(
         <TravelExploreIcon sx={{ fontSize: 50 }} />,
-        "Vacations",
-        "View the vacations the couple has gone on 🛫🛬",
-        "/vacations",
-        "lightgreen",
-        0.5
+        'Vacations',
+        'View the vacations the couple has gone on 🛫🛬',
+        '/vacations',
+        'lightgreen',
+        0.5,
       )}
       {getAnimatedCard(
         <CameraAltIcon sx={{ fontSize: 50 }} />,
-        "More Images",
-        "The cast has 2 main protagonists: Anna and Zac",
-        "/more_images",
-        "",
-        0.5
+        'More Images',
+        'The cast has 2 main protagonists: Anna and Zac',
+        '/more_images',
+        '',
+        0.5,
       )}
     </div>
   );

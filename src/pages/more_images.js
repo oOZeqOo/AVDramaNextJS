@@ -1,4 +1,4 @@
-import ImageGalleryPage from "@/components/ImageGalleryPage";
+import ImageGalleryPage from '@/components/ImageGalleryPage';
 
 export default function ImageGallery() {
   return <ImageGalleryPage />;

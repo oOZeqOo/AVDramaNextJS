@@ -1,65 +1,65 @@
-import React from "react";
-import styles from "@/styles/HomePage.module.css";
-import Image from "next/image";
-import Link from "next/link";
-import LoadingImage from "../common/LoadingImage";
+import React from 'react';
+import styles from '@/styles/HomePage.module.css';
+import Image from 'next/image';
+import Link from 'next/link';
+import LoadingImage from '../common/LoadingImage';
 
 const PageHeader = ({ viewWidth, height, isMobile }) => {
   const myStyles = {
     headerWrapper: {
-      minHeight: "100vh",
-      display: "flex",
-      flexDirection: "column",
-      justifyContent: "center",
+      minHeight: '100vh',
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'center',
     },
     header: {
-      display: "flex",
-      minHeight: "100vh",
-      flexDirection: "column",
-      justifyContent: "center",
-      marginLeft: isMobile ? "5%" : "25%",
-      marginRight: isMobile ? "5%" : "25%",
+      display: 'flex',
+      minHeight: '100vh',
+      flexDirection: 'column',
+      justifyContent: 'center',
+      marginLeft: isMobile ? '5%' : '25%',
+      marginRight: isMobile ? '5%' : '25%',
     },
     imageWrapper: {
-      position: "absolute",
+      position: 'absolute',
       zIndex: -1,
-      overflow: "hidden",
-      height: "100vh",
+      overflow: 'hidden',
+      height: '100vh',
     },
     image: {
-      objectFit: "cover",
-      alignItems: "center",
-      textAlign: "right",
+      objectFit: 'cover',
+      alignItems: 'center',
+      textAlign: 'right',
       zIndex: -1,
-      display: "flex",
-      objectPosition: "50% 50%",
+      display: 'flex',
+      objectPosition: '50% 50%',
     },
     video: {
       width: 100,
       weight: 100,
-      margin: "auto",
-      objectFit: "contain",
+      margin: 'auto',
+      objectFit: 'contain',
       borderRadius: 10,
     },
     subText: {
-      backgroundColor: "rgb(0, 0, 0, 0.3)",
-      color: "white",
+      backgroundColor: 'rgb(0, 0, 0, 0.3)',
+      color: 'white',
       padding: 10,
       borderRadius: 10,
     },
     button: {
       marginTop: 10,
-      backgroundColor: "black",
-      color: "white",
+      backgroundColor: 'black',
+      color: 'white',
       borderRadius: 40,
       padding: 20,
-      width: "200px",
+      width: '200px',
     },
-    moreInfo: { color: "black" },
+    moreInfo: { color: 'black' },
     rowCenter: {
-      display: "flex",
-      flexDirection: "row",
-      justifyContent: "center",
+      display: 'flex',
+      flexDirection: 'row',
+      justifyContent: 'center',
     },
   };
 
@@ -70,8 +70,8 @@ const PageHeader = ({ viewWidth, height, isMobile }) => {
           <LoadingImage
             className="static"
             style={myStyles.image}
-            src={"/images/sunflower-6.jpg"}
-            alt={"Sunflowers"}
+            src={'/images/sunflower-6.jpg'}
+            alt={'Sunflowers'}
             width={viewWidth}
             height={height}
           />
@@ -87,23 +87,23 @@ const PageHeader = ({ viewWidth, height, isMobile }) => {
               width="100"
               autoPlay={true}
               loop={true}
-              style={{ borderRadius: 100, border: "5px solid black" }}
+              style={{ borderRadius: 100, border: '5px solid black' }}
               onLoadStart={() => {}}
               playsInline={true}
-              src={"/videos/AVDrama.mp4"}
-              alt={"Missing"}
+              src={'/videos/AVDrama.mp4'}
+              alt={'Missing'}
               muted={true}
               type="video/mp4"
             />
           </div>
           <div style={myStyles.rowCenter}>
-            <Link href={"#more"} style={myStyles.button} scroll={false}>
+            <Link href={'#more'} style={myStyles.button} scroll={false}>
               LEARN MORE
             </Link>
           </div>
         </div>
       </div>
-      <div id={"more"}>
+      <div id={'more'}>
         <h1 style={myStyles.moreInfo}>More Information about the A-V-Drama</h1>
       </div>
     </>

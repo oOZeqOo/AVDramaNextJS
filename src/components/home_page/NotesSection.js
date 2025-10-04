@@ -1,7 +1,7 @@
-import Image from "next/image";
-import React from "react";
-import { homePageNotes } from "@/assets/data/HomePageNotes";
-import LoadingImage from "../common/LoadingImage";
+import Image from 'next/image';
+import React from 'react';
+import { homePageNotes } from '@/assets/data/HomePageNotes';
+import LoadingImage from '../common/LoadingImage';
 
 const NoteSection = ({ viewWidth = 200 }) => {
   return buildNoteSection(viewWidth);
@@ -12,7 +12,7 @@ export default NoteSection;
 const buildNoteSection = (viewWidth) => {
   const width = Math.min(viewWidth, 300);
   return (
-    <div style={styles.contentWrapper} id={"secret"}>
+    <div style={styles.contentWrapper} id={'secret'}>
       <div style={styles.content}>
         <div>{getElementsContent(homePageNotes?.title)}</div>
         <div>{getElementsContent(homePageNotes?.message)}</div>
@@ -24,8 +24,8 @@ const buildNoteSection = (viewWidth) => {
             let imgHeight = Math.min(width, 300);
             const mode = url.style;
 
-            if (mode === "landscape") imgWidth = Math.min(viewWidth, 400);
-            else if (mode === "portrait") imgHeight = Math.min(viewWidth, 400);
+            if (mode === 'landscape') imgWidth = Math.min(viewWidth, 400);
+            else if (mode === 'portrait') imgHeight = Math.min(viewWidth, 400);
 
             return (
               <LoadingImage
@@ -33,7 +33,7 @@ const buildNoteSection = (viewWidth) => {
                 src={url.src}
                 width={imgWidth}
                 height={imgHeight}
-                alt={"gif"}
+                alt={'gif'}
               />
             );
           })}
@@ -45,44 +45,44 @@ const buildNoteSection = (viewWidth) => {
 
 const getElementsContent = (item) => {
   switch (item?.element) {
-    case "h1":
+    case 'h1':
       return item?.content?.map((item, index) => (
         <h1 key={index} style={styles.blackText}>
           {item}
         </h1>
       ));
-    case "h2":
+    case 'h2':
       return item?.content?.map((item, index) => (
         <h2 key={index} style={styles.blackText}>
           {item}
         </h2>
       ));
-    case "h3":
+    case 'h3':
       return item?.content?.map((item, index) => (
         <h3 key={index} style={styles.blackText}>
           {item}
         </h3>
       ));
-    case "h4":
+    case 'h4':
       return item?.content?.map((item, index) => (
         <h4 key={index} style={styles.blackText}>
           {item}
         </h4>
       ));
-    case "h5":
+    case 'h5':
       return item?.content?.map((item, index) => (
         <h5 key={index} style={styles.blackText}>
           {item}
         </h5>
       ));
-    case "h6":
+    case 'h6':
       return item?.content?.map((item, index) => (
         <h6 key={index} style={styles.blackText}>
           {item}
         </h6>
       ));
 
-    case "tiny":
+    case 'tiny':
       return item?.content?.map((item, index) => (
         <h6
           key={index}
@@ -95,17 +95,17 @@ const getElementsContent = (item) => {
         </h6>
       ));
 
-    case "img":
+    case 'img':
       return item?.content?.map((item, index) => (
         <div style={styles.gifWrapper} key={index}>
           <Image
-            alt={"Image"}
+            alt={'Image'}
             width={300}
             height={300}
             src={item}
             style={{
               ...styles.imageStyle,
-              objectFit: "contain",
+              objectFit: 'contain',
             }}
           />
         </div>
@@ -121,27 +121,27 @@ const getElementsContent = (item) => {
 
 const styles = {
   blackText: {
-    color: "black",
+    color: 'black',
     margin: 0,
-    textAlign: "middle",
+    textAlign: 'middle',
   },
   center: {
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
   },
   contentWrapper: {
-    width: "100%",
+    width: '100%',
   },
   content: {
-    width: "90%",
-    margin: "auto",
+    width: '90%',
+    margin: 'auto',
   },
   gifWrapper: {
-    display: "flex",
-    flexDirection: "row",
-    flexWrap: "wrap",
-    justifyContent: "center",
+    display: 'flex',
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'center',
     marginBottom: 50,
   },
 };

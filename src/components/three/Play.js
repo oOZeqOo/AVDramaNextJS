@@ -1,6 +1,6 @@
-import React from "react";
-import { Canvas } from "react-three-fiber";
-import Heart from "./Heart";
+import React from 'react';
+import { Canvas } from 'react-three-fiber';
+import Heart from './Heart';
 
 const Play = () => {
   return (

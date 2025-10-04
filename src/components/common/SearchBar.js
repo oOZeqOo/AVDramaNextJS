@@ -1,18 +1,18 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react';
 
 function validPlus(string) {
-  if (string.indexOf("+") === -1) return true;
+  if (string.indexOf('+') === -1) return true;
 
-  return string.indexOf("+") === string.length - 1;
+  return string.indexOf('+') === string.length - 1;
 }
 
 function isNumeric(str) {
-  if (typeof str != "string") return false; // we only process strings!
+  if (typeof str != 'string') return false; // we only process strings!
   return !isNaN(str) && !isNaN(parseFloat(str));
 }
 
 const SearchBar = ({ onChange }) => {
-  const [searchTerm, setSearchTerm] = useState("");
+  const [searchTerm, setSearchTerm] = useState('');
 
   useEffect(() => {
     if (!validPlus(searchTerm)) return;
@@ -33,7 +33,7 @@ const SearchBar = ({ onChange }) => {
       </label>
       <input
         className="peer block w-full rounded-md border border-gray-200 py-[9px] pl-10 text-sm outline-2 placeholder:text-gray-500"
-        placeholder={"Search Image Number"}
+        placeholder={'Search Image Number'}
         onChange={(e) => {
           setSearchTerm(e.target.value);
         }}
