@@ -105,11 +105,7 @@ export const homePageNotes = {
   title: {
     element: 'h1',
     content: [
-      'HAPPY NATIONAL GIRLFRIEND DAY BOBA QUEEN',
-      ' 💘💘💘💘💝💝💝💝💝💝💘💘💘💘',
-      ' 💘🎊🎊💘💝💝💝💝💝💝💘🎊🎊💘',
-      ' 💘💘💘💘💝💝💝💝💝💝💘💘💘💘',
-      ' 💘🎊🎊💘💝💝💝💝💝💝💘🎊🎊💘',
+
     ],
   },
   message: {
@@ -119,8 +115,7 @@ export const homePageNotes = {
   extraNote: {
     element: 'h2',
     content: [
-      'A wonderful day to be you! Keep being you babe 💝💝💝',
-      '💝💝💝💝💝💝💝💝💝💝💝💝',
+
     ],
   },
   extras: {

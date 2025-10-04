@@ -234,71 +234,71 @@ export const vacationData = {
     cards: [
       {
         imgPath: '/images/vacations/california_1/Snapchat-1000142310.jpg',
-        title: '',
+        title: 'Zac and Anna on the way to California',
       },
       {
         imgPath: '/images/vacations/california_1/Snapchat-1180422702.jpg',
-        title: '',
+        title: 'They went shopping in Japan Town',
       },
       {
         imgPath: '/images/vacations/california_1/Snapchat-1216367878.jpg',
-        title: '',
+        title: 'They got to walk on the red carpet of Universal Studios!',
       },
       {
         imgPath: '/images/vacations/california_1/Snapchat-1220844131.jpg',
-        title: '',
+        title: 'They are matching mushrooms in Super Mario World! 🍄🍄🍄',
       },
       {
         imgPath: '/images/vacations/california_1/Snapchat-1233399009.jpg',
-        title: '',
+        title: 'A great Mario scene',
       },
       {
         imgPath: '/images/vacations/california_1/Snapchat-132898198.jpg',
-        title: '',
+        title: 'Thai dinner! 🍛🍛',
       },
       {
         imgPath: '/images/vacations/california_1/Snapchat-1551738303.jpg',
-        title: '',
+        title: 'Vietnamese food 🥘🥘',
       },
       {
         imgPath: '/images/vacations/california_1/Snapchat-1604987186.jpg',
-        title: '',
+        title: 'Universal Studios!',
       },
       {
         imgPath: '/images/vacations/california_1/Snapchat-28555623.jpg',
-        title: '',
+        title: 'Fancy Japanese dinner on a mountain top! 🗻',
       },
       {
         imgPath: '/images/vacations/california_1/Snapchat-494050807.jpg',
-        title: '',
+        title: 'A nice picture with the space shuttle and a beautiful girl 😍😍😍!',
       },
       {
         imgPath: '/images/vacations/california_1/Snapchat-514203869.jpg',
-        title: '',
+        title: 'It\'s Boba Time',
       },
       {
         imgPath: '/images/vacations/california_1/Snapchat-535141012.jpg',
-        title: '',
+        title: 'Feet at Hollywood star walk!',
       },
       {
         imgPath: '/images/vacations/california_1/Snapchat-629511589.jpg',
-        title: '',
+        title: 'At a huuuuuuge mall!',
       },
       {
         imgPath: '/images/vacations/california_1/Snapchat-728068009.jpg',
-        title: '',
+        title: 'Minions!!!',
       },
       {
         imgPath: '/images/vacations/california_1/Snapchat-849555312.jpg',
-        title: '',
+        title: 'Beautiful girl in Hollywood 😘😘😘',
       },
       {
         imgPath: '/images/vacations/california_1/Snapchat-871334655.jpg',
-        title: '',
+        title: 'Time to leave!',
       },
       {
         imgPath: '/images/vacations/california_1/Snapchat-954883380.jpg',
-        title: '',
+        title: 'What a great scene!',
       },
     ],
   },
