@@ -103,20 +103,16 @@
 // Anniversary 2024 (5 years)
 export const homePageNotes = {
   title: {
-    element: 'h1',
-    content: [
-
-    ],
+    element: "h1",
+    content: [],
   },
   message: {
-    element: 'h3',
+    element: "h3",
     content: [],
   },
   extraNote: {
-    element: 'h2',
-    content: [
-
-    ],
+    element: "h2",
+    content: [],
   },
   extras: {
     // element: "img",

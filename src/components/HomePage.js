@@ -1,13 +1,13 @@
-import React from 'react';
-import { Divider } from '@mui/material';
+import React from "react";
+import { Divider } from "@mui/material";
 
-import useDeviceSize from './hooks/useDeviceSize';
-import { isMobile } from 'react-device-detect';
+import useDeviceSize from "./hooks/useDeviceSize";
+import { isMobile } from "react-device-detect";
 
-import CardSection from './home_page/CardSection';
-import AboutSection from './home_page/AboutSection';
-import PageHeader from './home_page/PageHeader';
-import NoteSection from './home_page/NotesSection';
+import CardSection from "./home_page/CardSection";
+import AboutSection from "./home_page/AboutSection";
+import PageHeader from "./home_page/PageHeader";
+import NoteSection from "./home_page/NotesSection";
 // import Play from "./three/play";
 
 const HomePage = () => {
@@ -15,15 +15,15 @@ const HomePage = () => {
   const styles = {
     contentWrapper: {
       width: width,
-      height: 'fit-content',
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'flex-start',
-      textAlign: 'center',
+      height: "fit-content",
+      display: "flex",
+      flexDirection: "column",
+      justifyContent: "flex-start",
+      textAlign: "center",
     },
     divider: {
-      margin: '40px 10%',
-      fontWeight: 'bold',
+      margin: "40px 10%",
+      fontWeight: "bold",
       fontSize: 100,
       borderBottomWidth: 3,
     },

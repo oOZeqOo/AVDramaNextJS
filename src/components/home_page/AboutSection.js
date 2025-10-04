@@ -1,16 +1,16 @@
-import React, { useEffect } from 'react';
-import Typography from '@mui/material/Typography';
-import Image from 'next/image';
-import { isMobile } from 'react-device-detect';
-import { aboutSectionData } from '@/assets/data/AboutSectionData';
-import { FadeInUpAnimation } from '../utils/Animations';
-import LoadingImage from '../common/LoadingImage';
+import React, { useEffect } from "react";
+import Typography from "@mui/material/Typography";
+import Image from "next/image";
+import { isMobile } from "react-device-detect";
+import { aboutSectionData } from "@/assets/data/AboutSectionData";
+import { FadeInUpAnimation } from "../utils/Animations";
+import LoadingImage from "../common/LoadingImage";
 
 const mobileDevice = isMobile || false;
 
 const AboutSection = ({ alternating = true, viewWidth = 800 }) => {
   return (
-    <div style={styles.wordSectionWrapper} id={'info-section'}>
+    <div style={styles.wordSectionWrapper} id={"info-section"}>
       {aboutSectionData?.map((item, index) =>
         getSection({ ...item, index, alternating, viewWidth }),
       )}
@@ -42,33 +42,33 @@ const getSection = ({
       <div style={myStyle} id={index}>
         <div style={styles.titleWrapper}>
           <Typography
-            variant={'h4'}
-            sx={{ fontWeight: 'bold' }}
-            align={'center'}
+            variant={"h4"}
+            sx={{ fontWeight: "bold" }}
+            align={"center"}
           >
             {title}
           </Typography>
         </div>
         <div>
-          {descriptions[0]?.includes('Title:') ? (
+          {descriptions[0]?.includes("Title:") ? (
             <>
               <Typography
                 key={index}
                 style={{
-                  textAlign: 'middle',
-                  margin: 'auto',
-                  fontWeight: 'bold',
+                  textAlign: "middle",
+                  margin: "auto",
+                  fontWeight: "bold",
                   fontSize: 20,
-                  color: 'black',
+                  color: "black",
                 }}
               >
-                {descriptions[0].split('Title:')}:
+                {descriptions[0].split("Title:")}:
               </Typography>
               <div
                 style={{
-                  display: 'flex',
-                  flexDirection: 'row',
-                  justifyContent: 'space-around',
+                  display: "flex",
+                  flexDirection: "row",
+                  justifyContent: "space-around",
                 }}
               >
                 <ul key={`left-side-${title}-1`} id={`left-side-${title}`}>
@@ -110,12 +110,12 @@ const getSection = ({
               {getWordSection(title, description)}
               <div style={styles.centerItems}>
                 <LoadingImage
-                  alt={'Image'}
+                  alt={"Image"}
                   width={width}
                   height={width}
                   src={imagePath}
                   style={{
-                    objectFit: 'cover',
+                    objectFit: "cover",
                     borderRadius: imageBorderRadius,
                   }}
                 />
@@ -125,12 +125,12 @@ const getSection = ({
             <>
               <div style={styles.centerItems}>
                 <LoadingImage
-                  alt={'Image'}
+                  alt={"Image"}
                   width={width}
                   height={width}
                   src={imagePath}
                   style={{
-                    objectFit: 'cover',
+                    objectFit: "cover",
                     borderRadius: imageBorderRadius,
                   }}
                 />
@@ -142,12 +142,12 @@ const getSection = ({
           <>
             <div style={styles.centerItems}>
               <LoadingImage
-                alt={'Image'}
+                alt={"Image"}
                 width={width}
                 height={width}
                 src={imagePath}
                 style={{
-                  objectFit: 'cover',
+                  objectFit: "cover",
                   borderRadius: imageBorderRadius,
                 }}
               />
@@ -162,47 +162,47 @@ const getSection = ({
 
 const styles = {
   wordImageWrapper: {
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'center',
-    flexWrap: 'wrap',
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "center",
+    flexWrap: "wrap",
     margin: 20,
   },
   wordSectionWrapper: {
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'space-between',
-    flexWrap: 'wrap',
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-between",
+    flexWrap: "wrap",
   },
   wordSection: {
-    width: '50%',
-    minWidth: '600px',
-    textAlign: 'left',
+    width: "50%",
+    minWidth: "600px",
+    textAlign: "left",
     marginLeft: 20,
-    padding: '0px 40px',
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
+    padding: "0px 40px",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
   },
   wordSectionSmallScreen: {
-    width: '90%',
-    minWidth: '100%',
-    textAlign: 'left',
+    width: "90%",
+    minWidth: "100%",
+    textAlign: "left",
     marginLeft: 0,
-    padding: '0px 20px',
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
+    padding: "0px 20px",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
   },
   titleWrapper: {
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'center',
-    margin: mobileDevice ? '40px 0px' : '0px 0px 40px 0px',
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "center",
+    margin: mobileDevice ? "40px 0px" : "0px 0px 40px 0px",
   },
   centerItems: {
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
   },
 };

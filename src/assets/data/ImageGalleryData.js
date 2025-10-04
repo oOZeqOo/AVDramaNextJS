@@ -801,5 +801,5 @@ export const imageGalleryData = {
     "0999.jpg",
     "1000.jpg",
     "1001.jpg",
-   ],
+  ],
 };

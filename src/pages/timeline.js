@@ -1,4 +1,4 @@
-import TimelinePage from '@/components/TimelinePage';
+import TimelinePage from "@/components/TimelinePage";
 export default function Timeline() {
   return <TimelinePage />;
 }

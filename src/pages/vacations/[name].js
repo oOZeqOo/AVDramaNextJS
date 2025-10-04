@@ -1,40 +1,40 @@
-import React from 'react';
-import { useRouter } from 'next/router';
-import { Button, Typography } from '@mui/material';
-import { vacationData } from '@/assets/data/VacationData';
-import Image from 'next/image';
+import React from "react";
+import { useRouter } from "next/router";
+import { Button, Typography } from "@mui/material";
+import { vacationData } from "@/assets/data/VacationData";
+import Image from "next/image";
 
-import MUICard from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import Link from 'next/link';
-import LoadingImage from '@/components/common/LoadingImage';
+import MUICard from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import Link from "next/link";
+import LoadingImage from "@/components/common/LoadingImage";
 
 const Card = ({
   icon,
   title,
   description,
   link,
-  imgPath = '',
-  cardColor = 'white',
-  textColor = 'black',
+  imgPath = "",
+  cardColor = "white",
+  textColor = "black",
 }) => {
   const content = () => (
     <>
       {imgPath && (
         <div
           style={{
-            display: 'flex',
-            justifyContent: 'start',
-            alignItems: 'middle',
+            display: "flex",
+            justifyContent: "start",
+            alignItems: "middle",
           }}
         >
           <LoadingImage
-            alt={'Image'}
+            alt={"Image"}
             width={250}
             height={200}
             src={imgPath}
             style={{
-              objectFit: 'contain',
+              objectFit: "contain",
               width: 250,
               height: 200,
             }}
@@ -65,25 +65,25 @@ const Card = ({
         height: 300,
         margin: 2,
         borderRadius: 10,
-        border: '1px solid black',
+        border: "1px solid black",
       }}
       style={{
         backgroundColor: cardColor,
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'space-between',
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between",
         boxShadow:
-          '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
+          "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
       }}
     >
       {link ? (
         <Link
           href={link}
           style={{
-            height: '100%',
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'space-between',
+            height: "100%",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "space-between",
           }}
         >
           {content()}
@@ -104,9 +104,9 @@ const VacationName = () => {
     <div>
       <div
         style={{
-          backgroundColor: 'lime',
+          backgroundColor: "lime",
           padding: 10,
-          borderBottom: '2px solid black',
+          borderBottom: "2px solid black",
         }}
       >
         <Button
@@ -119,34 +119,34 @@ const VacationName = () => {
       </div>
       <div
         style={{
-          border: '30px solid',
+          border: "30px solid",
           borderImage: `url("${vacation?.borderImage}")`,
-          backgroundColor: 'lightgreen',
+          backgroundColor: "lightgreen",
         }}
       >
         <div id="top-section" style={{ marginBlock: 10, marginInline: 40 }}>
           <Typography
             variant="h2"
-            style={{ color: 'black', marginBottom: 20 }}
+            style={{ color: "black", marginBottom: 20 }}
             align="center"
           >
             {vacation?.title}
           </Typography>
-          <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <div style={{ display: "flex", justifyContent: "center" }}>
             <Image
-              alt={'Image'}
+              alt={"Image"}
               width={250}
               height={200}
-              src={vacation?.imgPath || ''}
+              src={vacation?.imgPath || ""}
               style={{
-                objectFit: 'contain',
+                objectFit: "contain",
               }}
             />
           </div>
           <Typography
             variant="h5"
             align="center"
-            style={{ display: 'flex', justifyContent: 'center' }}
+            style={{ display: "flex", justifyContent: "center" }}
           >
             {vacation?.description}
           </Typography>
@@ -154,10 +154,10 @@ const VacationName = () => {
         <div
           id="card-section"
           style={{
-            display: 'flex',
-            flexDirection: 'row',
-            flexWrap: 'wrap',
-            justifyContent: 'center',
+            display: "flex",
+            flexDirection: "row",
+            flexWrap: "wrap",
+            justifyContent: "center",
           }}
         >
           {vacation?.cards?.map((item, index) => (
@@ -167,33 +167,33 @@ const VacationName = () => {
         <div id="footer-section">
           <Typography
             align="center"
-            style={{ color: 'black', fontWeight: 'bold', fontSize: 'xx-large' }}
+            style={{ color: "black", fontWeight: "bold", fontSize: "xx-large" }}
           >
             {vacation?.footer}
           </Typography>
         </div>
         <div
           style={{
-            display: 'flex',
-            flexDirection: 'row',
-            flexWrap: 'wrap',
-            justifyContent: 'center',
+            display: "flex",
+            flexDirection: "row",
+            flexWrap: "wrap",
+            justifyContent: "center",
           }}
         >
           {vacation?.otherImages?.map((imgPath, index) =>
             imgPath ? (
               <LoadingImage
                 key={index}
-                alt={'Image'}
+                alt={"Image"}
                 width={250}
                 height={250}
                 src={imgPath}
                 style={{
-                  objectFit: 'contain',
+                  objectFit: "contain",
                 }}
               />
             ) : (
-              ''
+              ""
             ),
           )}
         </div>

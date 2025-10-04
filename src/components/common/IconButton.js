@@ -1,5 +1,5 @@
-import React from 'react';
-import { IconButton as MUIIconButton } from '@mui/material';
+import React from "react";
+import { IconButton as MUIIconButton } from "@mui/material";
 
 const IconButton = (props) => {
   const { children, ...rest } = props;
