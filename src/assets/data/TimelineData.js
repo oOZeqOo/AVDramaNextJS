@@ -2089,6 +2089,14 @@ export const timelineData = {
       title: "Interview Fondue 🧀💼",
     },
     {
+      description:
+        "Zac got Its Boba Time to go and picked up Anna to take her to UTSA to study. Later he picked her up and they went to China Stix for dinner to celebrate! 🎉🥳🥳",
+      imgClass: "img-big",
+      imgPath: "/images/timeline/2025/oct_03_2025.jpg",
+      month: "October",
+      title: "International Boyfriend Day 💘💘",
+    },
+    {
       description: "I love you so much babyyyyy 💖💖💝💝🥰🥰🥰",
       imgClass: "img-big",
       imgPath: "/images/timeline/sunflower-6.jpg",
