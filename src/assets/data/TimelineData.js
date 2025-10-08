@@ -1617,7 +1617,7 @@ export const timelineData = {
     },
     {
       description:
-        "Zac, Anna and her dad all went to Houston! They stopped at Bucees. They stopped at Kinokuniya to shop! Then they went to a Vietnamese restaurant for lunch! Then they went to the Bep Teahouse to get drinks to go. Then they went to the Galleria to go shopping. After that they went to the Bep Teahouse again to get drinks to go for the next day! Then they went to Subway to get food to go and then went home. On their way home they stopped at their favorite place, Bucees! 🍚🍜🍝",
+        "Zac, Anna and her dad all went to Houston! They stopped at Bucee's. They stopped at Kinokuniya to shop! Then they went to a Vietnamese restaurant for lunch! Then they went to the Bep Teahouse to get drinks to go. Then they went to the Galleria to go shopping. After that they went to the Bep Teahouse again to get drinks to go for the next day! Then they went to Subway to get food to go and then went home. On their way home they stopped at their favorite place, Bucee's! 🍚🍜🍝",
       isVideo: false,
       imgClass: "img",
       imgPath: "/images/timeline/2025/jan_07_2025.jpg",
@@ -1677,7 +1677,7 @@ export const timelineData = {
     },
     {
       description:
-        "Zac took Anna to Austin to go to Mozart's Coffee Roasters to get drinks and watch a Lunar New Year celebration. After that they went to Loro Asian Smokehouse & Bar for lunch. Then they tried a new place called FatBee and it was a hidden gem! They went home and stopped at Bucees on the way home!",
+        "Zac took Anna to Austin to go to Mozart's Coffee Roasters to get drinks and watch a Lunar New Year celebration. After that they went to Loro Asian Smokehouse & Bar for lunch. Then they tried a new place called FatBee and it was a hidden gem! They went home and stopped at Bucee's on the way home!",
       isVideo: false,
       imgClass: "img-big",
       imgPath: "/images/timeline/2025/feb_09_2025.jpg",
@@ -1855,7 +1855,7 @@ export const timelineData = {
     },
     {
       description:
-        "Zac and Anna went to Austin to do the new Tea Ride! They then went to Machi Sushi and Anna didn't like the service there! Zac then dropped Anna off at the Oasis Spa for her appointment! Zac went to HEB while she did that. Then they went to Love Bubble to get drinks to go! They went to the Barton Creek Mall and went shopping! After that they went to ChiCha San to get drinks to go. They got Loro Austin to go and stopped at Buccees on the way home. Zac celebrated for Anna 🎊💝🎉🥳",
+        "Zac and Anna went to Austin to do the new Tea Ride! They then went to Machi Sushi and Anna didn't like the service there! Zac then dropped Anna off at the Oasis Spa for her appointment! Zac went to HEB while she did that. Then they went to Love Bubble to get drinks to go! They went to the Barton Creek Mall and went shopping! After that they went to ChiCha San to get drinks to go. They got Loro Austin to go and stopped at Bucee's on the way home. Zac celebrated for Anna 🎊💝🎉🥳",
       imgClass: "img",
       imgPath: "/images/timeline/2025/may_23_2025.jpeg",
       month: "May",
@@ -1961,7 +1961,7 @@ export const timelineData = {
     },
     {
       description:
-        "Zac and Anna went to Boerne to go to Jims to eat there! 🥞🥚 Then they went to The Bubble Tea Factory to get some drinks! After that Zac took Anna home",
+        "Zac and Anna went to Boerne to go to Jim's to eat there! 🥞🥚 Then they went to The Bubble Tea Factory to get some drinks! After that Zac took Anna home",
       imgClass: "img-big",
       imgPath: "/images/timeline/2025/jul_04_2025.jpg",
       month: "July",
@@ -1969,7 +1969,7 @@ export const timelineData = {
     },
     {
       description:
-        "Zac and Anna took a trip to Houston. They stopped at Bucees, got Subway to go on the way and then they went to the Bep Teahouse. After they finished there, they went to Puer Tea & Coffee to get cheesecakes and a drink to go! Then they went to R&B Tea to get drinks for the next day! After that they went to some japanese stores 🍙🎌 and they finally found dinner at Zake Sushi & Ramen. They took it to go and stopped at Buccees on the way home again! 🎉🎉🎈🎈 ",
+        "Zac and Anna took a trip to Houston. They stopped at Bucee's, got Subway to go on the way and then they went to the Bep Teahouse. After they finished there, they went to Puer Tea & Coffee to get cheesecakes and a drink to go! Then they went to R&B Tea to get drinks for the next day! After that they went to some japanese stores 🍙🎌 and they finally found dinner at Zake Sushi & Ramen. They took it to go and stopped at Bucee's on the way home again! 🎉🎉🎈🎈 ",
       imgClass: "img-big",
       imgPath: "/images/timeline/2025/jul_05_2025.jpg",
       month: "July",
@@ -2095,6 +2095,14 @@ export const timelineData = {
       imgPath: "/images/timeline/2025/oct_03_2025.jpg",
       month: "October",
       title: "International Boyfriend Day 💘💘",
+    },
+    {
+      description:
+        "Zac got Feng Cha to go and picked up Anna to take her to school. Later he picked her up and they went to the Mid Autumn Lantern Festival! They had so much fun there! 🏮🏮🎆🎆 Then they went to In n out for dinner",
+      imgClass: "img",
+      imgPath: "/images/timeline/2025/oct_04_2025.jpg",
+      month: "October",
+      title: "Mid Autumn Lantern Festival 🏮🏮🎆🎆",
     },
     {
       description: "I love you so much babyyyyy 💖💖💝💝🥰🥰🥰",
